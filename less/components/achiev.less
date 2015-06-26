@@ -1,0 +1,28 @@
+@import "../variables.less";
+@import "mixins.less";
+
+.achiev{
+  display: inline-block;
+  margin-right: @margin-default;
+  margin-top: @margin-default;
+  padding: 16px 30px 16px 74px;
+  width: 49.70%;
+  min-height: 6.4rem;
+  background-color: @white;
+  vertical-align: top;
+
+  &__text{
+    margin: 0;
+    font-size: @font-size--medium;
+    line-height: @line-height;
+    color: @text-color;
+  }
+
+  &__link{
+    color: @text-shill;
+  }
+}
+
+.achiev:nth-child(odd){
+  margin-right: 0;
+}

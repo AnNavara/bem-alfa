@@ -1,0 +1,26 @@
+{
+  "name": "bem-Photokyo",
+  "version": "0.0.0",
+  "authors": [
+    "AnNavara <navarachkou@gmail.com>"
+  ],
+  "description": "no descrption",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "picturefill": "~2.3.1",
+    "ideal-image-slider": "~1.4.0"
+  },
+  "devDependencies": {
+    "jquery": "~2.1.4",
+    "jquery-ui": "~1.11.4",
+    "tap": "~1.0.6",
+    "slick.js": "~1.5.5"
+  }
+}

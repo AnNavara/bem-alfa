@@ -1,0 +1,91 @@
+@import "../variables.less";
+@import "mixins.less";
+
+.page-header{
+  margin: 3.4rem 0 3.2rem 0;
+
+  &__wrapper{
+    margin-bottom: 1.7rem;
+    width: 100%;
+    #clear();
+  }
+
+  &__logo{
+    display: inline-block;
+    vertical-align: bottom;
+    max-width: 240px;
+    font-size: 0;
+  }
+
+  &__workinfo{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 77px;
+    max-width: 235px;
+
+    >span{
+      font-family: @font-family;
+      font-size: @font-size--h5;
+      line-height: @line-height--heading;
+      font-weight: @font-weight--heading;
+    }
+  }
+
+  &__phone{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 45px;
+    max-width: 200px;
+
+    >span{
+      display: block;
+      font-family: @font-family;
+      font-size: @font-size--medium;
+      color: @gray;
+    }
+
+    &-link{
+      font-family: @font-family;
+      font-size: @font-size--h2;
+      line-height: @line-height--heading;
+      font-weight: @font-weight--heading;
+      color: @link-color;
+    }
+  }
+
+  &__ask-call{
+    color: @text-shill;
+  }
+
+  &__guilds{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 65px;
+    max-width: 110px;
+    font-size: 0;
+
+    &-item{
+      display: inline-block;
+      width: 50px;
+      height: 36px;
+
+      &--ap{
+        background-image: url("../img/logo-ap.png");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+      }
+
+      &--ac{
+        background-image: url("../img/logo-ac.png");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__ask{
+    margin-left: 36px;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+}

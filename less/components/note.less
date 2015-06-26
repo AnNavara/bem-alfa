@@ -1,0 +1,65 @@
+@import "../variables.less";
+@import "mixins.less";
+
+.notes{
+  padding: 3rem 0;
+  width: 100%;
+  border-top: 1px dotted @border-color;
+  border-bottom: 1px dotted @border-color;
+
+  #clear();
+}
+
+.note{
+  float: left;
+  width: 48.17%;
+
+  #clear();
+
+  &__wrapper{
+    margin-top: 4px;
+    width: 100%;
+
+    #clear();
+  }
+
+  &__btn{
+    float: right;
+    margin-top: 5px;
+  }
+
+  &__item{
+    display: block;
+    float: left;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    padding: 1.5rem 2rem;
+    width: 185px;
+    min-height: 10.3rem;
+    background-color: @white;
+
+    >h3{
+      margin: 0;
+      font-family: @font-family;
+      font-size: @font-size--medium;
+      line-height: @line-height--heading;
+      font-weight: @font-weight;
+    }
+  }
+
+  &__date{
+    display: block;
+    margin-top: .8rem;
+    font-family: @font-family;
+    font-size: @font-size--medium;
+    color: @heading-color;
+  }
+
+  &__item:nth-child(3n){
+    margin-right: 0;
+  }
+}
+
+.note:nth-child(odd){
+  margin-right: 3.66%;
+}

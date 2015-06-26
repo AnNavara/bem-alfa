@@ -1,0 +1,50 @@
+@import "../variables.less";
+@import "mixins.less";
+
+.menu{
+  max-width: 240px;
+
+  &__container{
+    margin: 0 0 4px 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  &__item{
+    padding: 0 2.5rem;
+    list-style: none;
+    background-color: @red;
+  }
+
+  &__item--alt{
+    background-color: @yellow;
+  }
+
+  &__item:first-of-type>&__link{
+    padding: 2rem 0 1.4rem 0;
+  }
+
+  &__item:last-of-type{
+  }
+
+  &__item:last-of-type>&__link{
+    padding: 1.4rem 0 2rem 0;
+    border-bottom: none;
+  }
+
+  &__link{
+    display: block;
+    padding: 1.4rem 0;
+    font-family: @font-family--heading;
+    font-size: @font-size--h6;
+    line-height: @line-height--heading;
+    color: @gray-red;
+    text-transform: uppercase;
+    border-bottom: 1px solid @border-color--red;
+  }
+
+  &__link--alt{
+    color: @gray-dark;
+    border-bottom: 1px solid @border-color--yellow;
+  }
+}
