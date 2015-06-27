@@ -1,0 +1,50 @@
+@import "../variables.less";
+@import "mixins.less";
+
+.catalog{
+  margin-top: -8px;
+  margin-bottom: 36px;
+  #clear();
+
+  &__inner{
+    float: left;
+    width: 646px;
+    padding: 25px 0;
+    background-color: @white;
+  }
+
+  &__item{
+    float: left;
+    padding: 0 25px 0 25px;
+    height: 64px;
+    border-right: 1px dotted @border-color;
+  }
+
+  &__item:last-of-type{
+    border-right: none;
+  }
+
+  &__wrapper{
+    float: left;
+  }
+
+  &__wrapper--r{
+    float: right;
+    margin-left: 25px;
+  }
+
+  &__subheader{
+    margin: 0;
+    font-family: @font-family--heading;
+    font-size: @font-size--h4;
+    font-weight: @font-weight;
+    color: @text-color;
+  }
+
+  &__link{
+    display: block;
+    font-size: @font-size--medium;
+    line-height: @line-height;
+    color: @text-shill;
+  }
+}

@@ -267,6 +267,22 @@ img {
 	max-width: 1220px;
 }
 
+.main {
+	width: 100%;
+}
+
+.main:before,
+.main:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.main__wrapper {
+	float: right;
+	width: 76.06%;
+}
+
 .btn--big {
 	padding: 1.2rem 2.3rem;
 	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
@@ -278,7 +294,7 @@ img {
 }
 
 .btn--med {
-	padding: .6rem 1.5rem;
+	padding: .8rem 1.5rem;
 	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 	font-size: 1.3rem;
 	line-height: 1.2;
@@ -286,7 +302,7 @@ img {
 	background-color: #e74c3c;
 }
 
-.block-header {
+.block-heading {
 	float: left;
 	margin: 0;
 	padding: 0;
@@ -466,6 +482,7 @@ img {
 }
 
 .menu {
+	float: left;
 	max-width: 240px;
 }
 
@@ -508,6 +525,192 @@ img {
 .menu__link--alt {
 	color: #4a4a4a;
 	border-bottom: 1px solid #e6d98a;
+}
+
+.catalog {
+	margin-top: -8px;
+	margin-bottom: 36px;
+}
+
+.catalog:before,
+.catalog:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.catalog__inner {
+	float: left;
+	width: 646px;
+	padding: 25px 0;
+	background-color: #ffffff;
+}
+
+.catalog__item {
+	float: left;
+	padding: 0 25px 0 25px;
+	height: 64px;
+	border-right: 1px dotted #cbcbcb;
+}
+
+.catalog__item:last-of-type {
+	border-right: none;
+}
+
+.catalog__wrapper {
+	float: left;
+}
+
+.catalog__wrapper--r {
+	float: right;
+	margin-left: 25px;
+}
+
+.catalog__subheader {
+	margin: 0;
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: #4a4a4a;
+}
+
+.catalog__link {
+	display: block;
+	font-size: 1.3rem;
+	line-height: 1.4;
+	color: #e74c3c;
+}
+
+.urgent {
+	float: right;
+	padding: 15px 25px;
+	width: 240px;
+	background-color: #fdef9d;
+}
+
+.urgent__heading {
+	margin: 0;
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	font-size: 1.9rem;
+	line-height: 1.2;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #4a4a4a;
+}
+
+.filter {
+	margin-bottom: 30px;
+	padding: 11px 0;
+	font-size: 0;
+	border-top: 1px dotted #cbcbcb;
+	border-bottom: 1px dotted #cbcbcb;
+}
+
+.filter:before,
+.filter:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.filter__btn {
+	float: right;
+	display: inline-block;
+	border: none;
+	vertical-align: middle;
+}
+
+.filter > p {
+	display: inline-block;
+	margin: 0 4px 0 0;
+	padding: 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 1.3rem;
+	line-height: 1.4;
+	color: #4a4a4a;
+	font-weight: 500;
+	vertical-align: middle;
+}
+
+.filter__heading {
+	display: inline-block;
+	margin: 0 18px 0 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.4;
+	font-weight: 500;
+	color: #4a4a4a;
+	vertical-align: middle;
+}
+
+.filter__container {
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	width: 143px;
+	vertical-align: middle;
+}
+
+.filter__container > li {
+	width: 100%;
+	list-style: none;
+	cursor: pointer;
+}
+
+.filter__dropdown {
+	display: none;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #e74c3c;
+	cursor: pointer;
+}
+
+.filter__dropdown-control {
+	display: block;
+	padding: 8px 9px;
+	width: 100%;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 1.3rem;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #ffffff;
+	background-color: #e74c3c;
+}
+
+.filter__dropdown > li {
+	list-style: none;
+}
+
+.filter__dropdown--type {
+	margin: 0 4px 0 0;
+}
+
+.filter__dropdown--rooms {
+	margin: 0 20px 0 0;
+}
+
+.filter__dropdown--area {
+	margin: 0 20px 0 0;
+}
+
+.filter__dropdown--no-js:hover > li > .filter__dropdown {
+	display: block;
+}
+
+.filter__input {
+	display: inline-block;
+	margin: 0 4px 0 0;
+	padding: 5.4px 8px;
+	width: 78px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 1.3rem;
+	line-height: 1.4;
+	color: #aeaeae;
+	background-color: #ffffff;
+	border: none;
+	vertical-align: middle;
 }
 
 .adv {
@@ -569,6 +772,7 @@ img {
 }
 
 .notes {
+	margin-bottom: 30px;
 	padding: 3rem 0;
 	width: 100%;
 	border-top: 1px dotted #cbcbcb;
@@ -609,6 +813,7 @@ img {
 .note__btn {
 	float: right;
 	margin-top: 5px;
+	margin-right: 2px;
 }
 
 .note__item {
@@ -617,7 +822,7 @@ img {
 	margin-right: 4px;
 	margin-bottom: 4px;
 	padding: 1.5rem 2rem;
-	width: 185px;
+	width: 184px;
 	min-height: 10.3rem;
 	background-color: #ffffff;
 }
@@ -647,7 +852,7 @@ img {
 }
 
 .about {
-	margin-top: 2.5rem;
+	margin-bottom: 42px;
 }
 
 .about:before,
@@ -676,6 +881,7 @@ img {
 }
 
 .about__btn {
+	margin-bottom: 4px;
 	float: right;
 }
 
@@ -741,7 +947,7 @@ img {
 
 .info__wrapper {
 	float: right;
-	margin-top: 3.7rem;
+	margin-top: 39px;
 	width: 41.4%;
 }
 

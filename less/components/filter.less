@@ -1,0 +1,114 @@
+@import "../variables.less";
+@import "mixins.less";
+
+.filter{
+  margin-bottom: 30px;
+  padding: 11px 0;
+  font-size: 0;
+  border-top: 1px dotted @border-color;
+  border-bottom: 1px dotted @border-color;
+  #clear();
+
+  &__btn{
+    float: right;
+    display: inline-block;
+    border: none;
+    vertical-align: middle;
+  }
+
+  >p{
+    display: inline-block;
+    margin: 0 @margin-default 0 0;
+    padding: 0;
+    font-family: @font-family;
+    font-size: @font-size--medium;
+    line-height: @line-height;
+    color: @text-color;
+    font-weight: @font-weight--heading;
+    vertical-align: middle;
+  }
+
+  &__heading{
+    display: inline-block;
+    margin: 0 18px 0 0;
+    font-family: @font-family;
+    font-size: @font-size--h6;
+    line-height: @line-height;
+    font-weight: @font-weight--heading;
+    color: @text-color;
+    vertical-align: middle;
+  }
+
+  &__container{
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    width: 143px;
+    vertical-align: middle;
+
+
+    >li{
+      width: 100%;
+      list-style: none;
+      cursor: pointer;
+    }
+  }
+
+  &__dropdown{
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: @red;
+    cursor: pointer;
+
+    &-control{
+      display: block;
+      padding: 8px 9px;
+      width: 100%;
+      font-family: @font-family;
+      font-size: @font-size--medium;
+      line-height: @line-height--heading;
+      font-weight: @font-weight;
+      color: @white;
+      background-color: @red;
+    }
+
+    >li{
+      list-style: none;
+    }
+
+    &--type{
+      margin: 0 @margin-default 0 0;
+    }
+
+    &--rooms{
+      margin: 0 20px 0 0;
+    }
+
+    &--area{
+      margin: 0 20px 0 0;
+    }
+
+    &--no-js:hover{
+      >li>.filter__dropdown{
+        display: block;
+      }
+    }
+  }
+
+  &__input{
+    display: inline-block;
+    margin: 0 @margin-default 0 0;
+    padding: 5.4px 8px;
+    width: 78px;
+    font-family: @font-family;
+    font-size: @font-size--medium;
+    line-height: @line-height;
+    color: @heading-color;
+    background-color: @white;
+    border: none;
+    vertical-align: middle;
+  }
+}
