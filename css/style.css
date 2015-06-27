@@ -268,6 +268,7 @@ img {
 }
 
 .main {
+	margin-bottom: 30px;
 	width: 100%;
 }
 
@@ -711,6 +712,131 @@ img {
 	background-color: #ffffff;
 	border: none;
 	vertical-align: middle;
+}
+
+.offer:before,
+.offer:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.offer__wrapper {
+	float: left;
+	width: 100%;
+}
+
+.offer__wrapper:before,
+.offer__wrapper:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.sale-item {
+	float: left;
+	margin: 0 4px 4px 0;
+	width: 219px;
+	background-color: #ffffff;
+	overflow-x: hidden;
+}
+
+.sale-item__wrapper {
+	padding: 0 19px 18px 19px;
+}
+
+.sale-item__wrapper:before,
+.sale-item__wrapper:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.sale-item__img {
+	margin-bottom: 17px;
+	width: auto;
+	height: 150px;
+	opacity: .8;
+}
+
+.sale-item__heading {
+	margin: 0 0 9px;
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #4a4a4a;
+}
+
+.sale-item__text {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 1.2rem;
+	color: #aeaeae;
+}
+
+.sale-item__area {
+	margin-bottom: 14px;
+}
+
+.sale-item__status {
+	margin: 0;
+	padding-top: 12px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: #aeaeae;
+	border-top: 1px solid #eaeaea;
+}
+
+.sale-item__price {
+	float: left;
+	margin: 0;
+	display: inline-block;
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	font-size: 1.5rem;
+	color: #e74c3c;
+}
+
+.sale-item__discount {
+	float: right;
+	margin: 4px 0 0 0;
+	display: inline-block;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 1.2rem;
+	color: #aeaeae;
+	text-decoration: line-through;
+	vertical-align: bottom;
+}
+
+.sale-item:hover {
+	box-shadow: -1px 1px 7px -2px #bbbbbb;
+	transition: box-shadow 0.3s ease;
+}
+
+.sale-item:hover > .sale-item__img {
+	opacity: 1;
+	transition: opacity .3s ease;
+}
+
+.sale-item:nth-child(4n) {
+	margin-right: 0;
+}
+
+.sale-item:not(:hover) {
+	box-shadow: none;
+	transition: box-shadow 0.3s ease;
+}
+
+.sale-item:not(:hover) > .sale-item__img {
+	opacity: .8;
+	transition: opacity .3s ease;
+}
+
+.tour__img {
+	width: auto;
+	height: 120px;
 }
 
 .adv {
