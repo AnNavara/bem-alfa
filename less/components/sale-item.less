@@ -73,8 +73,7 @@
 }
 
 .sale-item:hover{
-  box-shadow: -1px 1px 7px -2px @gray-73;
-  transition: box-shadow .3s ease;
+  #box-shadow();
 
   >.sale-item__img{
     opacity: 1;
@@ -87,8 +86,7 @@
 }
 
 .sale-item:not(:hover){
-  box-shadow: none;
-  transition: box-shadow .3s ease;
+  #no-shadow();
 
   >.sale-item__img{
     opacity: .8;

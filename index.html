@@ -3,9 +3,11 @@
 <head>
 	<title>alfa</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="http://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
 	<div class="page-wrapper">
@@ -59,25 +61,26 @@
 			<a href="" class="slider__item"></a>
 			<a href="" class="slider__item"></a>
 		</section>
-		<div class="main">
+		<main class="main">
 			<aside class="menu">
 				<ul class="menu__container">
 					<li class="menu__item"><a href="#" class="menu__link">Покупка</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">Продажа</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">Обмен</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Аренда</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">Ипотечное Кредитование</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Юридические Услуги</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Юридические <br>Услуги</a></li>
 				</ul>
 				<ul class="menu__container menu__container--alt">
 					<li class="menu__item menu__item--alt"><a href="#" class="menu__link menu__link--alt">Клининг</a></li>
 					<li class="menu__item menu__item--alt"><a href="#" class="menu__link menu__link--alt">Декорирование Помещений</a></li>
 				</ul>
 				<a href="#" class="adv adv--valuation">
-					<h1 class="adv__header">Оценка вашей недвижимости</h1>
-					<p class="adv__text">Узнай стоимость <br>своей квартиры</p>
+					<h1 class="inner-heading">Оценка вашей недвижимости</h1>
+					<p class="inner-text">Узнай стоимость <br>своей квартиры</p>
 				</a>
 				<a href="#" class="adv adv--reviews">
-					<h1 class="adv__header">Отзывы <br>о нас</h1>
+					<h1 class="inner-heading">Отзывы <br>о нас</h1>
 				</a>
 				<section class="outer">
 					<h3 class="outer__heading">Все услуги нашей компании сертифицированы.<br>
@@ -114,11 +117,11 @@
 						</div>
 					</div>
 					<a href="" class="urgent">
-						<h1 class="urgent__heading">Срочный Выкуп Квартир</h1>
+						<h1 class="inner-heading">Срочный Выкуп Квартир</h1>
 					</a>
 				</section>
 				<form class="filter">
-					<h1 class="filter__heading">Я ищу:</h1>
+					<span class="filter__text">Я ищу:</span>
 					<ul class="filter__container filter__dropdown--type filter__dropdown--no-js">
 						<li>
 							<span class="filter__dropdown-control">любой тип</span>
@@ -144,7 +147,7 @@
 							</ul>
 						</li>
 					</ul>
-					<p>в</p>
+					<span class="filter__text filter__text--small">в</span>
 					<ul class="filter__container filter__dropdown--area filter__dropdown--no-js">
 						<li>
 							<span class="filter__dropdown-control">любой район</span>
@@ -160,10 +163,10 @@
 							</ul>
 						</li>
 					</ul>
-					<p>по цене</p>
+					<span class="filter__text filter__text--small">по цене</span>
 					<input class="filter__input" type="text" name="" id="" placeholder="от">
 					<input class="filter__input" type="text" name="" id="" placeholder="до">
-					<p>р</p>
+					<span class="filter__text filter__text--small">р</span>
 					<input class="filter__btn btn--med" type="submit" value="Найти">
 				</form>
 				<section class="offer">
@@ -234,7 +237,7 @@
 					</div>
 				</section>
 			</div>
-		</div>
+		</main>
 		<div class="notes">
 			<section class="note">
 				<div class="note__wrapper">
@@ -284,7 +287,7 @@
 					<a href="" class="about__btn btn--med">Узнать больше</a>
 				</div>
 				<header class="about__header">
-					<img src="img/logo.png" alt="Альфа чёт-там">
+					<img src="img/logo--bw.png" width="191px" alt="Агенство Недвижимости Альфа">
 					<h1 class="about__heading">«АЛЬФА» — Быстрые и выгодные сделки с недвижимостью!</h1>
 				</header>
 				<div class="about-slider">
@@ -309,19 +312,19 @@
 			</div>
 			<div class="info__wrapper">
 				<a href="" class="info--r">
-					<h2 class="info__heading">Наши <br>сертификаты</h2>
+					<h2 class="inner-heading">Наши <br>сертификаты</h2>
 				</a>
 				<a href="" class="info">
-					<h2 class="info__heading">Наши <br>Вакансии</h2>
+					<h2 class="inner-heading">Наши <br>Вакансии</h2>
 				</a>
 				<a href="" class="info">
-					<h2 class="info__heading">Наши <br>партнёры</h2>
+					<h2 class="inner-heading">Наши <br>партнёры</h2>
 				</a>
 				<a href="" class="info--r2">
-					<h2 class="info__heading">Справочная <br>информация</h2>
+					<h2 class="inner-heading">Справочная <br>информация</h2>
 				</a>
 				<a href="" class="info">
-					<h2 class="info__heading">Хочу Стать <br>Риэлтором</h2>
+					<h2 class="inner-heading">Хочу Стать <br>Риэлтором</h2>
 				</a>
 			</div>
 		</section>

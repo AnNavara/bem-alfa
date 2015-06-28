@@ -12,6 +12,10 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    &>.navigation__item:first-child>.navigation__link{
+      padding-left: 0;
+    }
   }
 
   &__item{
@@ -24,16 +28,13 @@
     font-family: @font-family--heading;
     font-size: @font-size;
     color: @link-color;
+    font-weight: @font-weight--heading;
     line-height: @line-height--heading;
-    letter-spacing: .0028em;
+    #ls();
     text-transform: uppercase;
   }
   &__link:hover{
     color: @link-color--hover;
-  }
-
-  &__link:first-of-type{
-    padding-left: 0;
   }
 
   &__link--active{

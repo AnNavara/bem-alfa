@@ -5,7 +5,16 @@
   float: right;
   padding: 15px 25px;
   width: 240px;
+  min-height: 114px;
   background-color: @yellow;
+
+  &:hover{
+    #box-shadow();
+  }
+
+  &:not(:hover){
+    #no-shadow();
+  }
 
   &__heading{
     margin: 0;

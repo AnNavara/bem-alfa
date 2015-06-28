@@ -3,7 +3,7 @@
 
 .notes{
   margin-bottom: 30px;
-  padding: 3rem 0;
+  padding: 30px 0;
   width: 100%;
   border-top: 1px dotted @border-color;
   border-bottom: 1px dotted @border-color;
@@ -13,7 +13,7 @@
 
 .note{
   float: left;
-  width: 48.17%;
+  width: 47.87%;
 
   #clear();
 
@@ -27,7 +27,6 @@
   &__btn{
     float: right;
     margin-top: 5px;
-    margin-right: 2px;
   }
 
   &__item{
@@ -35,23 +34,31 @@
     float: left;
     margin-right: 4px;
     margin-bottom: 4px;
-    padding: 1.5rem 2rem;
+    padding: 15px 20px;
     width: 184px;
-    min-height: 10.3rem;
+    min-height: 103px;
     background-color: @white;
+
+    &:hover{
+      #box-shadow();
+    }
+
+    &:not(:hover){
+      #no-shadow();
+    }
 
     >h3{
       margin: 0;
       font-family: @font-family;
       font-size: @font-size--medium;
       line-height: @line-height--heading;
-      font-weight: @font-weight;
+      font-weight: @font-weight--heading;
     }
   }
 
   &__date{
     display: block;
-    margin-top: .8rem;
+    margin-top: 8px;
     font-family: @font-family;
     font-size: @font-size--medium;
     color: @heading-color;
