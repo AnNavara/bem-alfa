@@ -21,7 +21,7 @@
     margin: 0 18px 0 0;
     padding: 0;
     font-family: @font-family;
-    font-size: @font-size--h6;
+    font-size: @font-size--medium;
     line-height: @line-height;
     font-weight: @font-weight--heading;
     color: @text-color;
@@ -29,6 +29,10 @@
 
     &--small{
       margin-right: @margin-default;
+    }
+
+    &--big{
+      font-size: @font-size--h6;
     }
   }
 
@@ -51,8 +55,13 @@
     display: none;
     position: absolute;
     margin: 0;
-    padding: 0;
-    width: 100%;
+    padding: 0 9px;
+    z-index: 5;
+    min-width: 100%;
+    font-family: @font-family;
+    font-size: @font-size--medium;
+    line-height: @line-height--heading;
+    color: @red-light;
     background-color: @red;
     cursor: pointer;
 
@@ -66,10 +75,6 @@
       font-weight: @font-weight;
       color: @white;
       background-color: @red;
-    }
-
-    >li{
-      list-style: none;
     }
 
     &--type{
@@ -91,6 +96,51 @@
     }
   }
 
+  &__check{
+    display: none;
+  }
+
+  &__check[type="checkbox"]+span:before{
+    position: absolute;
+    content: "";
+    top: 11px;
+    left: 1px;
+    width: 10px;
+    height: 10px;
+    background-color: @red-dark;
+  }
+
+  &__check[type="checkbox"]:checked+span:before{
+    position: absolute;
+    content: "";
+    top: 11px;
+    left: 1px;
+    width: 10px;
+    height: 10px;
+    background-color: @white;
+  }
+
+  &__item{
+    list-style: none;
+    border-top: 1px solid @red-dark;
+
+    &>label{
+      position: relative;
+      display: block;
+      padding: 8px 0 8px 0;
+
+      &>span{
+        display: block;
+        padding-left: 20px;
+        cursor: pointer;
+      }
+    }
+
+    &>label:hover{
+      color: @white;
+    }
+  }
+
   &__input{
     display: inline-block;
     margin: 0 @margin-default 0 0;
@@ -99,9 +149,18 @@
     font-family: @font-family;
     font-size: @font-size--medium;
     line-height: @line-height;
-    color: @heading-color;
+    color: @text-color;
     background-color: @white;
     border: none;
     vertical-align: middle;
+  }
+  &__input::-moz-placeholder{
+    color: @heading-color;
+  }
+  &__input::-webkit-placeholder{
+    color: @heading-color;
+  }
+  &__input::-ms-placeholder{
+    color: @heading-color;
   }
 }
