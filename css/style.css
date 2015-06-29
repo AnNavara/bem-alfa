@@ -316,6 +316,8 @@ img {
 }
 
 .inner-heading {
+	position: relative;
+	z-index: 5;
 	margin: 0;
 	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 	font-size: 19px;
@@ -326,6 +328,8 @@ img {
 }
 
 .inner-text {
+	position: relative;
+	z-index: 5;
 	margin: 16px 0 0 0;
 	padding: 0;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -461,8 +465,8 @@ img {
 }
 
 .page-header__guild--ac > .page-header__guild-promt {
-	left: -202%;
-	width: 177px;
+	left: -231%;
+	width: 202px;
 }
 
 .page-header__ask {
@@ -652,6 +656,47 @@ img {
 	width: 240px;
 	min-height: 114px;
 	background-color: #fdef9d;
+	position: relative;
+	overflow: hidden;
+}
+
+.urgent:before {
+	position: absolute;
+	content: "";
+	bottom: -130px;
+	left: 30%;
+	width: 220px;
+	height: 220px;
+	background-color: #fff5bc;
+	border-radius: 100%;
+}
+
+.urgent:after {
+	position: absolute;
+	content: "";
+	z-index: 2;
+	bottom: -27px;
+	left: 171px;
+	width: 0;
+	height: 0;
+	background-color: #e74c3c;
+	border-radius: 100%;
+}
+
+.urgent:hover:after {
+	bottom: -130px;
+	left: 30%;
+	width: 221px;
+	height: 221px;
+	transition: all .8s ease;
+}
+
+.urgent:not(:hover):after {
+	bottom: -27px;
+	left: 171px;
+	width: 0;
+	height: 0;
+	transition: all .8s ease;
 }
 
 .urgent:hover {
@@ -720,7 +765,7 @@ img {
 	position: relative;
 	display: inline-block;
 	padding: 0;
-	width: 143px;
+	width: 155px;
 	vertical-align: middle;
 }
 
@@ -978,6 +1023,47 @@ img {
 	margin: 0 0 4px 0;
 	padding: 15px 25px;
 	background-color: #fdef9d;
+	position: relative;
+	overflow: hidden;
+}
+
+.adv:before {
+	position: absolute;
+	content: "";
+	bottom: -30px;
+	left: 40%;
+	width: 170px;
+	height: 170px;
+	background-color: #fff5bc;
+	border-radius: 100%;
+}
+
+.adv:after {
+	position: absolute;
+	content: "";
+	z-index: 2;
+	bottom: -27px;
+	left: 178px;
+	width: 0;
+	height: 0;
+	background-color: #e74c3c;
+	border-radius: 100%;
+}
+
+.adv:hover:after {
+	bottom: -30px;
+	left: 40%;
+	width: 171px;
+	height: 171px;
+	transition: all .8s ease;
+}
+
+.adv:not(:hover):after {
+	bottom: 48px;
+	left: 178px;
+	width: 0;
+	height: 0;
+	transition: all .8s ease;
 }
 
 .adv:hover {
@@ -1226,6 +1312,47 @@ img {
 	width: 240px;
 	min-height: 150px;
 	background-color: #fdef9d;
+	position: relative;
+	overflow: hidden;
+}
+
+.info:before {
+	position: absolute;
+	content: "";
+	bottom: -60px;
+	left: 38%;
+	width: 180px;
+	height: 180px;
+	background-color: #fff5bc;
+	border-radius: 100%;
+}
+
+.info:after {
+	position: absolute;
+	content: "";
+	z-index: 2;
+	bottom: 22px;
+	left: 176px;
+	width: 0;
+	height: 0;
+	background-color: #e74c3c;
+	border-radius: 100%;
+}
+
+.info:hover:after {
+	bottom: -60px;
+	left: 38%;
+	width: 181px;
+	height: 181px;
+	transition: all .8s ease;
+}
+
+.info:not(:hover):after {
+	bottom: 22x;
+	left: 176px;
+	width: 0;
+	height: 0;
+	transition: all .8s ease;
 }
 
 .info:hover {
@@ -1246,6 +1373,47 @@ img {
 	width: 240px;
 	min-height: 304px;
 	background-color: #fdef9d;
+	position: relative;
+	overflow: hidden;
+}
+
+.info--r:before {
+	position: absolute;
+	content: "";
+	bottom: -20px;
+	left: 20%;
+	width: 220px;
+	height: 220px;
+	background-color: #fff5bc;
+	border-radius: 100%;
+}
+
+.info--r:after {
+	position: absolute;
+	content: "";
+	z-index: 2;
+	bottom: 84px;
+	left: 156px;
+	width: 0;
+	height: 0;
+	background-color: #e74c3c;
+	border-radius: 100%;
+}
+
+.info--r:hover:after {
+	bottom: -20px;
+	left: 20%;
+	width: 221px;
+	height: 221px;
+	transition: all .8s ease;
+}
+
+.info--r:not(:hover):after {
+	bottom: 84px;
+	left: 156px;
+	width: 0;
+	height: 0;
+	transition: all .8s ease;
 }
 
 .info--r:hover {
@@ -1266,6 +1434,47 @@ img {
 	width: 240px;
 	min-height: 150px;
 	background-color: #fdef9d;
+	position: relative;
+	overflow: hidden;
+}
+
+.info--r2:before {
+	position: absolute;
+	content: "";
+	bottom: -70px;
+	left: 25%;
+	width: 200px;
+	height: 200px;
+	background-color: #fff5bc;
+	border-radius: 100%;
+}
+
+.info--r2:after {
+	position: absolute;
+	content: "";
+	z-index: 2;
+	bottom: 22px;
+	left: 161px;
+	width: 0;
+	height: 0;
+	background-color: #e74c3c;
+	border-radius: 100%;
+}
+
+.info--r2:hover:after {
+	bottom: -70px;
+	left: 25%;
+	width: 201px;
+	height: 201px;
+	transition: all .8s ease;
+}
+
+.info--r2:not(:hover):after {
+	bottom: 22px;
+	left: 161px;
+	width: 0;
+	height: 0;
+	transition: all .8s ease;
 }
 
 .info--r2:hover {
