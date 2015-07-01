@@ -9,15 +9,33 @@
 
   &__item{
     display: inline-block;
-    padding: 1.4rem 0 1.4rem .3rem;
+    padding: 14px 0 14px 3px;
     list-style: none;
   }
 
   &__link{
     display: block;
-    width: 2rem;
-    height: 2rem;
+    width: 20px;
+    height: 20px;
     font-size: 0;
     background-color: @border-color;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--ok{
+      background-image: url("../img/icon-ok.png");
+    }
+
+    &--mailru{
+      background-image: url("../img/icon-mailru.png");
+    }
+
+    &--vk{
+      background-image: url("../img/icon-vk.png");
+    }
+
+    &--fb{
+      background-image: url("../img/icon-fb.png");
+    }
   }
 }

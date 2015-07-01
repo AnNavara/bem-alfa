@@ -2,6 +2,7 @@
 @import "mixins.less";
 
 .achiev{
+  position: relative;
   display: inline-block;
   margin-right: @margin-default;
   margin-bottom: @margin-default;
@@ -10,6 +11,30 @@
   min-height: 64px;
   background-color: @white;
   vertical-align: top;
+
+  &--1:before{
+    position: absolute;
+    content: "";
+    top: -3px;
+    left: 18px;
+    width: 40px;
+    height: 100%;
+    background-image: url("../img/icon-achiev.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--2:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 23px;
+    width: 34px;
+    height: 100%;
+    background-image: url("../img/icon-achiev--2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
   &__text{
     margin: 0;

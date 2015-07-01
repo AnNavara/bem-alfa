@@ -9,6 +9,11 @@
   color: @white;
   text-transform: uppercase;
   background-color: @red;
+
+  &:hover{
+    background-color: @red-dark;
+    color: @white;
+  }
 }
 
 .btn--med{
@@ -18,4 +23,22 @@
   line-height: @line-height--heading;
   color: @white;
   background-color: @red;
+
+  &:hover{
+    background-color: @red-dark;
+    color: @white;
+  }
+}
+
+.btn--small{
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  font-size: 0;
+  background-color: @red;
+  vertical-align: middle;
+
+  &:hover{
+    background-color: @red-dark;
+  }
 }

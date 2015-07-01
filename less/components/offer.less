@@ -10,4 +10,42 @@
     width: 100%;
     #clear();
   }
+
+  &__btns{
+    float: right;
+    font-size: 0;
+  }
+
+  &__btn--left{
+    position: relative;
+    margin-right: @margin-default;
+
+    &:after{
+      position: absolute;
+      content: "";
+      top: 11px;
+      left: 11px;
+      width: 8px;
+      height: 8px;
+      transform: rotate(45deg);
+      border-left: 1px solid @white;
+      border-bottom: 1px solid @white;
+    }
+  }
+
+  &__btn--right{
+    position: relative;
+
+    &:after{
+      position: absolute;
+      content: "";
+      top: 11px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      transform: rotate(45deg);
+      border-right: 1px solid @white;
+      border-top: 1px solid @white;
+    }
+  }
 }
