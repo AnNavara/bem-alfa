@@ -44,7 +44,7 @@
       #box-shadow();
 
       &:after{
-        transform: translate(-5px, 5px);
+        transform: translate(-5px, 5px) rotate(.0001deg);
         transition: all .8s ease;
       }
 
@@ -53,7 +53,7 @@
       }
     }
     &:not(:hover):after{
-      transform: translate(0, 0);
+      transform: translate(0, 0) rotate(.0001deg);
       transition: all 1.2s ease;
     }
   }
