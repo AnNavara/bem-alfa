@@ -18,12 +18,64 @@
   background-color: @yellow;
   #round-info();
 
+  &--vacancy{
+    &:after{
+      position: absolute;
+      content: "";
+      bottom: -20px;
+      right: -55px;
+      width: 173px;
+      height: 99px;
+      background-image: url("../img/hand-cup.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--partners{
+    &:after{
+      position: absolute;
+      content: "";
+      bottom: 15px;
+      right: -10px;
+      width: 135px;
+      height: 72px;
+      background-image: url("../img/hand-open.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--want{
+    &:after{
+      position: absolute;
+      content: "";
+      bottom: -25px;
+      right: -90px;
+      width: 215px;
+      height: 106px;
+      background-image: url("../img/hand-key.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
   &:hover{
     #box-shadow();
+
+    &:after{
+      transform: translate(-4px, -4px);
+      transition: transform .8s ease;
+    }
   }
 
   &:not(:hover){
     #no-shadow();
+
+    &:after{
+      transform: translate(0, 0);
+      transition: transform .8s ease;
+    }
   }
 }
 
@@ -36,14 +88,36 @@
   min-height: 304px;
   background-color: @yellow;
 
+  &:after{
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    right: -130px;
+    width: 310px;
+    height: 219px;
+    background-image: url("../img/hand-docs.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   #round-info--r();
 
   &:hover{
     #box-shadow();
+
+    &:after{
+      transform: translate(-4px, -4px);
+      transition: transform .8s ease;
+    }
   }
 
   &:not(:hover){
     #no-shadow();
+
+    &:after{
+      transform: translate(0, 0);
+      transition: transform .8s ease;
+    }
   }
 }
 
@@ -57,11 +131,33 @@
   background-color: @yellow;
   #round-info--r2();
 
+  &:after{
+    position: absolute;
+    content: "";
+    bottom: -15px;
+    right: -20px;
+    width: 136px;
+    height: 115px;
+    background-image: url("../img/hand-loupe.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   &:hover{
     #box-shadow();
+
+    &:after{
+      transform: translate(-4px, -4px);
+      transition: transform .8s ease;
+    }
   }
 
   &:not(:hover){
     #no-shadow();
+
+    &:after{
+      transform: translate(0, 0);
+      transition: transform .8s ease;
+    }
   }
 }

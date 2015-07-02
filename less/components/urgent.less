@@ -9,12 +9,34 @@
   background-color: @yellow;
   #round();
 
+  &:after{
+    position: absolute;
+    content: "";
+    top: 65px;
+    right: -5px;
+    width: 129px;
+    height: 48px;
+    background-image: url("../img/hand-money.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   &:hover{
     #box-shadow();
+
+    &:after{
+      transform: translate(-4px, -4px);
+      transition: transform .8s ease;
+    }
   }
 
   &:not(:hover){
     #no-shadow();
+
+    &:after{
+      transform: translate(0, 0);
+      transition: transform .8s ease;
+    }
   }
 
   &__heading{

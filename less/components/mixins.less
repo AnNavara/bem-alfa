@@ -36,30 +36,35 @@
     background-color: @yellow-light;
     border-radius: 100%;
   }
-  &:after{
+  &:hover:before{
+    transform: scale(1.2);
+    transition: transform .8s ease;
+  }
+  &:not(:hover):before{
+    transform: scale(1);
+    transition: transform .8s ease;
+  }
+}
+
+#round-slider(){
+  &:before{
     position: absolute;
     content: "";
-    z-index: 2;
-    bottom: -27px;
-    left: 171px;
-    width: 0;
-    height: 0;
-    background-color: @red;
+    bottom: -35px;
+    left: 60%;
+    width: 390px;
+    height: 390px;
+    background-color: @yellow-light;
     border-radius: 100%;
+    z-index: -1;
   }
-  &:hover:after{
-    bottom: -130px;
-    left: 30%;
-    width: 221px;
-    height: 221px;
-    transition: all .8s ease;
+  &:hover:before{
+    transform: scale(1.2);
+    transition: transform .8s ease;
   }
-  &:not(:hover):after{
-    bottom: -27px;
-    left: 171px;
-    width: 0;
-    height: 0;
-    transition: all .8s ease;
+  &:not(:hover):before{
+    transform: scale(1);
+    transition: transform 1.2s ease;
   }
 }
 
@@ -77,30 +82,13 @@
     background-color: @yellow-light;
     border-radius: 100%;
   }
-  &:after{
-    position: absolute;
-    content: "";
-    z-index: 2;
-    bottom: -27px;
-    left: 178px;
-    width: 0;
-    height: 0;
-    background-color: @red;
-    border-radius: 100%;
+  &:hover:before{
+    transform: scale(1.2);
+    transition: transform .8s ease;
   }
-  &:hover:after{
-    bottom: -30px;
-    left: 40%;
-    width: 171px;
-    height: 171px;
-    transition: all .8s ease;
-  }
-  &:not(:hover):after{
-    bottom: 48px;
-    left: 178px;
-    width: 0;
-    height: 0;
-    transition: all .8s ease;
+  &:not(:hover):before{
+    transform: scale(1);
+    transition: transform .8s ease;
   }
 }
 
@@ -112,36 +100,19 @@
     position: absolute;
     content: "";
     bottom: -60px;
-    left: 38%;
-    width: 180px;
-    height: 180px;
+    left: 34%;
+    width: 195px;
+    height: 195px;
     background-color: @yellow-light;
     border-radius: 100%;
   }
-  &:after{
-    position: absolute;
-    content: "";
-    z-index: 2;
-    bottom: 22px;
-    left: 176px;
-    width: 0;
-    height: 0;
-    background-color: @red;
-    border-radius: 100%;
+  &:hover:before{
+    transform: scale(1.2);
+    transition: transform .8s ease;
   }
-  &:hover:after{
-    bottom: -60px;
-    left: 38%;
-    width: 181px;
-    height: 181px;
-    transition: all .8s ease;
-  }
-  &:not(:hover):after{
-    bottom: 22x;
-    left: 176px;
-    width: 0;
-    height: 0;
-    transition: all .8s ease;
+  &:not(:hover):before{
+    transform: scale(1);
+    transition: transform .8s ease;
   }
 }
 
@@ -152,37 +123,20 @@
   &:before{
     position: absolute;
     content: "";
-    bottom: -20px;
+    bottom: -10px;
     left: 20%;
-    width: 220px;
-    height: 220px;
+    width: 230px;
+    height: 230px;
     background-color: @yellow-light;
     border-radius: 100%;
   }
-  &:after{
-    position: absolute;
-    content: "";
-    z-index: 2;
-    bottom: 84px;
-    left: 156px;
-    width: 0;
-    height: 0;
-    background-color: @red;
-    border-radius: 100%;
+  &:hover:before{
+    transform: scale(1.2);
+    transition: transform .8s ease;
   }
-  &:hover:after{
-    bottom: -20px;
-    left: 20%;
-    width: 221px;
-    height: 221px;
-    transition: all .8s ease;
-  }
-  &:not(:hover):after{
-    bottom: 84px;
-    left: 156px;
-    width: 0;
-    height: 0;
-    transition: all .8s ease;
+  &:not(:hover):before{
+    transform: scale(1);
+    transition: transform .8s ease;
   }
 }
 
@@ -200,29 +154,12 @@
     background-color: @yellow-light;
     border-radius: 100%;
   }
-  &:after{
-    position: absolute;
-    content: "";
-    z-index: 2;
-    bottom: 22px;
-    left: 161px;
-    width: 0;
-    height: 0;
-    background-color: @red;
-    border-radius: 100%;
+  &:hover:before{
+    transform: scale(1.2);
+    transition: transform .8s ease;
   }
-  &:hover:after{
-    bottom: -70px;
-    left: 25%;
-    width: 201px;
-    height: 201px;
-    transition: all .8s ease;
-  }
-  &:not(:hover):after{
-    bottom: 22px;
-    left: 161px;
-    width: 0;
-    height: 0;
-    transition: all .8s ease;
+  &:not(:hover):before{
+    transform: scale(1);
+    transition: transform .8s ease;
   }
 }

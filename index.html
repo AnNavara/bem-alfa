@@ -53,15 +53,45 @@
 			</nav>
 		</header>
 		<section class="slider">
-			<a href="#" class="slider__item slider__item--active">
-				<h1 class="slider__heading">Быстрые и выгодные сделки с недвижимостью</h1>
-				<p class="slider__text">все услуги сертифицированы, предоставляем гарантии</p>
-				<div class="slider__btn btn--med">Узнать больше</div>
-			</a>
-			<a href="#" class="slider__item"></a>
-			<a href="#" class="slider__item"></a>
-			<a href="#" class="slider__item"></a>
-			<a href="#" class="slider__item"></a>
+				<input type="radio" name="slider" id="slider__ctrl-1" class="slider__input-ctrl" checked>
+				<input type="radio" name="slider" id="slider__ctrl-2" class="slider__input-ctrl">
+				<input type="radio" name="slider" id="slider__ctrl-3" class="slider__input-ctrl">
+				<input type="radio" name="slider" id="slider__ctrl-4" class="slider__input-ctrl">
+				<input type="radio" name="slider" id="slider__ctrl-5" class="slider__input-ctrl">
+				<div class="slider__ctrls">
+					<label id="slider__label-1" for="slider__ctrl-1"><i class="btn--dot"></i>slide-1</label>
+					<label id="slider__label-2" for="slider__ctrl-2"><i class="btn--dot"></i>slide-2</label>
+					<label id="slider__label-3" for="slider__ctrl-3"><i class="btn--dot"></i>slide-3</label>
+					<label id="slider__label-4" for="slider__ctrl-4"><i class="btn--dot"></i>slide-4</label>
+					<label id="slider__label-5" for="slider__ctrl-5"><i class="btn--dot"></i>slide-5</label>
+				</div>
+			<div class="slider__wrapper">
+				<a id="slider-1" data-slider="slide-1" href="#" class="slider__item">
+					<h1 class="slider__heading">Быстрые и выгодные сделки с недвижимостью</h1>
+					<p class="slider__text">все услуги сертифицированы, предоставляем гарантии</p>
+					<div class="slider__btn btn--med">Узнать больше</div>
+				</a>
+				<a id="slider-2" data-slider="slide-2" href="#" class="slider__item">
+					<h1 class="slider__heading">Быстрые и выгодные сделки с недвижимостью</h1>
+					<p class="slider__text">все услуги сертифицированы, предоставляем гарантии</p>
+					<div class="slider__btn btn--med">Узнать больше</div>
+				</a>
+				<a id="slider-3" data-slider="slide-3" href="#" class="slider__item">
+					<h1 class="slider__heading">Быстрые и выгодные сделки с недвижимостью</h1>
+					<p class="slider__text">все услуги сертифицированы, предоставляем гарантии</p>
+					<div class="slider__btn btn--med">Узнать больше</div>
+				</a>
+				<a id="slider-4" data-slider="slide-4" href="#" class="slider__item">
+					<h1 class="slider__heading">Быстрые и выгодные сделки с недвижимостью</h1>
+					<p class="slider__text">все услуги сертифицированы, предоставляем гарантии</p>
+					<div class="slider__btn btn--med">Узнать больше</div>
+				</a>
+				<a id="slider-5" data-slider="slide-5" href="#" class="slider__item">
+					<h1 class="slider__heading">Быстрые и выгодные сделки с недвижимостью</h1>
+					<p class="slider__text">все услуги сертифицированы, предоставляем гарантии</p>
+					<div class="slider__btn btn--med">Узнать больше</div>
+				</a>
+			</div>
 		</section>
 		<main class="main">
 			<aside class="menu">
@@ -166,8 +196,8 @@
 						</li>
 					</ul>
 					<span class="filter__text filter__text--small">по цене</span>
-					<input class="filter__input" type="text" name="" id="" placeholder="от">
-					<input class="filter__input" type="text" name="" id="" placeholder="до">
+					<input class="filter__input" pattern="[0-9]" type="text" name="" id="" placeholder="от">
+					<input class="filter__input" pattern="[0-9]" type="text" name="" id="" placeholder="до">
 					<span class="filter__text filter__text--small">р</span>
 					<input class="filter__btn btn--med" type="submit" value="Найти">
 				</form>
@@ -320,16 +350,16 @@
 				<a href="" class="info--r">
 					<h2 class="inner-heading">Наши <br>сертификаты</h2>
 				</a>
-				<a href="" class="info">
+				<a href="" class="info info--vacancy">
 					<h2 class="inner-heading">Наши <br>Вакансии</h2>
 				</a>
-				<a href="" class="info">
+				<a href="" class="info info--partners">
 					<h2 class="inner-heading">Наши <br>партнёры</h2>
 				</a>
 				<a href="" class="info--r2">
 					<h2 class="inner-heading">Справочная <br>информация</h2>
 				</a>
-				<a href="" class="info">
+				<a href="" class="info info--want">
 					<h2 class="inner-heading">Хочу Стать <br>Риэлтором</h2>
 				</a>
 			</div>

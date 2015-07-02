@@ -10,17 +10,51 @@
 
   &:hover{
     #box-shadow();
+
+    &:after{
+      transform: translate(-4px, -4px);
+      transition: transform .8s ease;
+    }
   }
 
   &:not(:hover){
     #no-shadow();
+
+    &:after{
+      transform: translate(0, 0);
+      transition: transform .8s ease;
+    }
   }
 }
 
 .adv--valuation{
   min-height: 166px;
+
+  &:after{
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    right: -5px;
+    width: 81px;
+    height: 90px;
+    background-image: url("../img/hand-calc.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .adv--reviews{
   min-height: 104px;
+
+  &:after{
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: -5px;
+    width: 99px;
+    height: 82px;
+    background-image: url("../img/hand-thumbup.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
