@@ -235,6 +235,9 @@ body {
 	line-height: 1.4;
 	color: #4a4a4a;
 	background-color: #f4f4f4;
+	background-image: url("../img/bg-body.png");
+	background-repeat: no-repeat;
+	background-position: center 185px;
 }
 
 input,
@@ -369,6 +372,97 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
+}
+
+.valuta--rub {
+	font-family: "ALS Rubl";
+}
+
+.side-stick {
+	position: fixed;
+	display: inline-block;
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.side-stick > h3 {
+	margin: 0;
+	padding: 7px 10px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	color: #ffffff;
+	background: #e74c3c;
+}
+
+.side-stick:hover {
+	right: 0;
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+	transition: right .7s ease, -webkit-transform .7s ease;
+	transition: right .7s ease, transform .7s ease;
+}
+
+.side-stick:hover > h3 {
+	margin-top: 40%;
+	-webkit-transform: rotate(0.0001deg);
+	-ms-transform: rotate(0.0001deg);
+	transform: rotate(0.0001deg);
+}
+
+.side-stick--calc {
+	top: 300px;
+	right: -68px;
+}
+
+.side-stick--calc:hover {
+	top: 230px;
+	height: 170px;
+}
+
+.side-stick--calc:hover > h3 {
+	color: #ffffff;
+	background-color: #ce4537;
+}
+
+.side-stick--calc:not(:hover) {
+	right: -68px;
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	transition: right .7s ease, -webkit-transform .7s ease;
+	transition: right .7s ease, transform .7s ease;
+}
+
+.side-stick--check {
+	top: 520px;
+	right: -78px;
+}
+
+.side-stick--check > h3 {
+	color: #e74c3c;
+	background-color: #fdef9d;
+}
+
+.side-stick--check:hover {
+	top: 430px;
+	height: 200px;
+}
+
+.side-stick--check:hover > h3 {
+	color: #ffffff;
+	background-color: #e6d98a;
+}
+
+.side-stick--check:not(:hover) {
+	right: -78px;
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	transition: right .7s ease, -webkit-transform .7s ease;
+	transition: right .7s ease, transform .7s ease;
 }
 
 .page-header {
@@ -567,14 +661,7 @@ img {
 	margin-bottom: 34px;
 	width: 100%;
 	min-height: 320px;
-}
-
-.slider > ul {
-	margin: 0;
-}
-
-.slider > ul > li {
-	list-style: none;
+	overflow: hidden;
 }
 
 .slider__wrapper {
@@ -631,9 +718,20 @@ img {
 	background-position: center;
 }
 
-.slider__item:hover {
-	box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
-	transition: box-shadow 0.3s ease;
+.slider__item:hover > .slider__decor:after {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+	transition: -webkit-transform .8s ease;
+	transition: transform .8s ease;
+}
+
+.slider__item:hover > .slider__decor:before {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+	transition: -webkit-transform .8s ease;
+	transition: transform .8s ease;
 }
 
 .slider__item:hover:after {
@@ -652,6 +750,55 @@ img {
 	-ms-transform: translate(0, 0) rotate(0.0001deg);
 	transform: translate(0, 0) rotate(0.0001deg);
 	transition: all 1.2s ease;
+}
+
+.slider__item:not(:hover) > .slider__decor:after {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	transition: -webkit-transform 1.2s ease;
+	transition: transform 1.2s ease;
+}
+
+.slider__item:not(:hover) > .slider__decor:before {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	transition: -webkit-transform 1.2s ease;
+	transition: transform 1.2s ease;
+}
+
+.slider__decor {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.slider__decor:before {
+	position: absolute;
+	content: "";
+	top: -40%;
+	left: -50px;
+	width: 280px;
+	height: 280px;
+	background-color: #fff5bc;
+	border-radius: 100%;
+	z-index: -1;
+}
+
+.slider__decor:after {
+	position: absolute;
+	content: "";
+	bottom: -50%;
+	left: 25%;
+	width: 230px;
+	height: 230px;
+	background-color: #fff5bc;
+	border-radius: 100%;
+	z-index: -1;
 }
 
 .slider__heading {
@@ -678,7 +825,23 @@ img {
 }
 
 .slider__btn {
+	position: relative;
 	display: inline-block;
+	padding-right: 30px;
+}
+
+.slider__btn:after {
+	position: absolute;
+	content: "";
+	top: 13px;
+	right: 14px;
+	width: 8px;
+	height: 8px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-right: 1px solid #ffffff;
+	border-top: 1px solid #ffffff;
 }
 
 .slider__control {
