@@ -13,6 +13,12 @@
     #clear();
   }
 
+  &__inner{
+    margin-bottom: 8px;
+    min-height: 3.8em;
+    border-bottom: 1px solid @gray-92;
+  }
+
   &__img{
     margin-bottom: 17px;
     min-width: 100%;
@@ -38,17 +44,15 @@
   }
 
   &__area{
-    margin-bottom: 14px;
+    margin-bottom: 8px;
   }
 
   &__status{
     margin: 0;
-    padding-top: 12px;
     font-family: @font-family;
     font-size: @font-size--small;
     font-weight: @font-weight;
     color: @heading-color;
-    border-top: 1px solid @gray-92;
   }
 
   &__price{
@@ -97,4 +101,10 @@
 .tour__img{
   width: auto;
   height: 120px;
+}
+
+@media (min-width: 767px) and (max-width: 920px){
+  .sale-item{
+    width: 32.6%;
+  }
 }

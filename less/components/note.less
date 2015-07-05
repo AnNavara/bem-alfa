@@ -36,7 +36,7 @@
     margin-bottom: 4px;
     padding: 15px 20px;
     width: 184px;
-    min-height: 103px;
+    min-height: 110px;
     background-color: @white;
 
     &:hover{
@@ -71,4 +71,18 @@
 
 .note:nth-child(odd){
   margin-right: 3.66%;
+}
+
+@media (min-width: 767px) and (max-width: 920px){
+  .note{
+    &__item{
+      width: 49.4%;
+    }
+    &__item:nth-child(2n){
+      margin-right: 0;
+    }
+    &__item:nth-child(3){
+      display: none;
+    }
+  }
 }

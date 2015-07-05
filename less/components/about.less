@@ -52,3 +52,19 @@
   min-height: 201px;
   background-color: @white;
 }
+
+@media (min-width: 767px) and (max-width: 920px){
+  .about{
+    &__inner{
+      max-width: 58%;
+    }
+    &__header{
+      >img{
+        display: none;
+      }
+    }
+    &-slider{
+      min-height: 280px;
+    }
+  }
+}

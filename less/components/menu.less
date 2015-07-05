@@ -3,6 +3,7 @@
 
 .menu{
   float: left;
+  width: 26.8%;
   max-width: 240px;
 
   &__container{
@@ -47,5 +48,15 @@
   &__link--alt{
     color: @gray-dark;
     border-bottom: 1px solid @border-color--yellow;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 920px){
+  .menu{
+    width: 26.5%;
+
+    &__item{
+      padding: 0 15px;
+    }
   }
 }
