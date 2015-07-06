@@ -1,0 +1,33 @@
+@import "../variables.less";
+@import "mixins.less";
+
+
+.slick-dots{
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: -14px;
+  z-index: 5;
+  width: auto;
+  height: 12px;
+
+  >li{
+    display: inline-block;
+    list-style: none;
+
+    >button{
+      display: inline-block;
+      margin: 0 4px;
+      width: 12px;
+      height: 12px;
+      background-color: transparent;
+      border: 1px solid @border-color--gray;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+  }
+  >li.slick-active>button{
+    background-color: @red;
+    border-color: @red;
+  }
+}

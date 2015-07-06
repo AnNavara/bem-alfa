@@ -29,10 +29,10 @@ module.exports = function(grunt) {
 		},
 
 		csscomb: {
-			style: {
+			less: {
 				expand: true,
-				src: ["less/**/*.less"]
-			}
+				src: ["less/**/*.less"],
+			},
 		},
 
 		watch: {
