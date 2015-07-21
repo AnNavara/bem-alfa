@@ -477,6 +477,45 @@ img {
 	border: 1px solid transparent;
 }
 
+.breadcrumbs {
+	display: block;
+	width: 100%;
+}
+
+.breadcrumbs__item {
+	display: inline-block;
+	margin: 0 10px 0 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 1.2;
+	font-weight: 500;
+	vertical-align: bottom;
+}
+
+.breadcrumbs__item:after {
+	display: inline-block;
+	margin: 0 6px;
+	content: "";
+	width: 5px;
+	height: 5px;
+	border-top: 1px solid #aeaeae;
+	border-right: 1px solid #aeaeae;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	vertical-align: middle;
+}
+
+.breadcrumbs__active {
+	display: block;
+	margin: 0;
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	font-size: 36px;
+	line-height: 1.2;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
 .side-stick {
 	position: fixed;
 	display: inline-block;
@@ -2416,6 +2455,7 @@ img {
 	display: block;
 	margin-bottom: 30px;
 	width: 605px;
+	min-width: 98%;
 }
 
 .error-404__menu {
@@ -2432,6 +2472,91 @@ img {
 	font-size: 14px;
 	line-height: 1.4;
 	text-transform: uppercase;
+}
+
+.service {
+	display: inline-block;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 15px 0;
+	width: 293px;
+	height: 94px;
+	background-color: #e74c3c;
+	vertical-align: middle;
+}
+
+.service:hover .service__name {
+	color: #ffffff;
+}
+
+.service:hover:before {
+	opacity: 1;
+}
+
+.service__name {
+	display: inline-block;
+	margin: 0 0 0 24px;
+	width: 174px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #f3e3e2;
+	vertical-align: middle;
+}
+
+.service::before {
+	display: inline-block;
+	content: "";
+	min-width: 94px;
+	height: 100%;
+	border-right: 1px solid #ce4537;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: .8;
+}
+
+.service__wrapper {
+	margin-top: 22px;
+	width: 100%;
+	font-size: 0;
+}
+
+.service--purchase:before {
+	background-image: url("../img/_source-icon/icon--purchase.png");
+}
+
+.service--sell:before {
+	background-image: url("../img/_source-icon/icon--sell.png");
+}
+
+.service--urgent:before {
+	background-image: url("../img/_source-icon/icon--urgent.png");
+}
+
+.service--exchange:before {
+	background-image: url("../img/_source-icon/icon--exchange.png");
+}
+
+.service--mortgage:before {
+	background-image: url("../img/_source-icon/icon--mortgage.png");
+}
+
+.service--privatization:before {
+	background-image: url("../img/_source-icon/icon--privatization.png");
+}
+
+.service--commerce:before {
+	background-image: url("../img/_source-icon/icon--commerce.png");
+}
+
+.service--legal:before {
+	background-image: url("../img/_source-icon/icon--legal.png");
+}
+
+.service:nth-child(3n) {
+	margin-right: 0;
 }
 
 @media (min-width: 767px) and (max-width: 920px) {

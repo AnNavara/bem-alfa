@@ -1,0 +1,39 @@
+@import "../variables.less";
+@import "mixins.less";
+
+.breadcrumbs{
+  display: block;
+  width: 100%;
+
+  &__item{
+    display: inline-block;
+    margin: 0 10px 0 0;
+    font-family: @font-family;
+    font-size: @font-size--small;
+    line-height: @line-height--heading;
+    font-weight: @font-weight--heading;
+    vertical-align: bottom;
+
+    &:after{
+      display: inline-block;
+      margin: 0 6px;
+      content: "";
+      width: 5px;
+      height: 5px;
+      border-top: 1px solid @border-color--gray;
+      border-right: 1px solid @border-color--gray;
+      transform: rotate(45deg);
+      vertical-align: middle;
+    }
+  }
+
+  &__active{
+    display: block;
+    margin: 0;
+    font-family: @font-family--heading;
+    font-size: @font-size--bighead;
+    line-height: @line-height--heading;
+    font-weight: @font-weight;
+    text-transform: uppercase;
+  }
+}
