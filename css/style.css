@@ -256,7 +256,7 @@ a {
 
 a:hover,
 a:focus {
-	color: #7d7d7d;
+	color: #36311a;
 	text-decoration: none;
 }
 
@@ -479,6 +479,8 @@ img {
 
 .breadcrumbs {
 	display: block;
+	margin-top: -7px;
+	margin-bottom: 22px;
 	width: 100%;
 }
 
@@ -739,7 +741,7 @@ img {
 }
 
 .navigation__link:hover {
-	color: #7d7d7d;
+	color: #36311a;
 }
 
 .navigation__link--active {
@@ -2518,7 +2520,6 @@ img {
 }
 
 .service__wrapper {
-	margin-top: 22px;
 	width: 100%;
 	font-size: 0;
 }
@@ -2557,6 +2558,204 @@ img {
 
 .service:nth-child(3n) {
 	margin-right: 0;
+}
+
+.partners {
+	display: inline-block;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 20px 0;
+	width: 219px;
+	height: 94px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 0;
+	line-height: 1.2;
+	font-weight: 400;
+	background-color: #ffffff;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.partners:hover {
+	box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease;
+}
+
+.partners:not(:hover) {
+	box-shadow: none;
+	transition: box-shadow 0.3s ease;
+}
+
+.partners:nth-child(4n) {
+	margin-right: 0;
+}
+
+.partners > h2 {
+	display: inline-block;
+	font-size: 0;
+	vertical-align: middle;
+}
+
+.partners > img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.partners__container {
+	margin-bottom: 26px;
+}
+
+.partners__container:before,
+.partners__container:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.partners__wrapper {
+	display: block;
+	margin-top: 4px;
+	width: 100%;
+	float: left;
+	font-size: 0;
+}
+
+.partners--big {
+	display: inline-block;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 24px;
+	width: 293px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	color: #4a4a4a;
+	background-color: #ffffff;
+	vertical-align: top;
+}
+
+.partners--big:nth-child(3n) {
+	margin-right: 0;
+}
+
+.partners--big__img {
+	width: 245px;
+	height: auto;
+	margin-bottom: 16px;
+}
+
+.partners--big__heading {
+	margin: 0 0 16px 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #4a4a4a;
+}
+
+.partners--big__text {
+	margin: 0 0 15px 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	font-weight: 400;
+	color: #4a4a4a;
+}
+
+.partners--big__list {
+	margin: 0 0 15px 0;
+	padding: 0 0 0 20px;
+	list-style: none;
+}
+
+.partners--big__list > li {
+	position: relative;
+	padding: 8px 0;
+}
+
+.partners--big__list > li:before {
+	position: absolute;
+	content: "\00a0\00a0\2014\00a0";
+	top: auto;
+	left: -22px;
+	width: 10px;
+	height: 13px;
+	color: #aeaeae;
+}
+
+.partners--big__descr {
+	display: block;
+	padding: 1px 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	font-weight: 400;
+	color: #4a4a4a;
+}
+
+.partners--big__link {
+	display: block;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	font-weight: 400;
+	color: #e74c3c;
+}
+
+.partners__all {
+	display: inline-block;
+	width: 219px;
+	height: 94px;
+	padding: 20px 0 0 20px;
+	margin-bottom: 4px;
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	font-size: 19px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #4a4a4a;
+	background-color: #fdef9d;
+	text-transform: uppercase;
+	vertical-align: top;
+	position: relative;
+	overflow: hidden;
+}
+
+.partners__all:before {
+	position: absolute;
+	content: "";
+	bottom: -110px;
+	left: -25%;
+	width: 170px;
+	height: 170px;
+	background-color: #fff5bc;
+	border-radius: 100%;
+}
+
+.partners__all:hover:before {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+	transition: -webkit-transform .8s ease;
+	transition: transform .8s ease;
+}
+
+.partners__all:not(:hover):before {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	transition: -webkit-transform .8s ease;
+	transition: transform .8s ease;
+}
+
+.partners__all:hover {
+	box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease;
+	color: #36311a;
+}
+
+.partners__all:not(:hover) {
+	box-shadow: none;
+	transition: box-shadow 0.3s ease;
 }
 
 @media (min-width: 767px) and (max-width: 920px) {
