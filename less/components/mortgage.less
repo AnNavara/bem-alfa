@@ -1,0 +1,38 @@
+@import "../variables.less";
+@import "mixins.less";
+
+.mortgage-calc{
+  position: relative;
+  #clear();
+  margin: 0 auto;
+  padding: 30px 28px 40px;
+  width: 380px;
+  border: 1px dotted @gray-cb;
+
+  &__inner{
+    background-image: url("../img/bg-mortgage.png");
+    background-repeat: no-repeat;
+    background-position: 50px top;
+  }
+
+  &__wrapper{
+    float: left;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  &__text{
+    display: inline-block;
+    margin: 7px 0 0 0;
+    #text();
+    vertical-align: middle;
+  }
+
+  &__submit-wrap{
+    position: absolute;
+    padding: 0 20px;
+    left: 117px;
+    bottom: -16px;
+    background: @body-color;
+  }
+}

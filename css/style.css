@@ -287,6 +287,14 @@ img {
 	width: 75.90%;
 }
 
+#text {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #4a4a4a;
+	font-weight: 400;
+}
+
 .btn--big {
 	padding: 12px 23px;
 	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
@@ -295,6 +303,7 @@ img {
 	color: #ffffff;
 	text-transform: uppercase;
 	background-color: #e74c3c;
+	border: none;
 }
 
 .btn--big:hover {
@@ -309,6 +318,7 @@ img {
 	line-height: 1.2;
 	color: #ffffff;
 	background-color: #e74c3c;
+	border: none;
 }
 
 .btn--med:hover {
@@ -322,6 +332,7 @@ img {
 	height: 28px;
 	font-size: 0;
 	background-color: #e74c3c;
+	border: none;
 	vertical-align: middle;
 }
 
@@ -1344,7 +1355,23 @@ img {
 	display: inline-block;
 	padding: 0;
 	width: 155px;
+	list-style: none;
 	vertical-align: middle;
+}
+
+.filter__container--small {
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	width: 75px;
+	list-style: none;
+	vertical-align: middle;
+}
+
+.filter__container--small > li {
+	width: 100%;
+	list-style: none;
+	cursor: pointer;
 }
 
 .filter__container > li {
@@ -1407,6 +1434,11 @@ img {
 	margin: 0 20px 0 0;
 }
 
+.filter__dropdown--mortgage {
+	float: right;
+	margin: 0 4px 0 0;
+}
+
 .filter__dropdown--no-js:hover > li > .filter__dropdown {
 	display: block;
 }
@@ -1441,7 +1473,30 @@ img {
 	background-color: #ce4537;
 }
 
+.filter__check[type="radio"] + span:before {
+	position: absolute;
+	content: "";
+	top: 11px;
+	left: 1px;
+	width: 10px;
+	height: 10px;
+	background-color: #ce4537;
+}
+
 .filter__check[type="checkbox"]:checked + span:after {
+	position: absolute;
+	content: "";
+	top: 9px;
+	left: 1px;
+	z-index: 10;
+	width: 12px;
+	height: 10px;
+	background-image: url("../img/icon-checked.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.filter__check[type="radio"]:checked + span:after {
 	position: absolute;
 	content: "";
 	top: 9px;
@@ -1480,6 +1535,24 @@ img {
 	margin: 0 4px 0 0;
 	padding: 5.4px 8px;
 	width: 78px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #4a4a4a;
+	background-color: #ffffff;
+	border: none;
+	vertical-align: middle;
+}
+
+.filter__input--mortgage {
+	float: right;
+}
+
+.filter__input--big {
+	display: inline-block;
+	margin: 0 4px 0 0;
+	padding: 5.4px 8px;
+	width: 155px;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 1.4;
@@ -2902,6 +2975,52 @@ img {
 	line-height: 1.2;
 	font-weight: 400;
 	color: #a49c6f;
+}
+
+.mortgage-calc {
+	position: relative;
+	margin: 0 auto;
+	padding: 30px 28px 40px;
+	width: 380px;
+	border: 1px dotted #cbcbcb;
+}
+
+.mortgage-calc:before,
+.mortgage-calc:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.mortgage-calc__inner {
+	background-image: url("../img/bg-mortgage.png");
+	background-repeat: no-repeat;
+	background-position: 50px top;
+}
+
+.mortgage-calc__wrapper {
+	float: left;
+	margin: 10px 0;
+	width: 100%;
+}
+
+.mortgage-calc__text {
+	display: inline-block;
+	margin: 7px 0 0 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #4a4a4a;
+	font-weight: 400;
+	vertical-align: middle;
+}
+
+.mortgage-calc__submit-wrap {
+	position: absolute;
+	padding: 0 20px;
+	left: 117px;
+	bottom: -16px;
+	background: #f4f4f4;
 }
 
 @media (min-width: 767px) and (max-width: 920px) {

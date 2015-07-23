@@ -41,8 +41,23 @@
     display: inline-block;
     padding: 0;
     width: 155px;
+    list-style: none;
     vertical-align: middle;
 
+    &--small{
+      position: relative;
+      display: inline-block;
+      padding: 0;
+      width: 75px;
+      list-style: none;
+      vertical-align: middle;
+
+      >li{
+        width: 100%;
+        list-style: none;
+        cursor: pointer;
+      }
+    }
 
     >li{
       width: 100%;
@@ -102,6 +117,11 @@
       margin: 0 20px 0 0;
     }
 
+    &--mortgage{
+      float: right;
+      margin: 0 4px 0 0;
+    }
+
     &--no-js:hover{
       >li>.filter__dropdown{
         display: block;
@@ -134,7 +154,30 @@
     background-color: @red-dark;
   }
 
+  &__check[type="radio"]+span:before{
+    position: absolute;
+    content: "";
+    top: 11px;
+    left: 1px;
+    width: 10px;
+    height: 10px;
+    background-color: @red-dark;
+  }
+
   &__check[type="checkbox"]:checked+span:after{
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 1px;
+    z-index: 10;
+    width: 12px;
+    height: 10px;
+    background-image: url("../img/icon-checked.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__check[type="radio"]:checked+span:after{
     position: absolute;
     content: "";
     top: 9px;
@@ -180,6 +223,24 @@
     background-color: @white;
     border: none;
     vertical-align: middle;
+
+    &--mortgage{
+      float: right;
+    }
+
+    &--big{
+      display: inline-block;
+      margin: 0 @margin-default 0 0;
+      padding: 5.4px 8px;
+      width: 155px;
+      font-family: @font-family;
+      font-size: @font-size--medium;
+      line-height: @line-height;
+      color: @text-color;
+      background-color: @white;
+      border: none;
+      vertical-align: middle;
+    }
   }
   &__input::-moz-placeholder{
     color: @heading-color;
