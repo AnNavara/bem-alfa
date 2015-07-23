@@ -1188,15 +1188,34 @@ img {
 	background-color: #ffffff;
 }
 
-.catalog__item {
+.catalog__inner--big {
 	float: left;
-	padding: 0 25px 0 25px;
-	height: 64px;
-	border-right: 1px dotted #cbcbcb;
+	width: auto;
+	padding: 25px 0;
+	background-color: #ffffff;
 }
 
-.catalog__item:last-of-type {
-	border-right: none;
+.catalog__item {
+	float: left;
+	padding: 0 25px;
+	height: 64px;
+	border-left: 1px dotted #cbcbcb;
+}
+
+.catalog__item:first-of-type {
+	border-left: none;
+}
+
+.catalog__item--l {
+	float: left;
+	padding: 0 40px;
+	height: 100%;
+	min-height: 80px;
+	border-left: 1px dotted #cbcbcb;
+}
+
+.catalog__item--l:first-of-type {
+	border-left: none;
 }
 
 .catalog__wrapper {
