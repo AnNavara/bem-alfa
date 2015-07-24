@@ -99,6 +99,29 @@
   }
 }
 
+#round-esteem(){
+  position: relative;
+  overflow: hidden;
+  &:before{
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: -5%;
+    width: 240px;
+    height: 240px;
+    background-color: @yellow-light;
+    border-radius: 100%;
+  }
+  &:hover:before{
+    transform: scale(1.2);
+    transition: transform .8s ease;
+  }
+  &:not(:hover):before{
+    transform: scale(1);
+    transition: transform .8s ease;
+  }
+}
+
 #round-link(){
   position: relative;
   overflow: hidden;
