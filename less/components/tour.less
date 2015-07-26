@@ -1,0 +1,70 @@
+@import "../variables.less";
+@import "mixins.less";
+
+.tour{
+	float: left;
+	width: 100%;
+
+	&__wrapper{
+		margin-right: @margin-default;
+		margin-bottom: @margin-default;
+		width: 592px;
+		min-height: 444px;
+		background-color: @white;
+	}
+
+	&__inner{
+		float: right;
+		width: 293px;
+	}
+
+	&__adv{
+		width: 100%;
+		padding: 16px 22px;
+		min-height: 76px;
+		background-color: @white;
+	}
+
+	&__guide{
+		margin-bottom: @margin-default;
+		padding: 14px 22px;
+		width: 100%;
+		min-height: 364px;
+		background-color: @white;
+	}
+
+	&__heading{
+		position: relative;
+		display: inline-block;
+		margin: 0;
+		padding-right: 15px;
+		z-index: 5;
+		font-family: @font-family;
+		font-size: @font-size--h4;
+		line-height: @line-height--heading;
+		font-weight: @font-weight;
+		background-color: @white;
+
+		&-wrap{
+			position: relative;
+			margin: 0 0 10px 0;
+
+			&:after{
+				position: absolute;
+				content: "";
+				left: 0;
+				bottom: 42%;
+				width: 100%;
+				border-bottom: 1px dotted @border-color--gray;
+			}
+		}
+	}
+
+	&__text{
+		margin: 0 0 5px 0;
+		font-family: @font-family;
+		font-size: @font-size--medium;
+		line-height: @line-height;
+		font-weight: @font-weight--heading;
+	}
+}

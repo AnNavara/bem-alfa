@@ -1,0 +1,20 @@
+@import "../variables.less";
+@import "mixins.less";
+
+.table{
+
+	&__row{
+		border-bottom: 1px dotted @border-color--gray;
+
+		&:last-child{
+			border-bottom: none;
+		}
+	}
+
+	&__cell{
+		font-family: @font-family;
+		font-size: @font-size--medium;
+		line-height: @line-height--heading;
+		font-weight: @font-weight--heading;
+	}
+}

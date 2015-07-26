@@ -1,0 +1,218 @@
+@import "../variables.less";
+@import "mixins.less";
+
+.estate-card{
+  width: 100%;
+  #clear();
+
+  &__pics{
+    float: left;
+    margin-right: @margin-default;
+    margin-bottom: @margin-default;
+    width: 294px;
+    min-height: 553px;
+    background-color: #000;
+  }
+
+  &__wrapper{
+    float: left;
+    margin-bottom: @margin-default;
+    width: 590px;
+    min-height: 553px;
+  }
+
+  &__tour{
+    float: left;
+    width: 100%;
+    min-height: 553px;
+    background-color: #37c;
+  }
+
+  &__spec{
+    margin: 0 @margin-default @margin-default 0;
+    padding: 14px 22px;
+    width: 410px;
+    height: 68px;
+    font-size: 0;
+    background-color: @white;
+
+    &-item{
+      margin: 0 35px 0 0;
+      display: inline-block;
+      vertical-align: middle;
+
+      &:last-child{
+        margin: 0;
+      }
+    }
+
+    &-subheading{
+      margin: 0;
+      font-size: @font-size--medium;
+      line-height: @line-height--heading;
+      color: @heading-color;
+      font-weight: @font-weight--heading;
+    }
+
+    &-text{
+      margin: 0;
+      font-size: @font-size--h4;
+      line-height: @line-height--heading;
+      color: @text-color;
+      font-weight: @font-weight;
+    }
+  }
+
+  &__sign{
+    display: block;
+    float: right;
+    padding: 12px 15px;
+    width: 176px;
+    height: 68px;
+    background-color: @yellow;
+    #round-adv();
+
+    &:hover{
+      #box-shadow();
+    }
+
+    &:not(:hover){
+      #no-shadow();
+    }
+  }
+
+  &__descr{
+    float: right;
+    padding: 19px 22px;
+    width: 293px;
+    height: 481px;
+    background-color: @white;
+  }
+
+  &__text{
+    margin: 0 0 10px 0;
+    #text();
+  }
+
+  &__phone{
+    margin: 15px 0 10px 0;
+    font-family: @font-family;
+    font-size: @font-size--h4;
+    line-height: @line-height--heading;
+    color: @text-color;
+    font-weight: @font-weight--heading;
+  }
+
+  &__info{
+    width: 100%;
+    height: 100%;
+
+    &-wrap{
+      margin: 0 @margin-default @margin-default 0;
+      padding: 19px 22px;
+      width: 293px;
+      height: 250px;
+      background-color: @white;
+    }
+  }
+}
+
+.contacts{
+  margin: 0 @margin-default 0 0;
+  padding: 19px;
+  width: 293px;
+  height: 227px;
+  background-color: @white;
+
+  &__wrapper{
+    position: relative;
+    margin: 0 6px 15px;
+    text-align: center;
+
+    &:after{
+      position: absolute;
+      content: "";
+      bottom: 43%;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px dotted @border-color--gray;
+    }
+  }
+
+  &__inner{
+    float: left;
+    margin: 0 0 0 19px;
+    padding: 10px 0 0 0;
+    width: 125px;
+  }
+
+  &__heading{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    z-index: 5;
+    padding: 0 10px;
+    font-family: @font-family;
+    font-size: @font-size--h4;
+    line-height: @line-height--heading;
+    font-weight: @font-weight;
+    text-align: center;
+    background-color: @white;
+  }
+
+  &__img{
+    float: left;
+    width: 111px;
+    height: auto;
+  }
+
+  &__name{
+    display: block;
+    margin: 0 0 3px 0;
+    font-family: @font-family;
+    font-size: @font-size--h4;
+    line-height: @line-height--heading;
+    color: @text-shill;
+    font-weight: @font-weight;
+  }
+
+  &__position{
+    margin: 0 0 12px 0;
+    display: block;
+    font-family: @font-family;
+    font-size: @font-size--medium;
+    line-height: @line-height--heading;
+    color: @text-color;
+    font-weight: @font-weight--heading;
+  }
+
+  &__phone{
+    margin: 0 0 4px 0;
+    display: inline-block;
+    font-family: @font-family;
+    font-size: @font-size--medium;
+    line-height: @line-height--heading;
+    color: @text-color;
+    font-weight: @font-weight--heading;
+
+    >h3{
+      margin: 0;
+      display: inline-block;
+      font-family: @font-family;
+      font-size: @font-size--medium;
+      line-height: @line-height--heading;
+      color: @text-color;
+      font-weight: @font-weight--heading;
+    }
+  }
+
+  &__email{
+    margin: 0 0 4px 0;
+    display: block;
+    font-family: @font-family;
+    font-size: @font-size--medium;
+    line-height: @line-height--heading;
+    color: @text-shill;
+    font-weight: @font-weight--heading;
+  }
+}
