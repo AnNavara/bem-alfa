@@ -1,0 +1,37 @@
+@import "../variables.less";
+@import "mixins.less";
+
+.toogle{
+	margin-bottom: 10px;
+
+	&__text{
+		display: inline-block;
+		margin: 0 18px 0 0;
+		#text();
+	}
+
+	&__item{
+		display: inline-block;
+		margin: 0;
+		font-family: @font-family;
+		font-size: @font-size--h4;
+		line-height: @line-height--heading;
+		font-weight: @font-weight;
+		color: @text-shill;
+
+		&--active{
+			color: @text-color;
+		}
+	}
+
+	&__separator{
+		display: inline-block;
+		margin: 0;
+		padding: 0 10px;
+		font-family: @font-family;
+		font-size: @font-size--h4;
+		line-height: @line-height--heading;
+		font-weight: @font-weight;
+		color: @heading-color;
+	}
+}
