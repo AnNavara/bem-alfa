@@ -1,0 +1,118 @@
+@import "../variables.less";
+@import "mixins.less";
+
+.staff{
+	font-size: 0;
+
+	&__item{
+		display: inline-block;
+		position: relative;
+		margin: 0 @margin-default @margin-default 0;
+		padding: 16px;
+		width: 293px;
+		min-height: 191px;
+		background-color: @white;
+
+		&:nth-child(3n){
+			margin-right: 0;
+		}
+	}
+
+	&__about{
+		display: none;
+		position: absolute;
+		right: -200px;
+		top: 17px;
+		z-index: 5;
+		padding: 8px 14px;
+		width: 220px;
+		min-height: 130px;
+		font-family: @font-family;
+		font-size: @font-size--medium;
+		line-height: @line-height;
+		color: @text-color;
+		font-weight: @font-weight;
+		background-color: @yellow;
+		background-image: url("../img/_source-icon/icon--staff.png");
+		background-repeat: no-repeat;
+		background-position: 140px 55px;
+
+		&::before{
+			position: absolute;
+			content: "";
+			top: 20px;
+			left: -20px;
+			border-right: 10px solid @yellow;
+			border-left: 10px solid transparent;
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+		}
+	}
+
+  &__wrapper{
+		float: left;
+    margin: 0 0 0 19px;
+    padding: 10px 0 0 0;
+    width: 125px;
+
+		&:hover>.staff__about{
+			display: block;
+		}
+  }
+
+  &__img{
+    float: left;
+    width: 111px;
+    height: auto;
+  }
+
+  &__name{
+    display: block;
+    margin: 0 0 3px 0;
+    font-family: @font-family;
+    font-size: @font-size--h4;
+    line-height: @line-height--heading;
+    color: @text-shill;
+    font-weight: @font-weight;
+  }
+
+  &__position{
+    margin: 0 0 12px 0;
+    display: block;
+    font-family: @font-family;
+    font-size: @font-size--medium;
+    line-height: @line-height--heading;
+    color: @text-color;
+    font-weight: @font-weight--heading;
+  }
+
+  &__phone{
+    margin: 0 0 4px 0;
+    display: inline-block;
+    font-family: @font-family;
+    font-size: @font-size--medium;
+    line-height: @line-height--heading;
+    color: @text-color;
+    font-weight: @font-weight--heading;
+
+    >h3{
+      margin: 0;
+      display: inline-block;
+      font-family: @font-family;
+      font-size: @font-size--medium;
+      line-height: @line-height--heading;
+      color: @text-color;
+      font-weight: @font-weight--heading;
+    }
+  }
+
+  &__email{
+    margin: 0 0 4px 0;
+    display: block;
+    font-family: @font-family;
+    font-size: @font-size--medium;
+    line-height: @line-height--heading;
+    color: @text-shill;
+    font-weight: @font-weight--heading;
+  }
+}

@@ -57,8 +57,40 @@
   margin-bottom: 20px;
   width: 100%;
 
+  &__header{
+    margin: 10px 0;
+  }
+
   &__title{
+    margin: 0;
     display: inline-block;
+    font-family: @font-family;
+    font-size: @font-size;
+    line-height: @line-height--heading;
+    color: @heading-color;
+    font-weight: @font-weight;
+    text-align: left;
+
+    &--address{
+      margin-left: 172px;
+      width: 280px;
+    }
+
+    &--square{
+      width: 90px;
+    }
+
+    &--rooms{
+      width: 95px;
+    }
+
+    &--floor{
+      width: 80px;
+    }
+
+    &--price{
+      width: 157px;
+    }
   }
 
   &__item{
@@ -87,29 +119,27 @@
   &__wrapper{
     display: inline-block;
     vertical-align: top;
+    text-align: left;
 
     &--address{
-      width: 282px;
+      width: 280px;
     }
 
     &--square{
-      width: 80px;
-      text-align: center;
+      width: 90px;
     }
 
     &--rooms{
-      width: 88px;
-      text-align: center;
+      width: 95px;
     }
 
     &--floor{
-      width: 94px;
-      text-align: center;
+      width: 80px;
     }
 
     &--price{
-      padding-left: 20px;
-      width: 152px;
+      padding-right: 20px;
+      width: 157px;
       text-align: left;
     }
   }
