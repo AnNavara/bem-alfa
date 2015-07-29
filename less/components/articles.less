@@ -1,0 +1,39 @@
+@import "../variables.less";
+@import "mixins.less";
+
+.articles{
+  margin: 0 0 @margin-default 0;
+  padding: 24px 28px;
+  width: 100%;
+  min-height: 191px;
+  background-color: @white;
+	#clear();
+
+  &__img{
+    float: left;
+    margin-right: 32px;
+    width: 196px;
+    min-height: 142px;
+  }
+
+  &__wrapper{
+    float: left;
+    width: 604px;
+  }
+
+  &__heading{
+    display: block;
+    margin: 0 0 14px 0;
+    #heading__shill--18();
+  }
+
+  &__text{
+    margin: 0 0 14px 0;
+    #text();
+  }
+
+  &__date{
+    margin: 0;
+    #text--light();
+  }
+}
