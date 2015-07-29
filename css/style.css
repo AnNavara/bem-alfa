@@ -292,7 +292,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 #text--light {
@@ -308,6 +308,14 @@ img {
 	font-size: 18px;
 	line-height: 1.2;
 	color: #4a4a4a;
+	font-weight: 400;
+}
+
+#heading__shill--18 {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #e74c3c;
 	font-weight: 400;
 }
 
@@ -3110,6 +3118,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
+	font-weight: 400;
 	font-weight: 500;
 	vertical-align: middle;
 }
@@ -3123,6 +3132,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
+	font-weight: 400;
 	font-weight: 500;
 	text-align: center;
 }
@@ -3304,7 +3314,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .estate-card__phone {
@@ -3597,7 +3607,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .toogle__item {
@@ -3661,7 +3671,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .filter__found {
@@ -3670,7 +3680,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .best-deal {
@@ -3964,6 +3974,147 @@ img {
 	line-height: 1.2;
 	color: #e74c3c;
 	font-weight: 500;
+}
+
+.employee {
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+.employee:before,
+.employee:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.employee__wrapper {
+	float: left;
+	margin-right: 24px;
+	width: 623px;
+}
+
+.employee__wrapper:before,
+.employee__wrapper:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.employee__img {
+	width: 192px;
+	height: 272px;
+	background-color: #4a4a4a;
+}
+
+.employee__img-wrap {
+	float: left;
+	margin: 0 4px 4px 0;
+	padding: 16px;
+	width: 224px;
+	background-color: #ffffff;
+}
+
+.employee__about {
+	float: left;
+	margin: 0 0 4px 0;
+	padding: 22px 24px;
+	width: 395px;
+	height: 304px;
+	background-color: #ffffff;
+}
+
+.employee__heading {
+	margin: 0 0 12px 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #4a4a4a;
+}
+
+.employee__text {
+	margin: 0 0 10px 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #4a4a4a;
+	font-weight: 400;
+}
+
+.employee__contacts {
+	float: left;
+	padding: 16px 22px;
+	width: 100%;
+	background-color: #ffffff;
+}
+
+.employee__contacts--phone {
+	margin-right: 50px;
+	display: inline-block;
+}
+
+.employee__contacts--email {
+	display: inline-block;
+}
+
+.employee__subheading {
+	margin: 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #4a4a4a;
+	font-weight: 400;
+}
+
+.employee__phone {
+	margin: 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #4a4a4a;
+	font-weight: 400;
+}
+
+.employee__email {
+	margin: 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #e74c3c;
+	font-weight: 400;
+}
+
+.employee__title {
+	margin: 0 0 16px 0;
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	line-height: 1.2;
+	color: #4a4a4a;
+	font-weight: 400;
+}
+
+.certificates {
+	float: left;
+	width: 241px;
+}
+
+.certificates__wrapper {
+	float: left;
+	padding: 18px;
+	width: 100%;
+	min-height: 347px;
+	background-color: #ffffff;
+}
+
+.certificates___img {
+	width: 204px;
+	height: 300px;
+}
+
+.certificates__btns {
+	float: right;
+	font-size: 0;
 }
 
 @media (min-width: 767px) and (max-width: 920px) {
