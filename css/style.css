@@ -292,7 +292,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 #text--light {
@@ -309,6 +309,14 @@ img {
 	line-height: 1.2;
 	color: #4a4a4a;
 	font-weight: 400;
+}
+
+#heading__weighten--18 {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #4a4a4a;
+	font-weight: 500;
 }
 
 #heading__shill--18 {
@@ -440,6 +448,16 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	font-weight: 400;
+	color: #e74c3c;
+}
+
+.text-link {
+	display: inline-block;
+	margin: 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	font-weight: 500;
 	color: #e74c3c;
 }
 
@@ -639,6 +657,20 @@ img {
 	font-size: 0;
 }
 
+.table--content {
+	margin: 25px 0 25px 40px;
+}
+
+.table__heading {
+	margin-bottom: 20px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #4a4a4a;
+	font-weight: 500;
+	text-align: left;
+}
+
 .table__row {
 	border-bottom: 1px dotted #aeaeae;
 }
@@ -648,6 +680,14 @@ img {
 }
 
 .table__cell {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.2;
+	font-weight: 500;
+}
+
+.table__cell--content {
+	padding: 8px 80px 8px 0;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 1.2;
@@ -3118,7 +3158,6 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 400;
 	font-weight: 500;
 	vertical-align: middle;
 }
@@ -3132,7 +3171,6 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 400;
 	font-weight: 500;
 	text-align: center;
 }
@@ -3314,7 +3352,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 .estate-card__phone {
@@ -3607,7 +3645,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 .toogle__item {
@@ -3671,7 +3709,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 .filter__found {
@@ -3680,7 +3718,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 .best-deal {
@@ -4039,7 +4077,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 .employee__contacts {
@@ -4064,7 +4102,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 .employee__phone {
@@ -4125,6 +4163,13 @@ img {
 	background-color: #ffffff;
 }
 
+.articles:before,
+.articles:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 .articles__img {
 	float: left;
 	margin-right: 32px;
@@ -4153,10 +4198,186 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 .articles__date {
+	margin: 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #aeaeae;
+	font-weight: 400;
+}
+
+.content:before,
+.content:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.content__wrapper {
+	display: block;
+	margin: 0 0 25px 0;
+	padding: 28px 37px;
+	background-color: #ffffff;
+}
+
+.content__wrapper:before,
+.content__wrapper:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.content__text {
+	margin: 0 0 12px 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #4a4a4a;
+	font-weight: 500;
+}
+
+.content__img--left {
+	float: left;
+	margin-top: 10px;
+	margin-right: 32px;
+	width: 210px;
+	height: auto;
+}
+
+.content__img--right {
+	float: right;
+	margin-top: 10px;
+	margin-left: 32px;
+	width: 210px;
+	height: auto;
+}
+
+.content__ol {
+	counter-reset: item-list;
+	margin: 0 0 10px 0;
+	padding: 0;
+	list-style: none;
+}
+
+.content__ul {
+	margin: 0 0 10px 0;
+	padding: 0;
+	list-style: none;
+}
+
+.content__li {
+	padding: 4px 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #4a4a4a;
+	font-weight: 500;
+}
+
+.content__li::before {
+	display: inline-block;
+	content: "\00a0\00a0\2014\00a0";
+	color: #b9b9b9;
+}
+
+.content__li--num {
+	padding: 4px 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #4a4a4a;
+	font-weight: 500;
+}
+
+.content__li--num::before {
+	display: inline-block;
+	content: "\00a0\00a0\00a0\00a0\00a0" counter(item-list) ".\00a0\00a0";
+	counter-increment: item-list;
+}
+
+.content__heading {
+	margin: 0 0 6px 0;
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	line-height: 1.2;
+	color: #4a4a4a;
+	font-weight: 500;
+}
+
+.content__subheading {
+	margin: 15px 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #4a4a4a;
+	font-weight: 500;
+}
+
+.content__important {
+	display: block;
+	margin: 30px -37px 0 -37px;
+	padding: 15px 281px 15px 81px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.4;
+	font-weight: 500;
+	color: #4a4a4a;
+	background-color: #fdef9d;
+}
+
+.content__file {
+	display: block;
+	margin: 14px 0;
+	min-height: 45px;
+	font-size: 0;
+}
+
+.content__file-wrap {
+	display: inline-block;
+	max-width: 750px;
+	font-size: 13px;
+	vertical-align: top;
+}
+
+.content__file::before {
+	display: inline-block;
+	content: "";
+	margin-right: 10px;
+	width: 40px;
+	height: 50px;
+	font-size: 13px;
+	background-repeat: no-repeat;
+	background-position: center;
+	vertical-align: top;
+}
+
+.content__file--doc::before {
+	background-image: url("../img/_source-icon/icon--doc.png");
+}
+
+.content__file--xls::before {
+	background-image: url("../img/_source-icon/icon--xls.png");
+}
+
+.content__file--pdf::before {
+	background-image: url("../img/_source-icon/icon--pdf.png");
+}
+
+.content__file--link {
+	display: block;
+	margin: 0 0 4px 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.4;
+	font-weight: 500;
+	color: #e74c3c;
+}
+
+.content__file--info {
 	margin: 0;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;

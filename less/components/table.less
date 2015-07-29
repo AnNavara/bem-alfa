@@ -3,6 +3,16 @@
 
 .table{
 
+	&--content{
+		margin: 25px 0 25px 40px;
+	}
+
+	&__heading{
+		margin-bottom: 20px;
+		#text();
+		text-align: left;
+	}
+
 	&__row{
 		border-bottom: 1px dotted @border-color--gray;
 
@@ -16,5 +26,13 @@
 		font-size: @font-size--medium;
 		line-height: @line-height--heading;
 		font-weight: @font-weight--heading;
+
+		&--content{
+			padding: 8px 80px 8px 0;
+			font-family: @font-family;
+			font-size: @font-size--medium;
+			line-height: @line-height--heading;
+			font-weight: @font-weight--heading;
+		}
 	}
 }
