@@ -292,7 +292,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 #text--light {
@@ -667,7 +667,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 	text-align: left;
 }
 
@@ -3158,6 +3158,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
+	font-weight: 400;
 	font-weight: 500;
 	vertical-align: middle;
 }
@@ -3171,6 +3172,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
+	font-weight: 400;
 	font-weight: 500;
 	text-align: center;
 }
@@ -3352,7 +3354,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .estate-card__phone {
@@ -3645,7 +3647,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .toogle__item {
@@ -3709,7 +3711,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .filter__found {
@@ -3718,7 +3720,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .best-deal {
@@ -4077,7 +4079,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .employee__contacts {
@@ -4102,7 +4104,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .employee__phone {
@@ -4198,7 +4200,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .articles__date {
@@ -4237,7 +4239,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .content__img--left {
@@ -4275,7 +4277,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .content__li::before {
@@ -4290,7 +4292,7 @@ img {
 	font-size: 13px;
 	line-height: 1.4;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .content__li--num::before {
@@ -4384,6 +4386,46 @@ img {
 	line-height: 1.4;
 	color: #aeaeae;
 	font-weight: 400;
+}
+
+.placeholder {
+	height: 100vh;
+	width: 600px;
+	margin: 12vh auto;
+	font-size: 0;
+	text-align: center;
+}
+
+.placeholder__wrapper {
+	text-align: center;
+}
+
+.placeholder__logo {
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.placeholder__link {
+	margin: 0 4px 4px 0;
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #ffffff;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #4a4a4a;
+	font-weight: 400;
+	vertical-align: top;
+}
+
+.placeholder__link:hover {
+	box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease;
+}
+
+.placeholder__link:not(:hover) {
+	box-shadow: none;
+	transition: box-shadow 0.3s ease;
 }
 
 @media (min-width: 767px) and (max-width: 920px) {
