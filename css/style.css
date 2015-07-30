@@ -2714,7 +2714,7 @@ img {
 	display: block;
 	margin-bottom: 30px;
 	width: 605px;
-	min-width: 98%;
+	max-width: 98%;
 }
 
 .error-404__menu {
