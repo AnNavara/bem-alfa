@@ -382,6 +382,21 @@ img {
 	cursor: pointer;
 }
 
+.btn--invert {
+	padding: 6px 14px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.2;
+	color: #e74c3c;
+	background-color: #ffffff;
+	border: 1px solid #e74c3c;
+}
+
+.btn--invert:hover {
+	border-color: #ce4537;
+	color: #ce4537;
+}
+
 .block-heading {
 	float: left;
 	margin: 0;
@@ -1496,6 +1511,57 @@ img {
 	vertical-align: middle;
 }
 
+.filter__container > li {
+	width: 100%;
+	list-style: none;
+	cursor: pointer;
+}
+
+.filter__container--big {
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	width: 175px;
+	list-style: none;
+	vertical-align: middle;
+}
+
+.filter__container--big > li {
+	width: 100%;
+	list-style: none;
+	cursor: pointer;
+}
+
+.filter__container--medium {
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	width: 134px;
+	list-style: none;
+	vertical-align: middle;
+}
+
+.filter__container--medium > li {
+	width: 100%;
+	list-style: none;
+	cursor: pointer;
+}
+
+.filter__container--smallish {
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	width: 87px;
+	list-style: none;
+	vertical-align: middle;
+}
+
+.filter__container--smallish > li {
+	width: 100%;
+	list-style: none;
+	cursor: pointer;
+}
+
 .filter__container--small {
 	position: relative;
 	display: inline-block;
@@ -1511,18 +1577,12 @@ img {
 	cursor: pointer;
 }
 
-.filter__container > li {
-	width: 100%;
-	list-style: none;
-	cursor: pointer;
-}
-
 .filter__dropdown {
 	display: none;
 	position: absolute;
 	margin: 0;
 	padding: 0 9px;
-	z-index: 5;
+	z-index: 20;
 	min-width: 100%;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;
@@ -1578,6 +1638,8 @@ img {
 
 .filter__dropdown--no-js:hover > li > .filter__dropdown {
 	display: block;
+	box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease;
 }
 
 .filter__dropdown--no-js:hover > li > .filter__dropdown-control:after {
@@ -1586,6 +1648,11 @@ img {
 	transform: rotate(-45deg) translateX(-4px) translateY(4px);
 	transition: -webkit-transform .4s ease;
 	transition: transform .4s ease;
+}
+
+.filter__dropdown--no-js:not(:hover) {
+	box-shadow: none;
+	transition: box-shadow 0.3s ease;
 }
 
 .filter__dropdown--no-js:not(:hover) > li > .filter__dropdown-control:after {
@@ -1685,11 +1752,53 @@ img {
 	float: right;
 }
 
+.filter__input--nano {
+	display: inline-block;
+	margin: 0 4px 0 0;
+	padding: 5.4px 8px;
+	width: 57px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #4a4a4a;
+	background-color: #ffffff;
+	border: none;
+	vertical-align: middle;
+}
+
+.filter__input--bigger {
+	display: inline-block;
+	margin: 0 4px 0 0;
+	padding: 5.4px 8px;
+	width: 92px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #4a4a4a;
+	background-color: #ffffff;
+	border: none;
+	vertical-align: middle;
+}
+
 .filter__input--big {
 	display: inline-block;
 	margin: 0 4px 0 0;
 	padding: 5.4px 8px;
 	width: 155px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #4a4a4a;
+	background-color: #ffffff;
+	border: none;
+	vertical-align: middle;
+}
+
+.filter__input--super {
+	display: inline-block;
+	margin: 0 4px 0 0;
+	padding: 5.4px 8px;
+	width: 195px;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 1.4;
@@ -3677,16 +3786,39 @@ img {
 
 .filter-build {
 	float: left;
+	position: relative;
 	margin-right: 34px;
-	padding: 10px 0;
+	padding: 10px 0 30px;
 	width: 626px;
 	border-top: 1px dotted #aeaeae;
 	border-bottom: 1px dotted #aeaeae;
 }
 
+.filter-build__wrapper {
+	margin-bottom: 40px;
+}
+
+.filter-build__wrapper:before,
+.filter-build__wrapper:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.filter-build__absolute {
+	position: absolute;
+	bottom: -14px;
+	font-size: 0;
+}
+
+.filter-build__submit {
+	margin-right: 4px;
+}
+
 .filter-build__row {
 	position: relative;
 	margin-bottom: 10px;
+	font-size: 0;
 }
 
 .filter-build__row::after {
@@ -3703,6 +3835,66 @@ img {
 	display: inline-block;
 	z-index: 5;
 	vertical-align: middle;
+	background-color: #f4f4f4;
+}
+
+.filter-build__item--left {
+	padding: 0 4px 0 0;
+}
+
+.filter-build__item--center {
+	padding: 0 4px 0 4px;
+}
+
+.filter-build__item--right {
+	padding: 0 0 0 4px;
+}
+
+.filter-build__item--city {
+	margin-right: 50px;
+	z-index: 30;
+}
+
+.filter-build__item--address {
+	margin-right: 51px;
+	z-index: 30;
+}
+
+.filter-build__item--area {
+	z-index: 30;
+}
+
+.filter-build__item--complex {
+	margin-right: 43px;
+	z-index: 20;
+}
+
+.filter-build__item--square {
+	margin-right: 45px;
+	z-index: 20;
+}
+
+.filter-build__item--price {
+	z-index: 20;
+}
+
+.filter-build__item--rooms {
+	margin-right: 43px;
+	z-index: 10;
+}
+
+.filter-build__item--floor {
+	margin-right: 43px;
+	z-index: 10;
+}
+
+.filter-build__item--home-type {
+	z-index: 10;
+}
+
+.filter-build__item--submit {
+	margin-left: 31px;
+	margin-right: 131px;
 }
 
 .filter-build__text {

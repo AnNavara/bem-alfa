@@ -3,15 +3,32 @@
 
 .filter-build{
   float: left;
+  position: relative;
   margin-right: 34px;
-  padding: 10px 0;
+  padding: 10px 0 30px;
   width: 626px;
   border-top: 1px dotted @border-color--gray;
   border-bottom: 1px dotted @border-color--gray;
 
+  &__wrapper{
+    #clear();
+    margin-bottom: 40px;
+  }
+
+  &__absolute{
+    position: absolute;
+    bottom: -14px;
+    font-size: 0;
+  }
+
+  &__submit{
+    margin-right: @margin-default;
+  }
+
   &__row{
     position: relative;
     margin-bottom: 10px;
+    font-size: 0;
 
     &::after{
       position: absolute;
@@ -28,6 +45,66 @@
     display: inline-block;
     z-index: 5;
     vertical-align: middle;
+    background-color: @body-color;
+
+    &--left{
+      padding: 0 4px 0 0;
+    }
+
+    &--center{
+      padding: 0 4px 0 4px;
+    }
+
+    &--right{
+      padding: 0 0 0 4px;
+    }
+
+    &--city{
+      margin-right: 50px;
+      z-index: 30;
+    }
+
+    &--address{
+      margin-right: 51px;
+      z-index: 30;
+    }
+
+    &--area{
+      z-index: 30;
+    }
+
+    &--complex{
+      margin-right: 43px;
+      z-index: 20;
+    }
+
+    &--square{
+      margin-right: 45px;
+      z-index: 20;
+    }
+
+    &--price{
+      z-index: 20;
+    }
+
+    &--rooms{
+      margin-right: 43px;
+      z-index: 10;
+    }
+
+    &--floor{
+      margin-right: 43px;
+      z-index: 10;
+    }
+
+    &--home-type{
+      z-index: 10;
+    }
+
+    &--submit{
+      margin-left: 31px;
+      margin-right: 131px;
+    }
   }
 
   &__text{
