@@ -7,23 +7,25 @@
 
   &__inner{
     float: left;
+    margin-right: @margin-default;
     font-size: 0;
-    width: 58.3%;
+    width: 58.2%;
   }
 
   &__wrapper{
-    margin-top: @margin-default;
+    margin-bottom: 2px;
     width: 100%;
     #clear();
   }
 
   &__btn{
-    margin-bottom: @margin-default;
+    margin-top: 3px;
+    padding: 6px 14px 7px 14px;
     float: right;
   }
 
   &__header{
-    padding: 0 33px;
+    padding: 0 27px 0 37px;
     margin-bottom: @margin-default;
     background-color: @white;
 
@@ -31,18 +33,19 @@
 
     >img{
       float: left;
-      margin: 33px 50px 26px 0;
+      margin: 33px 51px 26px 0;
       width: 190px;
     }
   }
 
   &__heading{
-    margin: 22px 0 22px 0;
+    margin: 21px 0 21px 0;
     font-family: @font-family--heading;
     font-size: @font-size--h2;
     color: @text-color;
     line-height: @line-height;
     font-weight: @font-weight;
+    letter-spacing: @letter-spacing--small;
     text-transform: uppercase;
   }
 }
@@ -60,7 +63,7 @@
     position: absolute;
     content: "";
     bottom: 32px;
-    left: 25px;
+    left: 33px;
     z-index: 5;
     width: auto;
     height: 12px;
@@ -70,8 +73,8 @@
     display: block;
     position: absolute;
     content: "";
-    bottom: 26px;
-    left: 470px;
+    bottom: 28px;
+    left: 447px;
     z-index: 5;
     width: 24px;
     height: 24px;
@@ -98,8 +101,8 @@
 
   &__item{
     float: left;
-    padding: 30px;
-    width: 440px;
+    padding: 30px 35px;
+    width: 410px;
     min-height: 10px;
   }
 

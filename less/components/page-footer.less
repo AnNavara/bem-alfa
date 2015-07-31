@@ -42,7 +42,7 @@
   &__wrapper{
     float: left;
     margin-left: 4.2735%;
-    padding-top: 23px;
+    padding-top: 19px;
     width: 550px;
   }
 
@@ -51,7 +51,7 @@
     max-width: 300px;
     font-family: @font-family;
     font-size: @font-size--medium;
-    line-height: @line-height;
+    line-height: @line-height--heading;
     font-weight: @font-weight--heading;
     color: @text-color;
     font-style: normal;
@@ -63,18 +63,22 @@
 
   &__rug{
     float: left;
-    margin-right: 1.7%;
+    margin-right: .9%;
     width: 165px;
-  }
 
-  &__rug--right{
-    float: right;
-    width: 165px;
+    &--center{
+      margin-right: 4.9%;
+    }
+
+    &--right{
+      float: left;
+      width: 165px;
+    }
   }
 
   &__link{
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
     color: @text-shill;
   }
 }
@@ -83,17 +87,15 @@
   position: relative;
   float: right;
   display: block;
-  margin-top: 23px;
+  margin-top: 20px;
   width: 218px;
-  padding-left: 22px;
   font-size: @font-size--medium;
   color: @gray-73;
 
   &::before{
-    position: absolute;
+    display: inline-block;
     content: "";
-    top: 1px;
-    left: 2px;
+    margin-right: 6px;
     width: 16px;
     height: 15px;
     background-image: url("../img/icon-error.png");
@@ -110,6 +112,9 @@
     &__wrapper{
       width: 46%;
     }
+    &__rug--center{
+      margin-right: .9%;
+    }
     &__rug--right{
       float: left;
     }
@@ -124,8 +129,11 @@
     &__wrapper{
       width: 58%;
     }
+    &__rug--center{
+      margin-right: .9%;
+    }
     &__rug--right{
-      float: left;
+      float: right;
     }
     &__form{
       width: 18%;

@@ -3,8 +3,12 @@
 
 .outer{
   margin-bottom: 4px;
-  padding: 15px 17px 15px 25px;
+  padding: 13px 17px 14px 24px;
   background-color: @white;
+
+  &--alt{
+    padding-bottom: 13px;;
+  }
 
   &__heading{
     margin: 0;
@@ -12,10 +16,15 @@
     font-family: @font-family;
     color: @text-color;
     font-size: @font-size--medium;
+    line-height: @line-height--semi;
     font-weight: @font-weight--heading;
   }
 
   &__link{
+    font-family: @font-family;
+    font-size: @font-size--medium;
+    line-height: @line-height--heading;
+    font-weight: @font-weight--heading;
     color: @text-shill;
   }
 

@@ -26,20 +26,27 @@
     padding: 20px 0 14px 0;
   }
 
-  &__item:last-of-type{
+  &__item--alt:first-of-type>&__link--alt{
+    padding: 19px 0 12px 0;
   }
 
   &__item:last-of-type>&__link{
-    padding: 14px 0 20px 0;
+    padding: 13px 0 18px 0;
+    border-bottom: none;
+  }
+
+  &__item--alt:last-of-type>&__link--alt{
+    padding: 14px 0 18px 0;
     border-bottom: none;
   }
 
   &__link{
     display: block;
-    padding: 14px 0;
+    padding: 13px 0;
     font-family: @font-family--heading;
     font-size: @font-size--h6;
-    line-height: @line-height--heading;
+    line-height: @line-height--semi;
+    letter-spacing: @letter-spacing;
     color: @gray-red;
     text-transform: uppercase;
     border-bottom: 1px solid @border-color--red;
