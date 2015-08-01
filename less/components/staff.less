@@ -13,6 +13,14 @@
 		min-height: 191px;
 		background-color: @white;
 
+		&:hover{
+		  #box-shadow();
+		}
+
+	  &:not(:hover){
+		  #no-shadow();
+	  }
+
 		&:nth-child(3n){
 			margin-right: 0;
 		}
@@ -74,6 +82,11 @@
     line-height: @line-height--heading;
     color: @text-shill;
     font-weight: @font-weight;
+
+		&:hover{
+			color: @text-shill;
+			text-decoration: underline;
+		}
   }
 
   &__position{

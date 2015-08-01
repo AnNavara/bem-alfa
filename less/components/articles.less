@@ -9,6 +9,14 @@
   background-color: @white;
   #clear();
 
+  &:hover{
+    #box-shadow();
+  }
+
+  &:not(:hover){
+    #no-shadow();
+  }
+
   &__img{
     float: left;
     margin-right: 32px;
@@ -25,6 +33,11 @@
     display: block;
     margin: 0 0 14px 0;
     #heading__shill--18();
+
+    &:hover{
+      color: @text-shill;
+      text-decoration: underline;
+    }
   }
 
   &__text{

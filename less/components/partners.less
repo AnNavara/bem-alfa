@@ -66,6 +66,14 @@
     background-color: @white;
     vertical-align: top;
 
+    &:hover{
+      #box-shadow();
+    }
+
+    &:not(:hover){
+      #no-shadow();
+    }
+
     &:nth-child(3n){
       margin-right: 0;
     }

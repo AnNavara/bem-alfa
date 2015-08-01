@@ -13,6 +13,14 @@
   vertical-align: top;
   #clear();
 
+  &:hover{
+    #box-shadow();
+  }
+
+  &:not(:hover){
+    #no-shadow();
+  }
+
   &:nth-child(3n){
     margin-right: 0;
   }
@@ -70,5 +78,10 @@
     line-height: @line-height;
     color: @text-shill;
     border-top: 1px solid @border-color--light;
+
+    &:hover{
+      color: @text-shill;
+      text-decoration: underline;
+    }
   }
 }

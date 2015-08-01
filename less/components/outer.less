@@ -26,10 +26,15 @@
     line-height: @line-height--heading;
     font-weight: @font-weight--heading;
     color: @text-shill;
-  }
 
-  &__link:hover{
-    color: darken(@text-shill, 10%);;
+    &:hover{
+      color: @text-shill;
+      text-decoration: underline;
+    }
+
+    &:active{
+      color: @text-shill;
+    }
   }
 }
 

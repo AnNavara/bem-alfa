@@ -32,16 +32,18 @@
     line-height: @line-height--heading;
     #ls();
     text-transform: uppercase;
-  }
-  &__link:hover{
-    color: @link-color--hover;
-  }
 
-  &__link--active{
-    color: @link-color--active;
-  }
-  &__link--active:hover{
-    color: darken(@link-color--active, 10%);;
+    &:hover{
+      color: @link-color--hover;
+    }
+
+    &:active{
+      color: @link-color--active;
+    }
+
+    &--active{
+      color: @link-color--active;
+    }
   }
 }
 
