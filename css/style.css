@@ -675,6 +675,13 @@ img {
 .breadcrumbs {
 	display: block;
 	margin-top: -7px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.breadcrumbs--alt {
+	display: block;
+	margin-top: -7px;
 	margin-bottom: 37px;
 	width: 100%;
 }
@@ -1481,7 +1488,7 @@ img {
 }
 
 .catalog__item:nth-of-type(3) {
-	padding: 0 10px 0 23px;
+	padding: 0 0 0 23px;
 }
 
 .catalog__item--l {
@@ -3536,9 +3543,10 @@ img {
 }
 
 .calc__inner {
+	padding-top: 17px;
 	background-image: url("../img/bg-mortgage.png");
 	background-repeat: no-repeat;
-	background-position: 52px 5px;
+	background-position: 52px 22px;
 }
 
 .calc__wrapper {
@@ -4092,7 +4100,15 @@ img {
 }
 
 .toogle {
+	display: inline-block;
 	margin-bottom: 10px;
+	padding: 9px 0 0;
+	border-top: 1px dotted #aeaeae;
+}
+
+.toogle--alt {
+	margin-top: -7px;
+	margin-bottom: 27px;
 }
 
 .toogle__text {
@@ -4150,12 +4166,22 @@ img {
 }
 
 .filter-build__wrapper {
-	margin-top: -17px;
-	margin-bottom: 31px;
+	margin-bottom: 51px;
 }
 
 .filter-build__wrapper:before,
 .filter-build__wrapper:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.filter-build__wrapper--alt {
+	margin-bottom: 31px;
+}
+
+.filter-build__wrapper--alt:before,
+.filter-build__wrapper--alt:after {
 	content: "";
 	display: table;
 	clear: both;

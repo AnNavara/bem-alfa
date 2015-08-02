@@ -2,7 +2,15 @@
 @import "mixins.less";
 
 .toogle{
+	display: inline-block;
 	margin-bottom: 10px;
+	padding: 9px 0 0;
+	border-top: 1px dotted @border-color--gray;
+
+	&--alt{
+		margin-top: -7px;
+		margin-bottom: 27px;
+	}
 
 	&__text{
 		display: inline-block;
