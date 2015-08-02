@@ -1405,6 +1405,18 @@ img {
 	clear: both;
 }
 
+.catalog--big {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+.catalog--big:before,
+.catalog--big:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 .catalog__inner {
 	float: left;
 	width: 646px;
@@ -1416,7 +1428,7 @@ img {
 .catalog__inner--big {
 	float: left;
 	width: auto;
-	padding: 25px 0;
+	padding: 20px 0 28px 0;
 	background-color: #ffffff;
 }
 
@@ -1442,9 +1454,10 @@ img {
 
 .catalog__item--l {
 	float: left;
-	padding: 0 40px;
+	padding: 0 0 0 28px;
 	height: 100%;
 	min-height: 80px;
+	min-width: 187px;
 	border-left: 1px dotted #cbcbcb;
 }
 
@@ -1452,17 +1465,43 @@ img {
 	border-left: none;
 }
 
+.catalog__item--big {
+	float: left;
+	padding: 0 0 0 27px;
+	height: 100%;
+	min-height: 80px;
+	min-width: 369px;
+	border-left: 1px dotted #cbcbcb;
+}
+
+.catalog__item--center {
+	float: left;
+	padding: 0 0 0 27px;
+	height: 100%;
+	min-height: 80px;
+	min-width: 207px;
+	border-left: 1px dotted #cbcbcb;
+}
+
 .catalog__wrapper {
 	float: left;
 }
 
 .catalog__wrapper--r {
-	float: right;
-	margin-left: 25px;
+	float: left;
+	margin-left: 34px;
 }
 
 .catalog__subheader {
 	margin: 0 0 7px 0;
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #4a4a4a;
+}
+
+.catalog__subheader--big {
+	margin: 0 0 11px 0;
 	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 400;
@@ -1580,6 +1619,22 @@ img {
 
 .filter:before,
 .filter:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.filter--catalog {
+	margin-top: -17px;
+	margin-bottom: 24px;
+	padding: 11px 0;
+	font-size: 0;
+	border-top: 1px dotted #cbcbcb;
+	border-bottom: 1px dotted #cbcbcb;
+}
+
+.filter--catalog:before,
+.filter--catalog:after {
 	content: "";
 	display: table;
 	clear: both;
