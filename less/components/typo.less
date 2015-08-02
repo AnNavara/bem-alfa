@@ -25,6 +25,19 @@
   color: @text-color;
   text-transform: uppercase;
 
+  &--build{
+    position: relative;
+    z-index: 5;
+    margin: 0 0 9px 0;
+    font-family: @font-family--heading;
+    font-size: @font-size--h3;
+    line-height: @line-height--heading;
+    font-weight: @font-weight;
+    letter-spacing: @letter-spacing;
+    color: @text-color;
+    text-transform: uppercase;
+  }
+
   &--small{
     position: relative;
     z-index: 5;
@@ -77,6 +90,21 @@
   }
 }
 
+.link--heading{
+  display: block;
+  margin: 0 0 5px 0;
+  font-family: @font-family;
+  font-size: @font-size--medium;
+  line-height: @line-height--heading;
+  font-weight: @font-weight;
+  color: @text-shill;
+
+  &:hover{
+    color: @text-shill;
+    text-decoration: underline;
+  }
+}
+
 .text-link{
   display: inline-block;
   margin: 0;
@@ -95,7 +123,7 @@
 .inner-text{
   position: relative;
   z-index: 5;
-  margin: 0 0 10px 0;
+  margin: 0 0 8px 0;
   padding: 0;
   font-family: @font-family;
   font-size: @font-size--medium;
@@ -106,10 +134,10 @@
 .inner-phone{
   position: relative;
   z-index: 5;
-  margin: 0 0 0 0;
+  margin: 0 0 4px 0;
   padding: 0;
   font-family: @font-family;
-  font-size: @font-size--h6;
+  font-size: @font-size--middish;
   line-height: @line-height--heading;
   color: @text-color;
 }

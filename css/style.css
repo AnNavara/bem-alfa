@@ -409,6 +409,7 @@ img {
 }
 
 .btn--invert {
+	display: inline-block;
 	padding: 6px 14px;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;
@@ -416,6 +417,7 @@ img {
 	color: #e74c3c;
 	background-color: #ffffff;
 	border: 1px solid #fbcfcb;
+	vertical-align: middle;
 }
 
 .btn--invert:hover {
@@ -439,6 +441,19 @@ img {
 	position: relative;
 	z-index: 5;
 	margin: 0 0 15px 0;
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	font-size: 19px;
+	line-height: 1.2;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	color: #4a4a4a;
+	text-transform: uppercase;
+}
+
+.inner-heading--build {
+	position: relative;
+	z-index: 5;
+	margin: 0 0 9px 0;
 	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 	font-size: 19px;
 	line-height: 1.2;
@@ -498,6 +513,21 @@ img {
 	text-decoration: underline;
 }
 
+.link--heading {
+	display: block;
+	margin: 0 0 5px 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #e74c3c;
+}
+
+.link--heading:hover {
+	color: #e74c3c;
+	text-decoration: underline;
+}
+
 .text-link {
 	display: inline-block;
 	margin: 0;
@@ -516,7 +546,7 @@ img {
 .inner-text {
 	position: relative;
 	z-index: 5;
-	margin: 0 0 10px 0;
+	margin: 0 0 8px 0;
 	padding: 0;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;
@@ -527,10 +557,10 @@ img {
 .inner-phone {
 	position: relative;
 	z-index: 5;
-	margin: 0 0 0 0;
+	margin: 0 0 4px 0;
 	padding: 0;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1.2;
 	color: #4a4a4a;
 }
@@ -692,7 +722,7 @@ img {
 .pagination {
 	display: inline-block;
 	margin-right: 4px;
-	padding: 2px 10px;
+	padding: 2px 8px;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 1.4;
@@ -712,7 +742,7 @@ img {
 
 .pagination__wrapper {
 	display: block;
-	margin: 0 0 10px 0;
+	margin: 0 0 7px 0;
 	font-size: 0;
 }
 
@@ -1440,12 +1470,14 @@ img {
 }
 
 .catalog__item:first-of-type {
-	padding: 0 35px 0 28px;
+	padding: 0 0 0 28px;
+	min-width: 171px;
 	border-left: none;
 }
 
 .catalog__item:nth-of-type(2) {
-	padding: 0 38px 0 23px;
+	padding: 0 0 0 23px;
+	min-width: 187px;
 }
 
 .catalog__item:nth-of-type(3) {
@@ -1485,11 +1517,11 @@ img {
 
 .catalog__wrapper {
 	float: left;
+	min-width: 71px;
 }
 
 .catalog__wrapper--r {
 	float: left;
-	margin-left: 34px;
 }
 
 .catalog__subheader {
@@ -1743,7 +1775,7 @@ img {
 	position: relative;
 	display: inline-block;
 	padding: 0;
-	width: 87px;
+	width: 85px;
 	list-style: none;
 	vertical-align: middle;
 }
@@ -1930,7 +1962,7 @@ img {
 	display: inline-block;
 	margin: 0 4px 0 0;
 	padding: 5.4px 8px;
-	width: 78px;
+	width: 77px;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 1.4;
@@ -4110,15 +4142,16 @@ img {
 .filter-build {
 	float: left;
 	position: relative;
-	margin-right: 34px;
-	padding: 10px 0 30px;
+	margin-right: 37px;
+	padding: 12px 0 33px;
 	width: 626px;
 	border-top: 1px dotted #aeaeae;
 	border-bottom: 1px dotted #aeaeae;
 }
 
 .filter-build__wrapper {
-	margin-bottom: 40px;
+	margin-top: -17px;
+	margin-bottom: 31px;
 }
 
 .filter-build__wrapper:before,
@@ -4130,12 +4163,16 @@ img {
 
 .filter-build__absolute {
 	position: absolute;
-	bottom: -14px;
+	bottom: -16px;
 	font-size: 0;
 }
 
 .filter-build__submit {
 	margin-right: 4px;
+	display: inline-block;
+	padding-left: 29px;
+	border: none;
+	vertical-align: middle;
 }
 
 .filter-build__row {
@@ -4148,7 +4185,7 @@ img {
 	position: absolute;
 	content: "";
 	left: 0;
-	bottom: 24%;
+	bottom: 31%;
 	width: 100%;
 	border-bottom: 1px dotted #aeaeae;
 }
@@ -4162,7 +4199,7 @@ img {
 }
 
 .filter-build__item--left {
-	padding: 0 4px 0 0;
+	padding: 0 4px 0 1px;
 }
 
 .filter-build__item--center {
@@ -4174,12 +4211,12 @@ img {
 }
 
 .filter-build__item--city {
-	margin-right: 50px;
+	margin-right: 46px;
 	z-index: 30;
 }
 
 .filter-build__item--address {
-	margin-right: 51px;
+	margin-right: 35px;
 	z-index: 30;
 }
 
@@ -4188,7 +4225,7 @@ img {
 }
 
 .filter-build__item--complex {
-	margin-right: 43px;
+	margin-right: 46px;
 	z-index: 20;
 }
 
@@ -4202,12 +4239,12 @@ img {
 }
 
 .filter-build__item--rooms {
-	margin-right: 43px;
+	margin-right: 47px;
 	z-index: 10;
 }
 
 .filter-build__item--floor {
-	margin-right: 43px;
+	margin-right: 38px;
 	z-index: 10;
 }
 
@@ -4216,7 +4253,7 @@ img {
 }
 
 .filter-build__item--submit {
-	margin-left: 31px;
+	margin-left: 36px;
 	margin-right: 131px;
 }
 
@@ -4230,7 +4267,7 @@ img {
 }
 
 .filter__found {
-	margin: 0 0 5px 0;
+	margin: 0 0 4px 0;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 1.4;
@@ -4240,8 +4277,8 @@ img {
 
 .best-deal {
 	float: left;
-	padding: 15px 25px;
-	width: 228px;
+	padding: 17px 24px 14px 24px;
+	width: 226px;
 	min-height: 239px;
 	background-color: #fdef9d;
 	background-image: url("../img/_source-icon/icon--phone.png");
@@ -4256,7 +4293,7 @@ img {
 }
 
 .new-build__header {
-	margin: 0 0 10px 0;
+	margin: 0 0 4px 0;
 }
 
 .new-build__title {
@@ -4272,23 +4309,23 @@ img {
 
 .new-build__title--address {
 	margin-left: 172px;
-	width: 280px;
+	width: 298px;
 }
 
 .new-build__title--square {
-	width: 90px;
+	width: 85px;
 }
 
 .new-build__title--rooms {
-	width: 95px;
+	width: 83px;
 }
 
 .new-build__title--floor {
-	width: 80px;
+	width: 92px;
 }
 
 .new-build__title--price {
-	width: 157px;
+	width: 140px;
 }
 
 .new-build__item {
@@ -4320,7 +4357,7 @@ img {
 	position: relative;
 	display: inline-block;
 	font-size: 13px;
-	padding: 18px 0 0 22px;
+	padding: 23px 0 0 22px;
 	vertical-align: top;
 }
 
@@ -4331,24 +4368,24 @@ img {
 }
 
 .new-build__wrapper--address {
-	width: 280px;
+	width: 298px;
 }
 
 .new-build__wrapper--square {
-	width: 90px;
+	width: 85px;
 }
 
 .new-build__wrapper--rooms {
-	width: 95px;
+	width: 83px;
 }
 
 .new-build__wrapper--floor {
-	width: 80px;
+	width: 96px;
 }
 
 .new-build__wrapper--price {
 	padding-right: 20px;
-	width: 157px;
+	width: 140px;
 	text-align: left;
 }
 
@@ -4356,6 +4393,15 @@ img {
 	margin: 0 0 2px 0;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 15px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #4a4a4a;
+}
+
+.new-build__heading--price {
+	margin: -5px 0 2px 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 18px;
 	line-height: 1.2;
 	font-weight: 400;
 	color: #4a4a4a;
@@ -4394,7 +4440,7 @@ img {
 	display: inline-block;
 	margin: 0;
 	left: 22px;
-	bottom: 8px;
+	bottom: 16px;
 }
 
 .new-build__flair {
