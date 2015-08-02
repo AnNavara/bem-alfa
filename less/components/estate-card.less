@@ -2,7 +2,7 @@
 @import "mixins.less";
 
 .estate-card{
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   width: 100%;
   #clear();
 
@@ -24,16 +24,22 @@
 
   &__spec{
     margin: 0 @margin-default @margin-default 0;
-    padding: 14px 22px;
+    padding: 13px 24px;
     width: 410px;
     height: 68px;
     font-size: 0;
     background-color: @white;
 
     &-item{
-      margin: 0 35px 0 0;
       display: inline-block;
+      min-width: 94px;
       vertical-align: middle;
+
+      &--area{
+        display: inline-block;
+        min-width: 167px;
+        vertical-align: middle;
+      }
 
       &:last-child{
         margin: 0;
@@ -45,7 +51,7 @@
       font-size: @font-size--medium;
       line-height: @line-height--heading;
       color: @heading-color;
-      font-weight: @font-weight--heading;
+      font-weight: @font-weight;
     }
 
     &-text{
@@ -54,13 +60,17 @@
       line-height: @line-height--heading;
       color: @text-color;
       font-weight: @font-weight;
+
+      >sup{
+        font-size: @font-size--small;
+      }
     }
   }
 
   &__sign{
     display: block;
     float: right;
-    padding: 12px 15px;
+    padding: 12px 20px;
     width: 176px;
     height: 68px;
     background-color: @yellow;
@@ -78,7 +88,7 @@
   &__descr{
     float: right;
     padding: 19px 22px;
-    width: 293px;
+    width: 292px;
     height: 481px;
     background-color: @white;
   }
@@ -89,12 +99,12 @@
   }
 
   &__phone{
-    margin: 15px 0 10px 0;
+    margin: 12px 0 10px 0;
     font-family: @font-family;
     font-size: @font-size--h4;
     line-height: @line-height--heading;
     color: @text-color;
-    font-weight: @font-weight--heading;
+    font-weight: @font-weight;
   }
 
   &__info{
@@ -103,8 +113,8 @@
 
     &-wrap{
       margin: 0 @margin-default @margin-default 0;
-      padding: 19px 22px;
-      width: 293px;
+      padding: 15px 23px;
+      width: 294px;
       height: 250px;
       background-color: @white;
     }

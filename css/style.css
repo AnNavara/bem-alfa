@@ -442,7 +442,7 @@ img {
 	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 	font-size: 19px;
 	line-height: 1.2;
-	font-weight: 500;
+	font-weight: 400;
 	letter-spacing: 0.04em;
 	color: #4a4a4a;
 	text-transform: uppercase;
@@ -738,11 +738,22 @@ img {
 	border-bottom: 1px dotted #aeaeae;
 }
 
+.table__row > .table__cell:first-child {
+	width: 165px;
+}
+
 .table__row:last-child {
 	border-bottom: none;
 }
 
 .table__cell {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.2;
+	font-weight: 400;
+}
+
+.table__cell--left {
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 1.2;
@@ -3552,7 +3563,7 @@ img {
 }
 
 .estate-card {
-	margin-bottom: 24px;
+	margin-bottom: 22px;
 	width: 100%;
 }
 
@@ -3581,7 +3592,7 @@ img {
 
 .estate-card__spec {
 	margin: 0 4px 4px 0;
-	padding: 14px 22px;
+	padding: 13px 24px;
 	width: 410px;
 	height: 68px;
 	font-size: 0;
@@ -3589,8 +3600,14 @@ img {
 }
 
 .estate-card__spec-item {
-	margin: 0 35px 0 0;
 	display: inline-block;
+	min-width: 94px;
+	vertical-align: middle;
+}
+
+.estate-card__spec-item--area {
+	display: inline-block;
+	min-width: 167px;
 	vertical-align: middle;
 }
 
@@ -3603,7 +3620,7 @@ img {
 	font-size: 13px;
 	line-height: 1.2;
 	color: #aeaeae;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .estate-card__spec-text {
@@ -3614,10 +3631,14 @@ img {
 	font-weight: 400;
 }
 
+.estate-card__spec-text > sup {
+	font-size: 12px;
+}
+
 .estate-card__sign {
 	display: block;
 	float: right;
-	padding: 12px 15px;
+	padding: 12px 20px;
 	width: 176px;
 	height: 68px;
 	background-color: #fdef9d;
@@ -3665,7 +3686,7 @@ img {
 .estate-card__descr {
 	float: right;
 	padding: 19px 22px;
-	width: 293px;
+	width: 292px;
 	height: 481px;
 	background-color: #ffffff;
 }
@@ -3680,12 +3701,12 @@ img {
 }
 
 .estate-card__phone {
-	margin: 15px 0 10px 0;
+	margin: 12px 0 10px 0;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	line-height: 1.2;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .estate-card__info {
@@ -3695,16 +3716,16 @@ img {
 
 .estate-card__info-wrap {
 	margin: 0 4px 4px 0;
-	padding: 19px 22px;
-	width: 293px;
+	padding: 15px 23px;
+	width: 294px;
 	height: 250px;
 	background-color: #ffffff;
 }
 
 .contacts {
 	margin: 0 4px 0 0;
-	padding: 19px;
-	width: 293px;
+	padding: 15px 17px;
+	width: 294px;
 	height: 227px;
 	background-color: #ffffff;
 }
@@ -3753,7 +3774,7 @@ img {
 
 .contacts__name {
 	display: block;
-	margin: 0 0 3px 0;
+	margin: 0 0 4px 0;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	line-height: 1.2;
@@ -3767,23 +3788,23 @@ img {
 }
 
 .contacts__position {
-	margin: 0 0 12px 0;
+	margin: 0 0 9px 0;
 	display: block;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 1.2;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .contacts__phone {
-	margin: 0 0 4px 0;
+	margin: 0 0 5px 0;
 	display: inline-block;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 1.2;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .contacts__phone > h3 {
@@ -3793,7 +3814,7 @@ img {
 	font-size: 13px;
 	line-height: 1.2;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .contacts__email {
@@ -3803,7 +3824,7 @@ img {
 	font-size: 13px;
 	line-height: 1.2;
 	color: #e74c3c;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .contacts__email:hover {
@@ -3826,19 +3847,19 @@ img {
 
 .tour__inner {
 	float: right;
-	width: 293px;
+	width: 294px;
 }
 
 .tour__adv {
 	width: 100%;
-	padding: 16px 22px;
+	padding: 15px 19px 17px 24px;
 	min-height: 76px;
 	background-color: #ffffff;
 }
 
 .tour__guide {
 	margin-bottom: 4px;
-	padding: 14px 22px;
+	padding: 19px 19px 18px 24px;
 	width: 100%;
 	min-height: 364px;
 	background-color: #ffffff;
@@ -3872,11 +3893,11 @@ img {
 }
 
 .tour__text {
-	margin: 0 0 5px 0;
+	margin: 0 0 8px 0;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 1.4;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .residential {

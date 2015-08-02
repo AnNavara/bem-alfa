@@ -16,6 +16,10 @@
 	&__row{
 		border-bottom: 1px dotted @border-color--gray;
 
+		>.table__cell:first-child{
+			width: 165px;
+		}
+
 		&:last-child{
 			border-bottom: none;
 		}
@@ -25,7 +29,15 @@
 		font-family: @font-family;
 		font-size: @font-size--medium;
 		line-height: @line-height--heading;
-		font-weight: @font-weight--heading;
+		font-weight: @font-weight;
+
+		&--left{
+
+			font-family: @font-family;
+			font-size: @font-size--medium;
+			line-height: @line-height--heading;
+			font-weight: @font-weight--heading;
+		}
 
 		&--content{
 			padding: 8px 80px 8px 0;
