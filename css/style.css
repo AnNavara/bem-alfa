@@ -2963,23 +2963,23 @@ img {
 }
 
 .error-404 {
-	padding: 45px 0 0 55px;
+	padding: 48px 0 0 56px;
 	background-image: none;
 }
 
 .error-404__header {
-	margin-bottom: 35px;
+	margin-bottom: 32px;
 }
 
 .error-404__wrapper {
-	padding-right: 35px;
+	padding-right: 40px;
+	margin-right: 36px;
 	display: inline-block;
 	border-right: 1px dotted #cbcbcb;
 	vertical-align: top;
 }
 
 .error-404__logo {
-	margin-left: 40px;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -2993,6 +2993,7 @@ img {
 	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 	font-size: 36px;
 	line-height: 1.2;
+	letter-spacing: 0.04em;
 	font-weight: 400;
 	text-transform: uppercase;
 }
@@ -3007,14 +3008,14 @@ img {
 
 .error-404__img {
 	display: block;
-	margin-bottom: 30px;
-	width: 605px;
+	margin-bottom: 27px;
+	width: 606px;
 	max-width: 98%;
 }
 
 .error-404__menu {
 	display: inline-block;
-	margin: 0 60px 0 0;
+	margin: 0 68px 0 0;
 	padding: 0;
 	list-style: none;
 }
@@ -3025,6 +3026,7 @@ img {
 	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.4;
+	letter-spacing: 0.04em;
 	text-transform: uppercase;
 }
 
