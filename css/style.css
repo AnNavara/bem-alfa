@@ -565,6 +565,15 @@ img {
 	color: #4a4a4a;
 }
 
+.list__heading {
+	margin: 0 0 11px 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #4a4a4a;
+	font-weight: 400;
+}
+
 .valuta {
 	text-transform: lowercase;
 }
@@ -702,6 +711,9 @@ img {
 	font-weight: 500;
 	color: #4a4a4a;
 	vertical-align: bottom;
+	-webkit-transform: scaleY(1.1);
+	-ms-transform: scaleY(1.1);
+	transform: scaleY(1.1);
 }
 
 .breadcrumbs__item:hover {
@@ -4614,7 +4626,7 @@ img {
 	font-size: 13px;
 	line-height: 1.2;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .staff__phone {
@@ -4624,7 +4636,7 @@ img {
 	font-size: 13px;
 	line-height: 1.2;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .staff__phone > h3 {
@@ -4648,7 +4660,7 @@ img {
 }
 
 .employee {
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 	width: 100%;
 }
 
@@ -4661,7 +4673,7 @@ img {
 
 .employee__wrapper {
 	float: left;
-	margin-right: 24px;
+	margin-right: 25px;
 	width: 623px;
 }
 
@@ -4689,7 +4701,7 @@ img {
 .employee__about {
 	float: left;
 	margin: 0 0 4px 0;
-	padding: 22px 24px;
+	padding: 22px 25px;
 	width: 395px;
 	height: 304px;
 	background-color: #ffffff;
@@ -4715,7 +4727,7 @@ img {
 
 .employee__contacts {
 	float: left;
-	padding: 16px 22px;
+	padding: 16px 22px 20px 22px;
 	width: 100%;
 	background-color: #ffffff;
 }
@@ -4768,6 +4780,8 @@ img {
 	line-height: 1.2;
 	color: #4a4a4a;
 	font-weight: 400;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
 }
 
 .certificates {
@@ -4779,7 +4793,7 @@ img {
 	float: left;
 	padding: 18px;
 	width: 100%;
-	min-height: 347px;
+	min-height: 351px;
 	background-color: #ffffff;
 }
 
@@ -4795,7 +4809,7 @@ img {
 
 .articles {
 	margin: 0 0 4px 0;
-	padding: 24px 28px;
+	padding: 26px 30px 18px 28px;
 	width: 100%;
 	min-height: 191px;
 	background-color: #ffffff;
@@ -4827,7 +4841,7 @@ img {
 
 .articles__wrapper {
 	float: left;
-	width: 604px;
+	width: 590px;
 }
 
 .articles__heading {
@@ -4872,8 +4886,8 @@ img {
 
 .content__wrapper {
 	display: block;
-	margin: 0 0 25px 0;
-	padding: 28px 37px;
+	margin: 0 0 24px 0;
+	padding: 30px 37px 37px 37px;
 	background-color: #ffffff;
 }
 
@@ -4885,7 +4899,7 @@ img {
 }
 
 .content__text {
-	margin: 0 0 12px 0;
+	margin: 0 0 17px 0;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 1.4;
@@ -4897,7 +4911,7 @@ img {
 	float: left;
 	margin-top: 10px;
 	margin-right: 32px;
-	width: 210px;
+	width: 208px;
 	height: auto;
 }
 
@@ -4905,13 +4919,13 @@ img {
 	float: right;
 	margin-top: 10px;
 	margin-left: 32px;
-	width: 210px;
+	width: 208px;
 	height: auto;
 }
 
 .content__ol {
 	counter-reset: item-list;
-	margin: 0 0 10px 0;
+	margin: 0 0 14px 0;
 	padding: 0;
 	list-style: none;
 }
@@ -4948,17 +4962,19 @@ img {
 
 .content__li--num::before {
 	display: inline-block;
-	content: "\00a0\00a0\00a0\00a0\00a0" counter(item-list) ".\00a0\00a0";
+	content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0" counter(item-list) ".\00a0";
 	counter-increment: item-list;
 }
 
 .content__heading {
-	margin: 0 0 6px 0;
+	margin: 0 0 9px 0;
 	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 	font-size: 24px;
 	line-height: 1.2;
 	color: #4a4a4a;
-	font-weight: 500;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
 }
 
 .content__subheading {
@@ -4972,14 +4988,20 @@ img {
 
 .content__important {
 	display: block;
-	margin: 30px -37px 0 -37px;
-	padding: 15px 281px 15px 81px;
-	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	margin: 30px -37px 20px -37px;
+	padding: 18px 81px 19px 81px;
+	background-color: #fdef9d;
+}
+
+.content__important > h3 {
+	margin: 0;
+	padding: 0;
+	max-width: 570px;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	font-size: 15px;
 	line-height: 1.4;
 	font-weight: 500;
 	color: #4a4a4a;
-	background-color: #fdef9d;
 }
 
 .content__file {
@@ -4993,19 +5015,19 @@ img {
 	display: inline-block;
 	max-width: 750px;
 	font-size: 13px;
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 .content__file::before {
 	display: inline-block;
 	content: "";
-	margin-right: 10px;
+	margin-right: 13px;
 	width: 40px;
 	height: 50px;
 	font-size: 13px;
 	background-repeat: no-repeat;
 	background-position: center;
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 .content__file--doc::before {
@@ -5025,8 +5047,8 @@ img {
 	margin: 0 0 4px 0;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 15px;
-	line-height: 1.4;
-	font-weight: 500;
+	line-height: 1.2;
+	font-weight: 400;
 	color: #e74c3c;
 }
 
@@ -5042,6 +5064,7 @@ img {
 	line-height: 1.4;
 	color: #aeaeae;
 	font-weight: 400;
+	font-style: italic;
 }
 
 .placeholder {

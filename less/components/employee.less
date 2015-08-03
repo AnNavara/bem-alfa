@@ -2,13 +2,13 @@
 @import "mixins.less";
 
 .employee{
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   width: 100%;
   #clear();
 
   &__wrapper{
     float: left;
-    margin-right: 24px;
+    margin-right: 25px;
     width: 623px;
     #clear();
   }
@@ -30,7 +30,7 @@
   &__about{
     float: left;
     margin: 0 0 @margin-default 0;
-    padding: 22px 24px;
+    padding: 22px 25px;
     width: 395px;
     height: 304px;
     background-color: @white;
@@ -52,7 +52,7 @@
 
   &__contacts{
     float: left;
-    padding: 16px 22px;
+    padding: 16px 22px 20px 22px;
     width: 100%;
     background-color: @white;
 
@@ -93,5 +93,7 @@
     line-height: @line-height--heading;
     color: @text-color;
     font-weight: @font-weight;
+    letter-spacing: @letter-spacing;
+    text-transform: uppercase;
   }
 }
