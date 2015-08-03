@@ -3269,7 +3269,7 @@ img {
 }
 
 .partners__container {
-	margin-bottom: 26px;
+	margin-bottom: 17px;
 }
 
 .partners__container:before,
@@ -3291,7 +3291,7 @@ img {
 	display: inline-block;
 	margin-right: 4px;
 	margin-bottom: 4px;
-	padding: 24px;
+	padding: 24px 24px 10px 24px;
 	width: 293px;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;
@@ -3318,11 +3318,11 @@ img {
 .partners--big__img {
 	width: 245px;
 	height: auto;
-	margin-bottom: 16px;
+	margin-bottom: 19px;
 }
 
 .partners--big__heading {
-	margin: 0 0 16px 0;
+	margin: 0 0 18px 0;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	line-height: 1.2;
@@ -3331,7 +3331,7 @@ img {
 }
 
 .partners--big__text {
-	margin: 0 0 15px 0;
+	margin: 0 0 20px 0;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 1.4;
@@ -3340,14 +3340,14 @@ img {
 }
 
 .partners--big__list {
-	margin: 0 0 15px 0;
+	margin: 0 0 13px 0;
 	padding: 0 0 0 20px;
 	list-style: none;
 }
 
 .partners--big__list > li {
 	position: relative;
-	padding: 8px 0;
+	padding: 5px 0;
 }
 
 .partners--big__list > li:before {
@@ -3362,7 +3362,7 @@ img {
 
 .partners--big__descr {
 	display: block;
-	padding: 1px 0;
+	padding: 0;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 1.4;
