@@ -25,6 +25,12 @@
       transition: transform .8s ease;
     }
   }
+
+  &__container{
+    display: block;
+    margin-bottom: 56px;
+    font-size: 0;
+  }
 }
 
 .adv--valuation{
@@ -59,9 +65,108 @@
   }
 }
 
+.adv--write{
+  display: inline-block;
+  margin: 0 4px 4px 0;
+  padding: 15px 25px;
+  width: 33%;
+  min-height: 135px;
+  background-color: @yellow;
+  #round-adv();
+
+  &:hover{
+    #box-shadow();
+
+    &:after{
+      transform: translate(-4px, -4px) rotate(.0001deg);
+      transition: transform .8s ease;
+    }
+  }
+
+  &:not(:hover){
+    #no-shadow();
+
+    &:after{
+      transform: translate(0, 0) rotate(.0001deg);
+      transition: transform .8s ease;
+    }
+  }
+}
+.adv--contained{
+  display: inline-block;
+  margin: 0 4px 4px 0;
+  padding: 18px 105px 15px 25px;
+  width: 33%;
+  min-height: 135px;
+  background-color: @yellow;
+  #round-info();
+
+  &:after{
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover{
+    #box-shadow();
+
+    &:after{
+      transform: translate(-4px, -4px) rotate(.0001deg);
+      transition: transform .8s ease;
+    }
+  }
+
+  &:not(:hover){
+    #no-shadow();
+
+    &:after{
+      transform: translate(0, 0) rotate(.0001deg);
+      transition: transform .8s ease;
+    }
+  }
+
+  &:nth-child(3n){
+    margin-right: 0;
+  }
+}
+
+.adv--write{
+  &:after{
+    bottom: -8px;
+    right: -32px;
+    width: 166px;
+    height: 79px;
+    background-image: url("../img/_source-icon/icon--hand-paplane.png");
+  }
+}
+
+.adv--choose{
+  &:after{
+    bottom: -31px;
+    right: -44px;
+    width: 207px;
+    height: 117px;
+    background-image: url("../img/_source-icon/icon--hand-keys.png");
+  }
+}
+
+.adv--price{
+  &:after{
+    bottom: -21px;
+    right: -17px;
+    width: 132px;
+    height: 97px;
+    background-image: url("../img/_source-icon/icon--hand-money.png");
+  }
+}
+
 
 @media (min-width: 767px) and (max-width: 920px){
   .adv{
+    padding: 15px;
+  }
+  .adv--contained{
     padding: 15px;
   }
 }

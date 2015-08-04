@@ -237,7 +237,7 @@ body {
 	background-color: #f4f4f4;
 	background-image: url("../img/bg-body.png");
 	background-repeat: no-repeat;
-	background-position: center 178px;
+	background-position: center 128px;
 }
 
 input,
@@ -284,7 +284,7 @@ img {
 
 .main__wrapper {
 	float: right;
-	width: 76%;
+	width: 890px;
 }
 
 #text {
@@ -2096,7 +2096,7 @@ img {
 
 .offer__btns {
 	float: right;
-	margin: 4px 0 0 0;
+	margin: 4px 2px 0 0;
 	font-size: 0;
 }
 
@@ -2310,6 +2310,12 @@ img {
 	transition: transform .8s ease;
 }
 
+.adv__container {
+	display: block;
+	margin-bottom: 56px;
+	font-size: 0;
+}
+
 .adv--valuation {
 	min-height: 166px;
 }
@@ -2342,9 +2348,172 @@ img {
 	background-position: center;
 }
 
+.adv--write {
+	display: inline-block;
+	margin: 0 4px 4px 0;
+	padding: 15px 25px;
+	width: 33%;
+	min-height: 135px;
+	background-color: #fdef9d;
+	position: relative;
+	overflow: hidden;
+}
+
+.adv--write:before {
+	position: absolute;
+	content: "";
+	bottom: -30px;
+	left: 40%;
+	width: 170px;
+	height: 170px;
+	background-color: #fff5bc;
+	border-radius: 100%;
+}
+
+.adv--write:hover:before {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+	transition: -webkit-transform .8s ease;
+	transition: transform .8s ease;
+}
+
+.adv--write:not(:hover):before {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	transition: -webkit-transform .8s ease;
+	transition: transform .8s ease;
+}
+
+.adv--write:hover {
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease;
+}
+
+.adv--write:hover:after {
+	-webkit-transform: translate(-4px, -4px) rotate(0.0001deg);
+	-ms-transform: translate(-4px, -4px) rotate(0.0001deg);
+	transform: translate(-4px, -4px) rotate(0.0001deg);
+	transition: -webkit-transform .8s ease;
+	transition: transform .8s ease;
+}
+
+.adv--write:not(:hover) {
+	box-shadow: none;
+	transition: box-shadow 0.3s ease;
+}
+
+.adv--write:not(:hover):after {
+	-webkit-transform: translate(0, 0) rotate(0.0001deg);
+	-ms-transform: translate(0, 0) rotate(0.0001deg);
+	transform: translate(0, 0) rotate(0.0001deg);
+	transition: -webkit-transform .8s ease;
+	transition: transform .8s ease;
+}
+
+.adv--contained {
+	display: inline-block;
+	margin: 0 4px 4px 0;
+	padding: 18px 105px 15px 25px;
+	width: 33%;
+	min-height: 135px;
+	background-color: #fdef9d;
+	position: relative;
+	overflow: hidden;
+}
+
+.adv--contained:before {
+	position: absolute;
+	content: "";
+	bottom: -60px;
+	left: 34%;
+	width: 195px;
+	height: 195px;
+	background-color: #fff5bc;
+	border-radius: 100%;
+}
+
+.adv--contained:hover:before {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+	transition: -webkit-transform .8s ease;
+	transition: transform .8s ease;
+}
+
+.adv--contained:not(:hover):before {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	transition: -webkit-transform .8s ease;
+	transition: transform .8s ease;
+}
+
+.adv--contained:after {
+	position: absolute;
+	content: "";
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.adv--contained:hover {
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease;
+}
+
+.adv--contained:hover:after {
+	-webkit-transform: translate(-4px, -4px) rotate(0.0001deg);
+	-ms-transform: translate(-4px, -4px) rotate(0.0001deg);
+	transform: translate(-4px, -4px) rotate(0.0001deg);
+	transition: -webkit-transform .8s ease;
+	transition: transform .8s ease;
+}
+
+.adv--contained:not(:hover) {
+	box-shadow: none;
+	transition: box-shadow 0.3s ease;
+}
+
+.adv--contained:not(:hover):after {
+	-webkit-transform: translate(0, 0) rotate(0.0001deg);
+	-ms-transform: translate(0, 0) rotate(0.0001deg);
+	transform: translate(0, 0) rotate(0.0001deg);
+	transition: -webkit-transform .8s ease;
+	transition: transform .8s ease;
+}
+
+.adv--contained:nth-child(3n) {
+	margin-right: 0;
+}
+
+.adv--write:after {
+	bottom: -8px;
+	right: -32px;
+	width: 166px;
+	height: 79px;
+	background-image: url("../img/_source-icon/icon--hand-paplane.png");
+}
+
+.adv--choose:after {
+	bottom: -31px;
+	right: -44px;
+	width: 207px;
+	height: 117px;
+	background-image: url("../img/_source-icon/icon--hand-keys.png");
+}
+
+.adv--price:after {
+	bottom: -21px;
+	right: -17px;
+	width: 132px;
+	height: 97px;
+	background-image: url("../img/_source-icon/icon--hand-money.png");
+}
+
 .outer {
 	margin-bottom: 4px;
-	padding: 13px 17px 14px 24px;
+	padding: 13px 17px 17px 24px;
 	background-color: #ffffff;
 }
 
@@ -4877,6 +5046,42 @@ img {
 	font-weight: 400;
 }
 
+.similar {
+	margin-top: 30px;
+	display: block;
+	padding: 18px 25px 5px 25px;
+	background-color: #ffffff;
+}
+
+.similar__heading {
+	margin: 0 0 15px 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #4a4a4a;
+	font-weight: 500;
+}
+
+.similar__item {
+	display: block;
+	margin-bottom: 11px;
+}
+
+.similar__link {
+	display: inline;
+	margin: 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #e74c3c;
+}
+
+.similar__link:hover {
+	color: #e74c3c;
+	border-bottom: 1px solid #faa782;
+}
+
 .content:before,
 .content:after {
 	content: "";
@@ -5065,6 +5270,64 @@ img {
 	color: #aeaeae;
 	font-weight: 400;
 	font-style: italic;
+}
+
+.testimony {
+	display: block;
+	margin-bottom: 29px;
+	width: 100%;
+}
+
+.testimony:before,
+.testimony:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.testimony__btn {
+	margin-right: 4px;
+}
+
+.testimony__wrapper {
+	float: left;
+	width: 100%;
+	margin-top: 4px;
+}
+
+.testimony__wrapper:before,
+.testimony__wrapper:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.testimony__item {
+	float: left;
+	display: block;
+	width: 174px;
+	margin: 0 4px 4px 0;
+	height: 243px;
+	border: 8px solid #dedede;
+}
+
+.testimony__item:nth-child(5n) {
+	margin-right: 0;
+}
+
+.testimony__item:hover {
+	border-color: #e74c3c;
+	transition: border-color 0.4s ease;
+}
+
+.testimony__item:not(:hover) {
+	border-color: #dedede;
+	transition: border-color 0.4s ease;
+}
+
+.testimony__img {
+	display: block;
+	width: 158px;
 }
 
 .placeholder {
@@ -5278,6 +5541,10 @@ img {
 }
 
 .adv {
+	padding: 15px;
+}
+
+.adv--contained {
 	padding: 15px;
 }
 
