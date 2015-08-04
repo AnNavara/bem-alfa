@@ -48,7 +48,7 @@
     display: block;
     margin-bottom: 27px;
     width: 606px;
-    max-width: 98%;
+    max-width: 96%;
   }
 
   &__menu{
@@ -66,5 +66,35 @@
     line-height: @line-height;
     letter-spacing: @letter-spacing;
     text-transform: uppercase;
+
+    &:hover{
+      color: @dark;
+    }
   }
+}
+@media (max-width: 766px){
+  .error-404{
+    padding: 3% 0 0 4%;
+
+    &__wrapper{
+      display: block;
+      margin-bottom: 15px;
+      padding-bottom: 30px;
+      max-width: 96%;
+      width: 606px;
+      border-bottom: 1px dotted @border-color--gray;
+      border-right: none;
+    }
+
+    &__logo{
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (min-width: 767px) and (max-width: 920px){
+}
+
+@media (min-width: 921px) and (max-width: 1220px){
 }
