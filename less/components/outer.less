@@ -17,19 +17,24 @@
     color: @text-color;
     font-size: @font-size--medium;
     line-height: @line-height--semi;
-    font-weight: @font-weight--heading;
+    font-weight: @font-weight;
+  }
+
+  &__item{
+    display: inline-block;
   }
 
   &__link{
+    display: inline;
     font-family: @font-family;
     font-size: @font-size--medium;
     line-height: @line-height--heading;
-    font-weight: @font-weight--heading;
+    font-weight: @font-weight;
     color: @text-shill;
 
     &:hover{
       color: @text-shill;
-      text-decoration: underline;
+      border-bottom: 1px solid @pink-link;
     }
 
     &:active{
