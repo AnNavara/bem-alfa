@@ -1,0 +1,197 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+/*.icon-icon--add {
+  background-image: url(../../img/sprite.png);
+  background-position: -154px -91px;
+  width: 10px;
+  height: 10px;
+}*/
+/*.icon-icon--close {
+  background-image: url(../../img/sprite.png);
+  background-position: -181px -140px;
+  width: 16px;
+  height: 16px;
+}*/
+/*.icon-icon--commerce {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -101px;
+  width: 54px;
+  height: 37px;
+}*/
+/*.icon-icon--doc {
+  background-image: url(../../img/sprite.png);
+  background-position: -101px -51px;
+  width: 40px;
+  height: 49px;
+}*/
+/*.icon-icon--exchange {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px 0px;
+  width: 54px;
+  height: 54px;
+}*/
+.icon-icon--find {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -178px;
+  width: 11px;
+  height: 11px;
+}
+/*.icon-icon--legal {
+  background-image: url(../../img/sprite.png);
+  background-position: -54px 0px;
+  width: 47px;
+  height: 47px;
+}*/
+/*.icon-icon--mortgage {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -138px;
+  width: 47px;
+  height: 40px;
+}*/
+/*.icon-icon--pdf {
+  background-image: url(../../img/sprite.png);
+  background-position: -101px 0px;
+  width: 41px;
+  height: 51px;
+}*/
+/*.icon-icon--print {
+  background-image: url(../../img/sprite.png);
+  background-position: -181px -156px;
+  width: 16px;
+  height: 16px;
+}*/
+/*.icon-icon--privatization {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -54px;
+  width: 46px;
+  height: 47px;
+}*/
+/*.icon-icon--purchase {
+  background-image: url(../../img/sprite.png);
+  background-position: -91px -138px;
+  width: 44px;
+  height: 39px;
+}*/
+/*.icon-icon--sell {
+  background-image: url(../../img/sprite.png);
+  background-position: -47px -138px;
+  width: 44px;
+  height: 39px;
+}*/
+/*.icon-icon--urgent {
+  background-image: url(../../img/sprite.png);
+  background-position: -46px -54px;
+  width: 55px;
+  height: 37px;
+}*/
+/*.icon-icon--xls {
+  background-image: url(../../img/sprite.png);
+  background-position: -142px 0px;
+  width: 39px;
+  height: 52px;
+}*/
+/*.icon-icon-ac--hover {
+  background-image: url(../../img/sprite.png);
+  background-position: -135px -138px;
+  width: 38px;
+  height: 39px;
+}*/
+/*.icon-icon-ac {
+  background-image: url(../../img/sprite.png);
+  background-position: -142px -52px;
+  width: 38px;
+  height: 39px;
+}*/
+/*.icon-icon-ap--hover {
+  background-image: url(../../img/sprite.png);
+  background-position: -102px -101px;
+  width: 48px;
+  height: 36px;
+}*/
+/*.icon-icon-ap {
+  background-image: url(../../img/sprite.png);
+  background-position: -54px -101px;
+  width: 48px;
+  height: 36px;
+}*/
+/*.icon-icon-checked {
+  background-image: url(../../img/sprite.png);
+  background-position: -142px -91px;
+  width: 12px;
+  height: 10px;
+}*/
+.icon-icon-date {
+  background-image: url(../../img/sprite.png);
+  background-position: -166px -121px;
+  width: 15px;
+  height: 15px;
+}
+/*.icon-icon-error {
+  background-image: url(../../img/sprite.png);
+  background-position: -150px -121px;
+  width: 16px;
+  height: 15px;
+}*/
+/*.icon-icon-fb--hover {
+  background-image: url(../../img/sprite.png);
+  background-position: -181px -120px;
+  width: 20px;
+  height: 20px;
+}*/
+/*.icon-icon-fb {
+  background-image: url(../../img/sprite.png);
+  background-position: -181px -100px;
+  width: 20px;
+  height: 20px;
+}*/
+/*.icon-icon-mailru--hover {
+  background-image: url(../../img/sprite.png);
+  background-position: -181px -80px;
+  width: 20px;
+  height: 20px;
+}*/
+/*.icon-icon-mailru {
+  background-image: url(../../img/sprite.png);
+  background-position: -181px -60px;
+  width: 20px;
+  height: 20px;
+}*/
+/*.icon-icon-ok--hover {
+  background-image: url(../../img/sprite.png);
+  background-position: -150px -101px;
+  width: 20px;
+  height: 20px;
+}*/
+/*.icon-icon-ok {
+  background-image: url(../../img/sprite.png);
+  background-position: -181px 0px;
+  width: 20px;
+  height: 20px;
+}*/
+/*.icon-icon-search {
+  background-image: url(../../img/sprite.png);
+  background-position: -170px -101px;
+  width: 11px;
+  height: 11px;
+}*/
+/*.icon-icon-vk--hover {
+  background-image: url(../../img/sprite.png);
+  background-position: -181px -20px;
+  width: 20px;
+  height: 20px;
+}*/
+/*.icon-icon-vk {
+  background-image: url(../../img/sprite.png);
+  background-position: -181px -40px;
+  width: 20px;
+  height: 20px;
+}*/

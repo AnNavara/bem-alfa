@@ -44,9 +44,17 @@
     height: 16px;
     font-size: 0;
     background-color: @body-color;
-    background-image: url("../img/_source-icon/icon--close.png");
-    background-repeat: no-repeat;
-    background-position: 9px top;
+
+    &::after{
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 30px;
+      background-image: url("../img/sprite.png");
+      background-position: -181px -140px;
+      width: 16px;
+      height: 16px;
+    }
   }
 
   &__inner{

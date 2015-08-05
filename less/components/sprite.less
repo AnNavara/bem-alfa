@@ -1,0 +1,414 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@icon-add-name: icon--add;
+@icon-add-x: 154px;
+@icon-add-y: 91px;
+@icon-add-offset-x: -154px;
+@icon-add-offset-y: -91px;
+@icon-add-width: 10px;
+@icon-add-height: 10px;
+@icon-add-total-width: 201px;
+@icon-add-total-height: 189px;
+@icon-add-image: '../../img/sprite.png';
+@icon-add: 154px 91px -154px -91px 10px 10px 201px 189px '../../img/sprite.png' icon--add;
+@icon-close-name: icon--close;
+@icon-close-x: 181px;
+@icon-close-y: 140px;
+@icon-close-offset-x: -181px;
+@icon-close-offset-y: -140px;
+@icon-close-width: 16px;
+@icon-close-height: 16px;
+@icon-close-total-width: 201px;
+@icon-close-total-height: 189px;
+@icon-close-image: '../../img/sprite.png';
+@icon-close: 181px 140px -181px -140px 16px 16px 201px 189px '../../img/sprite.png' icon--close;
+@icon-commerce-name: icon--commerce;
+@icon-commerce-x: 0px;
+@icon-commerce-y: 101px;
+@icon-commerce-offset-x: 0px;
+@icon-commerce-offset-y: -101px;
+@icon-commerce-width: 54px;
+@icon-commerce-height: 37px;
+@icon-commerce-total-width: 201px;
+@icon-commerce-total-height: 189px;
+@icon-commerce-image: '../../img/sprite.png';
+@icon-commerce: 0px 101px 0px -101px 54px 37px 201px 189px '../../img/sprite.png' icon--commerce;
+@icon-doc-name: icon--doc;
+@icon-doc-x: 101px;
+@icon-doc-y: 51px;
+@icon-doc-offset-x: -101px;
+@icon-doc-offset-y: -51px;
+@icon-doc-width: 40px;
+@icon-doc-height: 49px;
+@icon-doc-total-width: 201px;
+@icon-doc-total-height: 189px;
+@icon-doc-image: '../../img/sprite.png';
+@icon-doc: 101px 51px -101px -51px 40px 49px 201px 189px '../../img/sprite.png' icon--doc;
+@icon-exchange-name: icon--exchange;
+@icon-exchange-x: 0px;
+@icon-exchange-y: 0px;
+@icon-exchange-offset-x: 0px;
+@icon-exchange-offset-y: 0px;
+@icon-exchange-width: 54px;
+@icon-exchange-height: 54px;
+@icon-exchange-total-width: 201px;
+@icon-exchange-total-height: 189px;
+@icon-exchange-image: '../../img/sprite.png';
+@icon-exchange: 0px 0px 0px 0px 54px 54px 201px 189px '../../img/sprite.png' icon--exchange;
+@icon-find-name: icon--find;
+@icon-find-x: 0px;
+@icon-find-y: 178px;
+@icon-find-offset-x: 0px;
+@icon-find-offset-y: -178px;
+@icon-find-width: 11px;
+@icon-find-height: 11px;
+@icon-find-total-width: 201px;
+@icon-find-total-height: 189px;
+@icon-find-image: '../../img/sprite.png';
+@icon-find: 0px 178px 0px -178px 11px 11px 201px 189px '../../img/sprite.png' icon--find;
+@icon-legal-name: icon--legal;
+@icon-legal-x: 54px;
+@icon-legal-y: 0px;
+@icon-legal-offset-x: -54px;
+@icon-legal-offset-y: 0px;
+@icon-legal-width: 47px;
+@icon-legal-height: 47px;
+@icon-legal-total-width: 201px;
+@icon-legal-total-height: 189px;
+@icon-legal-image: '../../img/sprite.png';
+@icon-legal: 54px 0px -54px 0px 47px 47px 201px 189px '../../img/sprite.png' icon--legal;
+@icon-mortgage-name: icon--mortgage;
+@icon-mortgage-x: 0px;
+@icon-mortgage-y: 138px;
+@icon-mortgage-offset-x: 0px;
+@icon-mortgage-offset-y: -138px;
+@icon-mortgage-width: 47px;
+@icon-mortgage-height: 40px;
+@icon-mortgage-total-width: 201px;
+@icon-mortgage-total-height: 189px;
+@icon-mortgage-image: '../../img/sprite.png';
+@icon-mortgage: 0px 138px 0px -138px 47px 40px 201px 189px '../../img/sprite.png' icon--mortgage;
+@icon-pdf-name: icon--pdf;
+@icon-pdf-x: 101px;
+@icon-pdf-y: 0px;
+@icon-pdf-offset-x: -101px;
+@icon-pdf-offset-y: 0px;
+@icon-pdf-width: 41px;
+@icon-pdf-height: 51px;
+@icon-pdf-total-width: 201px;
+@icon-pdf-total-height: 189px;
+@icon-pdf-image: '../../img/sprite.png';
+@icon-pdf: 101px 0px -101px 0px 41px 51px 201px 189px '../../img/sprite.png' icon--pdf;
+@icon-print-name: icon--print;
+@icon-print-x: 181px;
+@icon-print-y: 156px;
+@icon-print-offset-x: -181px;
+@icon-print-offset-y: -156px;
+@icon-print-width: 16px;
+@icon-print-height: 16px;
+@icon-print-total-width: 201px;
+@icon-print-total-height: 189px;
+@icon-print-image: '../../img/sprite.png';
+@icon-print: 181px 156px -181px -156px 16px 16px 201px 189px '../../img/sprite.png' icon--print;
+@icon-privatization-name: icon--privatization;
+@icon-privatization-x: 0px;
+@icon-privatization-y: 54px;
+@icon-privatization-offset-x: 0px;
+@icon-privatization-offset-y: -54px;
+@icon-privatization-width: 46px;
+@icon-privatization-height: 47px;
+@icon-privatization-total-width: 201px;
+@icon-privatization-total-height: 189px;
+@icon-privatization-image: '../../img/sprite.png';
+@icon-privatization: 0px 54px 0px -54px 46px 47px 201px 189px '../../img/sprite.png' icon--privatization;
+@icon-purchase-name: icon--purchase;
+@icon-purchase-x: 91px;
+@icon-purchase-y: 138px;
+@icon-purchase-offset-x: -91px;
+@icon-purchase-offset-y: -138px;
+@icon-purchase-width: 44px;
+@icon-purchase-height: 39px;
+@icon-purchase-total-width: 201px;
+@icon-purchase-total-height: 189px;
+@icon-purchase-image: '../../img/sprite.png';
+@icon-purchase: 91px 138px -91px -138px 44px 39px 201px 189px '../../img/sprite.png' icon--purchase;
+@icon-sell-name: icon--sell;
+@icon-sell-x: 47px;
+@icon-sell-y: 138px;
+@icon-sell-offset-x: -47px;
+@icon-sell-offset-y: -138px;
+@icon-sell-width: 44px;
+@icon-sell-height: 39px;
+@icon-sell-total-width: 201px;
+@icon-sell-total-height: 189px;
+@icon-sell-image: '../../img/sprite.png';
+@icon-sell: 47px 138px -47px -138px 44px 39px 201px 189px '../../img/sprite.png' icon--sell;
+@icon-urgent-name: icon--urgent;
+@icon-urgent-x: 46px;
+@icon-urgent-y: 54px;
+@icon-urgent-offset-x: -46px;
+@icon-urgent-offset-y: -54px;
+@icon-urgent-width: 55px;
+@icon-urgent-height: 37px;
+@icon-urgent-total-width: 201px;
+@icon-urgent-total-height: 189px;
+@icon-urgent-image: '../../img/sprite.png';
+@icon-urgent: 46px 54px -46px -54px 55px 37px 201px 189px '../../img/sprite.png' icon--urgent;
+@icon-xls-name: icon--xls;
+@icon-xls-x: 142px;
+@icon-xls-y: 0px;
+@icon-xls-offset-x: -142px;
+@icon-xls-offset-y: 0px;
+@icon-xls-width: 39px;
+@icon-xls-height: 52px;
+@icon-xls-total-width: 201px;
+@icon-xls-total-height: 189px;
+@icon-xls-image: '../../img/sprite.png';
+@icon-xls: 142px 0px -142px 0px 39px 52px 201px 189px '../../img/sprite.png' icon--xls;
+@icon-ac-hover-name: icon-ac--hover;
+@icon-ac-hover-x: 135px;
+@icon-ac-hover-y: 138px;
+@icon-ac-hover-offset-x: -135px;
+@icon-ac-hover-offset-y: -138px;
+@icon-ac-hover-width: 38px;
+@icon-ac-hover-height: 39px;
+@icon-ac-hover-total-width: 201px;
+@icon-ac-hover-total-height: 189px;
+@icon-ac-hover-image: '../../img/sprite.png';
+@icon-ac-hover: 135px 138px -135px -138px 38px 39px 201px 189px '../../img/sprite.png' icon-ac--hover;
+@icon-ac-name: icon-ac;
+@icon-ac-x: 142px;
+@icon-ac-y: 52px;
+@icon-ac-offset-x: -142px;
+@icon-ac-offset-y: -52px;
+@icon-ac-width: 38px;
+@icon-ac-height: 39px;
+@icon-ac-total-width: 201px;
+@icon-ac-total-height: 189px;
+@icon-ac-image: '../../img/sprite.png';
+@icon-ac: 142px 52px -142px -52px 38px 39px 201px 189px '../../img/sprite.png' icon-ac;
+@icon-ap-hover-name: icon-ap--hover;
+@icon-ap-hover-x: 102px;
+@icon-ap-hover-y: 101px;
+@icon-ap-hover-offset-x: -102px;
+@icon-ap-hover-offset-y: -101px;
+@icon-ap-hover-width: 48px;
+@icon-ap-hover-height: 36px;
+@icon-ap-hover-total-width: 201px;
+@icon-ap-hover-total-height: 189px;
+@icon-ap-hover-image: '../../img/sprite.png';
+@icon-ap-hover: 102px 101px -102px -101px 48px 36px 201px 189px '../../img/sprite.png' icon-ap--hover;
+@icon-ap-name: icon-ap;
+@icon-ap-x: 54px;
+@icon-ap-y: 101px;
+@icon-ap-offset-x: -54px;
+@icon-ap-offset-y: -101px;
+@icon-ap-width: 48px;
+@icon-ap-height: 36px;
+@icon-ap-total-width: 201px;
+@icon-ap-total-height: 189px;
+@icon-ap-image: '../../img/sprite.png';
+@icon-ap: 54px 101px -54px -101px 48px 36px 201px 189px '../../img/sprite.png' icon-ap;
+@icon-checked-name: icon-checked;
+@icon-checked-x: 142px;
+@icon-checked-y: 91px;
+@icon-checked-offset-x: -142px;
+@icon-checked-offset-y: -91px;
+@icon-checked-width: 12px;
+@icon-checked-height: 10px;
+@icon-checked-total-width: 201px;
+@icon-checked-total-height: 189px;
+@icon-checked-image: '../../img/sprite.png';
+@icon-checked: 142px 91px -142px -91px 12px 10px 201px 189px '../../img/sprite.png' icon-checked;
+@icon-date-name: icon-date;
+@icon-date-x: 166px;
+@icon-date-y: 121px;
+@icon-date-offset-x: -166px;
+@icon-date-offset-y: -121px;
+@icon-date-width: 15px;
+@icon-date-height: 15px;
+@icon-date-total-width: 201px;
+@icon-date-total-height: 189px;
+@icon-date-image: '../../img/sprite.png';
+@icon-date: 166px 121px -166px -121px 15px 15px 201px 189px '../../img/sprite.png' icon-date;
+@icon-error-name: icon-error;
+@icon-error-x: 150px;
+@icon-error-y: 121px;
+@icon-error-offset-x: -150px;
+@icon-error-offset-y: -121px;
+@icon-error-width: 16px;
+@icon-error-height: 15px;
+@icon-error-total-width: 201px;
+@icon-error-total-height: 189px;
+@icon-error-image: '../../img/sprite.png';
+@icon-error: 150px 121px -150px -121px 16px 15px 201px 189px '../../img/sprite.png' icon-error;
+@icon-fb-hover-name: icon-fb--hover;
+@icon-fb-hover-x: 181px;
+@icon-fb-hover-y: 120px;
+@icon-fb-hover-offset-x: -181px;
+@icon-fb-hover-offset-y: -120px;
+@icon-fb-hover-width: 20px;
+@icon-fb-hover-height: 20px;
+@icon-fb-hover-total-width: 201px;
+@icon-fb-hover-total-height: 189px;
+@icon-fb-hover-image: '../../img/sprite.png';
+@icon-fb-hover: 181px 120px -181px -120px 20px 20px 201px 189px '../../img/sprite.png' icon-fb--hover;
+@icon-fb-name: icon-fb;
+@icon-fb-x: 181px;
+@icon-fb-y: 100px;
+@icon-fb-offset-x: -181px;
+@icon-fb-offset-y: -100px;
+@icon-fb-width: 20px;
+@icon-fb-height: 20px;
+@icon-fb-total-width: 201px;
+@icon-fb-total-height: 189px;
+@icon-fb-image: '../../img/sprite.png';
+@icon-fb: 181px 100px -181px -100px 20px 20px 201px 189px '../../img/sprite.png' icon-fb;
+@icon-mailru-hover-name: icon-mailru--hover;
+@icon-mailru-hover-x: 181px;
+@icon-mailru-hover-y: 80px;
+@icon-mailru-hover-offset-x: -181px;
+@icon-mailru-hover-offset-y: -80px;
+@icon-mailru-hover-width: 20px;
+@icon-mailru-hover-height: 20px;
+@icon-mailru-hover-total-width: 201px;
+@icon-mailru-hover-total-height: 189px;
+@icon-mailru-hover-image: '../../img/sprite.png';
+@icon-mailru-hover: 181px 80px -181px -80px 20px 20px 201px 189px '../../img/sprite.png' icon-mailru--hover;
+@icon-mailru-name: icon-mailru;
+@icon-mailru-x: 181px;
+@icon-mailru-y: 60px;
+@icon-mailru-offset-x: -181px;
+@icon-mailru-offset-y: -60px;
+@icon-mailru-width: 20px;
+@icon-mailru-height: 20px;
+@icon-mailru-total-width: 201px;
+@icon-mailru-total-height: 189px;
+@icon-mailru-image: '../../img/sprite.png';
+@icon-mailru: 181px 60px -181px -60px 20px 20px 201px 189px '../../img/sprite.png' icon-mailru;
+@icon-ok-hover-name: icon-ok--hover;
+@icon-ok-hover-x: 150px;
+@icon-ok-hover-y: 101px;
+@icon-ok-hover-offset-x: -150px;
+@icon-ok-hover-offset-y: -101px;
+@icon-ok-hover-width: 20px;
+@icon-ok-hover-height: 20px;
+@icon-ok-hover-total-width: 201px;
+@icon-ok-hover-total-height: 189px;
+@icon-ok-hover-image: '../../img/sprite.png';
+@icon-ok-hover: 150px 101px -150px -101px 20px 20px 201px 189px '../../img/sprite.png' icon-ok--hover;
+@icon-ok-name: icon-ok;
+@icon-ok-x: 181px;
+@icon-ok-y: 0px;
+@icon-ok-offset-x: -181px;
+@icon-ok-offset-y: 0px;
+@icon-ok-width: 20px;
+@icon-ok-height: 20px;
+@icon-ok-total-width: 201px;
+@icon-ok-total-height: 189px;
+@icon-ok-image: '../../img/sprite.png';
+@icon-ok: 181px 0px -181px 0px 20px 20px 201px 189px '../../img/sprite.png' icon-ok;
+@icon-search-name: icon-search;
+@icon-search-x: 170px;
+@icon-search-y: 101px;
+@icon-search-offset-x: -170px;
+@icon-search-offset-y: -101px;
+@icon-search-width: 11px;
+@icon-search-height: 11px;
+@icon-search-total-width: 201px;
+@icon-search-total-height: 189px;
+@icon-search-image: '../../img/sprite.png';
+@icon-search: 170px 101px -170px -101px 11px 11px 201px 189px '../../img/sprite.png' icon-search;
+@icon-vk-hover-name: icon-vk--hover;
+@icon-vk-hover-x: 181px;
+@icon-vk-hover-y: 20px;
+@icon-vk-hover-offset-x: -181px;
+@icon-vk-hover-offset-y: -20px;
+@icon-vk-hover-width: 20px;
+@icon-vk-hover-height: 20px;
+@icon-vk-hover-total-width: 201px;
+@icon-vk-hover-total-height: 189px;
+@icon-vk-hover-image: '../../img/sprite.png';
+@icon-vk-hover: 181px 20px -181px -20px 20px 20px 201px 189px '../../img/sprite.png' icon-vk--hover;
+@icon-vk-name: icon-vk;
+@icon-vk-x: 181px;
+@icon-vk-y: 40px;
+@icon-vk-offset-x: -181px;
+@icon-vk-offset-y: -40px;
+@icon-vk-width: 20px;
+@icon-vk-height: 20px;
+@icon-vk-total-width: 201px;
+@icon-vk-total-height: 189px;
+@icon-vk-image: '../../img/sprite.png';
+@icon-vk: 181px 40px -181px -40px 20px 20px 201px 189px '../../img/sprite.png' icon-vk;
+@spritesheet-width: 201px;
+@spritesheet-height: 189px;
+@spritesheet-image: '../../img/sprite.png';
+@spritesheet-sprites: @icon-add @icon-close @icon-commerce @icon-doc @icon-exchange @icon-find @icon-legal @icon-mortgage @icon-pdf @icon-print @icon-privatization @icon-purchase @icon-sell @icon-urgent @icon-xls @icon-ac-hover @icon-ac @icon-ap-hover @icon-ap @icon-checked @icon-date @icon-error @icon-fb-hover @icon-fb @icon-mailru-hover @icon-mailru @icon-ok-hover @icon-ok @icon-search @icon-vk-hover @icon-vk;
+@spritesheet: 201px 189px '../../img/sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: extract(@sprite, 10);
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

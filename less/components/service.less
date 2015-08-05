@@ -15,8 +15,26 @@
     .service__name{
       color: @white;
     }
-    &:before{
+    &>.service__container::before{
       opacity: 1;
+    }
+  }
+
+  &__container{
+    display: inline-block;
+    margin-top: 10px;
+    min-width: 94px;
+    text-align: center;
+    border-right: 1px solid @border-color--red;
+    vertical-align: middle;
+
+    &::before{
+      display: inline-block;
+      content: "";
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: .8;
     }
   }
 
@@ -32,53 +50,65 @@
     vertical-align: middle;
   }
 
-  &::before{
-    display: inline-block;
-    content: "";
-    min-width: 94px;
-    height: 100%;
-    border-right: 1px solid @border-color--red;
-    vertical-align: middle;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: .8;
-  }
-
   &__wrapper{
     width: 100%;
     font-size: 0;
   }
 
-  &--purchase:before{
-    background-image: url("../img/_source-icon/icon--purchase.png");
+  &--purchase>.service__container:before{
+    width: 44px;
+    height: 39px;
+    background-image: url("../img/sprite.png");
+    background-position: -91px -138px;
   }
 
-  &--sell:before{
-    background-image: url("../img/_source-icon/icon--sell.png");
+  &--sell>.service__container:before{
+    width: 44px;
+    height: 39px;
+    background-image: url("../img/sprite.png");
+    background-position: -47px -138px;
   }
 
-  &--urgent:before{
-    background-image: url("../img/_source-icon/icon--urgent.png");
+  &--urgent>.service__container:before{
+    width: 55px;
+    height: 37px;
+    background-image: url("../img/sprite.png");
+    background-position: -46px -54px;
   }
 
-  &--exchange:before{
-    background-image: url("../img/_source-icon/icon--exchange.png");
+  &--exchange>.service__container:before{
+    width: 54px;
+    height: 54px;
+    background-image: url("../img/sprite.png");
+    background-position: 0 0;
   }
 
-  &--mortgage:before{
-    background-image: url("../img/_source-icon/icon--mortgage.png");
+  &--mortgage>.service__container:before{
+    width: 47px;
+    height: 40px;
+    background-image: url("../img/sprite.png");
+    background-position: 0 -138px;
   }
 
-  &--privatization:before{
-    background-image: url("../img/_source-icon/icon--privatization.png");
+  &--privatization>.service__container:before{
+    width: 46px;
+    height: 47px;
+    background-image: url("../img/sprite.png");
+    background-position: 0 -54px;
   }
 
-  &--commerce:before{
-    background-image: url("../img/_source-icon/icon--commerce.png");
+  &--commerce>.service__container:before{
+    width: 54px;
+    height: 37px;
+    background-image: url("../img/sprite.png");
+    background-position: 0 -101px;
   }
 
-  &--legal:before{
-    background-image: url("../img/_source-icon/icon--legal.png");
+  &--legal>.service__container:before{
+    width: 47px;
+    height: 47px;
+    background-image: url("../img/sprite.png");
+    background-position: -54px 0;
   }
 }
 .service:nth-child(3n){

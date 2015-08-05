@@ -110,6 +110,14 @@ module.exports = function(grunt) {
 					]
 				}]
 			}
+		},
+
+		sprite: {
+			all: {
+				src: "img/_source-icon/*.png",
+				dest: "img/sprite.png",
+				destCss: "less/components/sprite.less"
+			}
 		}
 
 	});

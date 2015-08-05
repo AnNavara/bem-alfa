@@ -2,6 +2,7 @@
 @import "mixins.less";
 
 .estate-card{
+  position: relative;
   margin-bottom: 22px;
   width: 100%;
   #clear();
@@ -119,4 +120,15 @@
       background-color: @white;
     }
   }
+}
+
+.print{
+  position: absolute;
+  content: "";
+  right: 0;
+  top: -28px;
+  padding-left: 25px;
+  background-image: url("../img/sprite.png");
+  background-position: -181px -156px;
+  background-repeat: no-repeat;
 }
