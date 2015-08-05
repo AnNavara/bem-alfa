@@ -1,7 +1,7 @@
 
 var review = document.querySelectorAll(".review__img-link");
 var certi = document.querySelectorAll(".certificates__popup");
-var popup_pics = document.querySelector(".popup");
+var popup_pics = document.querySelector(".js-popup--img");
 var popup_img = document.querySelector(".popup__img");
 var popup_close = document.querySelector(".popup__close");
 

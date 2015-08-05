@@ -7,6 +7,14 @@
   border-bottom: 1px dotted @border-color;
   #clear();
 
+  &__control{
+    display: none;
+
+    &-wrap{
+      display: none;
+    }
+  }
+
   &__container{
     float: left;
     margin: 0;
@@ -46,11 +54,117 @@
     }
   }
 }
+// (min-width: 767px) and
+@media  (max-width: 920px){
+  .navigation{
+    &__container{
+      position: absolute;
+      top: 20vh;
+      left: 8%;
+      z-index: 20;
+      padding: 0 20px;
+      background-color: @white;
+      #box-shadow();
+      transform: translateX(-150%);
+      transition: transform .45s ease;
+
+      &--active{
+        transform: translateX(0);
+        transition: transform .45s ease;
+      }
+
+      &>.navigation__item:first-child>.navigation__link{
+        padding-left: 0;
+      }
+      &>.navigation__item:last-child>.navigation__link{
+        border-bottom: none;
+      }
+    }
+
+    &__link{
+      padding: 13px 0 12px 0;
+      background-color: @white;
+      border-bottom: 1px dotted @border-color--gray;
+    }
+
+    &__control{
+      display: block;
+      width: 24px;
+      height: 20px;
+      font-size: 0;
+      background-image: url("../img/icon-sandwich.png");
+      background-size: cover;
+      outline: none;
+
+      &-wrap{
+        display: inline-block;
+        margin: 9px 0;
+        width: 24px;
+        height: 20px;
+        vertical-align: middle;
+      }
+    }
+
+    &__item{
+      display: block;
+      background-color: @body-color;
+    }
+  }
+}
 
 @media (min-width: 921px) and (max-width: 1220px){
   .navigation{
+    &__container{
+      position: absolute;
+      top: 12vh;
+      left: 8%;
+      z-index: 20;
+      padding: 0 20px;
+      background-color: @white;
+      #box-shadow();
+      transform: translateX(-150%);
+      transition: transform .45s ease;
+
+      &--active{
+        transform: translateX(0);
+        transition: transform .45s ease;
+      }
+
+      &>.navigation__item:first-child>.navigation__link{
+        padding-left: 0;
+      }
+      &>.navigation__item:last-child>.navigation__link{
+        border-bottom: none;
+      }
+    }
+
     &__link{
-      padding: 16px 7px;
+      padding: 13px 0 12px 0;
+      background-color: @white;
+      border-bottom: 1px dotted @border-color--gray;
+    }
+
+    &__control{
+      display: block;
+      width: 24px;
+      height: 20px;
+      font-size: 0;
+      background-image: url("../img/icon-sandwich.png");
+      background-size: cover;
+      outline: none;
+
+      &-wrap{
+        display: inline-block;
+        margin: 9px 0;
+        width: 24px;
+        height: 20px;
+        vertical-align: middle;
+      }
+    }
+
+    &__item{
+      display: block;
+      background-color: @body-color;
     }
   }
 }
