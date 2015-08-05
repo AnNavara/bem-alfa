@@ -60,3 +60,16 @@ $(document).ready(function(){
 	  ]
 	});
 });
+
+$(document).ready(function(){
+	$(".js-certi__slide").slick({
+	  dots: false,
+		prevArrow: $(".js-certi__btn--l"),
+		nextArrow: $(".js-certi__btn--r"),
+		draggable: false,
+	  infinite: false,
+	  speed: 600,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	});
+});
