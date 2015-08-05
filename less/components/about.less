@@ -62,11 +62,38 @@
   &__btns{
     position: absolute;
     content: "";
-    bottom: 32px;
-    left: 33px;
+    bottom: -4px;
+    left: -4px;
     z-index: 5;
     width: auto;
     height: 12px;
+
+    >li{
+      display: inline-block;
+
+      >button{
+        display: inline-block;
+        margin: 0 3px;
+        width: 14px;
+        height: 14px;
+        background: @white;
+        border: 1px solid @gray-dot;
+        border-radius: 100%;
+        cursor: pointer;
+        outline: none;
+
+        &:hover{
+          border-color: @gray-dot--hover;
+        }
+      }
+    }
+
+    >li.slick-active{
+      >button{
+        background-color: @red-dot;
+        border-color: @red-dot;
+      }
+    }
   }
 
   &__next{

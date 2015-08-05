@@ -2195,6 +2195,22 @@ img {
 	overflow: hidden;
 }
 
+.sale-item--3d {
+	position: relative;
+}
+
+.sale-item--3d::after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/overlay-3d.png");
+	background-repeat: no-repeat;
+	background-position: 13px 13px;
+}
+
 .sale-item__wrapper {
 	padding: 0 19px 14px 19px;
 }
@@ -2224,6 +2240,15 @@ img {
 	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 	font-size: 15px;
 	line-height: 1.2;
+	font-weight: 400;
+	color: #4a4a4a;
+}
+
+.sale-item__heading--3d {
+	margin: 0 0 9px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 1.4;
 	font-weight: 400;
 	color: #4a4a4a;
 }
@@ -2291,11 +2316,6 @@ img {
 .sale-item:not(:hover) > .sale-item__img {
 	opacity: .8;
 	transition: opacity .3s ease;
-}
-
-.tour__img {
-	width: auto;
-	height: 120px;
 }
 
 .adv {
@@ -2782,11 +2802,36 @@ img {
 .about-slider__btns {
 	position: absolute;
 	content: "";
-	bottom: 32px;
-	left: 33px;
+	bottom: -4px;
+	left: -4px;
 	z-index: 5;
 	width: auto;
 	height: 12px;
+}
+
+.about-slider__btns > li {
+	display: inline-block;
+}
+
+.about-slider__btns > li > button {
+	display: inline-block;
+	margin: 0 3px;
+	width: 14px;
+	height: 14px;
+	background: #ffffff;
+	border: 1px solid #a9a79f;
+	border-radius: 100%;
+	cursor: pointer;
+	outline: none;
+}
+
+.about-slider__btns > li > button:hover {
+	border-color: #747269;
+}
+
+.about-slider__btns > li.slick-active > button {
+	background-color: #e75040;
+	border-color: #e75040;
 }
 
 .about-slider__next {
@@ -3974,7 +4019,40 @@ img {
 	margin-bottom: 4px;
 	width: 294px;
 	min-height: 553px;
-	background-color: #000;
+	background-color: #ffffff;
+}
+
+.estate-card__more {
+	display: block;
+	padding: 8px 0;
+	height: 34px;
+	text-align: center;
+	background-color: #fdef9d;
+}
+
+.estate-card__pics-wrap {
+	display: block;
+	font-size: 0;
+}
+
+.estate-card__img {
+	display: inline-block;
+	margin: 0 4px 4px 0;
+	width: 145px;
+	height: 100px;
+	background-color: #fdef9d;
+}
+
+.estate-card__img:nth-of-type(2n) {
+	margin-right: 0;
+}
+
+.estate-card__img--big {
+	display: block;
+	margin-bottom: 4px;
+	width: 100%;
+	height: 203px;
+	background-color: #fdef9d;
 }
 
 .estate-card__wrapper {
@@ -4240,6 +4318,11 @@ img {
 .tour {
 	float: left;
 	width: 100%;
+}
+
+.tour__img {
+	width: 100%;
+	height: 120px;
 }
 
 .tour__wrapper {
@@ -5119,7 +5202,8 @@ img {
 	background-color: #ffffff;
 }
 
-.certificates___img {
+.certificates__img {
+	display: block;
 	width: 204px;
 	height: 300px;
 }
@@ -5494,6 +5578,7 @@ img {
 
 .popup {
 	position: fixed;
+	display: none;
 	top: 0;
 	left: 0;
 	width: 100%;
