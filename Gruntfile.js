@@ -52,7 +52,7 @@ module.exports = function(grunt) {
 				},
 				files: [{
 					expand: true,
-					src: ["img/**/*.{jpg, png, svg}"]
+					src: ["img/**/*.{png, jpg, svg}"]
 				}]
 			}
 		},

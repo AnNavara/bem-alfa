@@ -73,3 +73,16 @@ $(document).ready(function(){
 	  slidesToScroll: 1,
 	});
 });
+
+$(document).ready(function(){
+	$(".js-testimony__slide").slick({
+	  dots: false,
+		prevArrow: $(".js-testimony__btn--l"),
+		nextArrow: $(".js-testimony__btn--r"),
+		draggable: false,
+	  infinite: false,
+	  speed: 600,
+	  slidesToShow: 5,
+	  slidesToScroll: 5,
+	});
+});

@@ -6,6 +6,7 @@
   display: none;
   top: 0;
   left: 0;
+  z-index: 20;
   width: 100%;
   height: 100%;
   background-image: url("../img/bg-popup.png");
@@ -20,7 +21,7 @@
 
   &__wrapper{
     position: fixed;
-    top: 20vh;
+    top: 12vh;
     left: 0;
     width: 100%;
     text-align: center;
@@ -43,6 +44,14 @@
     padding: 12px 4px 4px 4px;
     background-color: @body-color;
     text-align: left;
+  }
+
+  &__textarea{
+    display: block;
+    width: 100%;
+    height: 200px;
+    height: 110px;
+    resize: vertical;
   }
 
   &__close{
