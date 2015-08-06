@@ -90,7 +90,7 @@
 				</div>
 				<div class="filter-build__wrapper--alt">
 					<a href="#" class="btn--invert filter-build__add">Добавить свой объект</a>
-					<div class="filter-build">
+					<form action="#" method="post" class="filter-build">
 						<div class="filter-build__row">
 							<div class="filter-build__item filter-build__item--city filter-build__item--left">
 								<p class="filter-build__text">город</p>
@@ -210,13 +210,13 @@
 						<div class="filter-build__absolute">
 							<div class="filter-build__item filter-build__item--center filter-build__item--submit">
 								<input type="submit" value="Найти" class="btn--med filter-build__submit">
-								<a href="" class="btn--invert">Подписаться</a>
+								<input type="submit" value="Подписаться" class="btn--invert">
 							</div>
 							<div class="filter-build__item filter-build__item--center">
-								<a href="" class="btn--invert">Рассчитать платеж по кредиту</a>
+								<input type="submit" value="Рассчитать платеж по кредиту" class="btn--invert">
 							</div>
 						</div>
-					</div>
+					</form>
 					<div class="best-deal">
 						<h1 class="inner-heading--build">Самые свежие предложения</h1>
 						<p class="inner-text">Возможно, информации о   них еще нет на нашем сайте.</p>
@@ -234,11 +234,21 @@
 				</div>
 				<div class="new-build">
 					<div class="new-build__header">
-						<p class="new-build__title new-build__title--address">адрес</p>
-						<p class="new-build__title new-build__title--square">площадь</p>
-						<p class="new-build__title new-build__title--rooms">комнаты</p>
-						<p class="new-build__title new-build__title--floor">этаж</p>
-						<p class="new-build__title new-build__title--price">цена</p>
+						<p class="new-build__title new-build__title--address">
+							<a href="" class="new-build__title-link">адрес</a>
+						</p>
+						<p class="new-build__title new-build__title--square">
+							<a href="" class="new-build__title-link">площадь</a>
+						</p>
+						<p class="new-build__title new-build__title--rooms">
+							<a href="" class="new-build__title-link">комнаты</a>
+						</p>
+						<p class="new-build__title new-build__title--floor">
+							<a href="" class="new-build__title-link">этаж</a>
+						</p>
+						<p class="new-build__title new-build__title--price">
+							<a href="" class="new-build__title-link">цена</a>
+						</p>
 					</div>
 					<article class="new-build__item">
 						<img src="img/content-3--small.jpg" alt="" class="new-build__img">
@@ -352,10 +362,178 @@
 				</form>
 		</footer>
 	</div>
+	<div class="popup js-popup--img">
+		<div class="popup__wrapper">
+			<div class="popup__item">
+				<div class="popup__inner">
+					<h1 class="popup__heading"></h1>
+				</div>
+				<a href="#" class="popup__close">X</a>
+				<div class="popup__container">
+					<img src="img/certificate-1--big.jpg" alt="" class="popup__img">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--ask-call">
+		<div class="popup__wrapper">
+			<div class="popup__item">
+				<div class="popup__inner">
+					<h1 class="popup__heading">Заказать звонок</h1>
+				</div>
+				<a href="#" class="popup__close">X</a>
+				<form action="#" method="post" class="popup__container popup__container--form">
+					<div class="calc__wrapper">
+						<p class="calc__text">Как к вам обращаться?</p>
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" id="" placeholder="Иван">
+					</div>
+					<div class="calc__wrapper">
+						<p class="calc__text">Контактный телефон</p>
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" id="" placeholder="+7 987 654 32 10" required>
+					</div>
+					<div class="popup__form-inner">
+						<div class="calc__submit-wrap">
+							<input type="submit" value="Отправить" class="calc__submit btn--med">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--mistake">
+		<div class="popup__wrapper">
+			<div class="popup__item">
+				<div class="popup__inner">
+					<h1 class="popup__heading">Сообщить об ошибке на сайте</h1>
+				</div>
+				<a href="#" class="popup__close">X</a>
+				<form action="#" method="post" class="popup__container popup__container--form">
+					<div class="calc__wrapper">
+						<p class="calc__text">Опишите ошибку:</p>
+					</div>
+					<div class="calc__wrapper">
+						<textarea class="popup__textarea" name="name" rows="8" cols="40"></textarea>
+					</div>
+					<div class="calc__wrapper">
+						<p class="calc__text">Имя:</p>
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" id="" placeholder="Иван" required>
+					</div>
+					<div class="calc__wrapper">
+						<p class="calc__text">Эл. Почта:</p>
+						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="" id="" placeholder="вашапочта@mail.com">
+					</div>
+					<div class="calc__wrapper">
+						<p class="calc__text">Введите защитный код(капча):</p>
+					</div>
+					<div class="calc__wrapper">
+					</div>
+					<div class="calc__wrapper">
+						<input class="filter__input--100" pattern="" type="email" name="" id="" placeholder="Введите защитный код(капча)">
+					</div>
+					<div class="popup__form-inner">
+						<div class="calc__submit-wrap">
+							<input type="submit" value="Отправить" class="calc__submit btn--med">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--add-property">
+		<div class="popup__wrapper">
+			<div class="popup__item">
+				<div class="popup__inner">
+					<h1 class="popup__heading">Добавить свой объект</h1>
+				</div>
+				<a href="#" class="popup__close">X</a>
+				<form action="#" method="post" class="popup__container popup__container--form">
+					<div class="calc__wrapper">
+						<p class="calc__text">Как к вам обращаться?</p>
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" id="" placeholder="Иван">
+					</div>
+					<div class="calc__wrapper">
+						<p class="calc__text">Контактный телефон:</p>
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" id="" placeholder="+7 987 654 32 10" required>
+					</div>
+					<div class="calc__wrapper">
+						<p class="calc__text">Эл. Почта:</p>
+						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="" id="" placeholder="вашапочта@mail.com">
+					</div>
+					<div class="calc__wrapper">
+						<p class="calc__text">Описание:</p>
+					</div>
+					<div class="calc__wrapper">
+						<textarea class="popup__textarea" name="name" rows="8" cols="40" placeholder="Адрес, тип недвижимости, краткие характеристики, метраж, цена"></textarea>
+					</div>
+					<div class="calc__wrapper">
+						<p class="calc__text">Фото:</p>
+					</div>
+					<div class="calc__wrapper">
+						<input class="filter__input--no-bg" pattern="" type="file" name="" id="" placeholder="" multiple>
+					</div>
+					<div class="calc__wrapper">
+						<p class="calc__text">Введите защитный код(капча):</p>
+					</div>
+					<div class="calc__wrapper">
+						<input class="filter__input--100" pattern="" type="email" name="" id="" placeholder="Введите защитный код(капча)">
+					</div>
+					<div class="popup__form-inner">
+						<div class="calc__submit-wrap">
+							<input type="submit" value="Отправить" class="calc__submit btn--med">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--write">
+		<div class="popup__wrapper">
+			<div class="popup__item">
+				<div class="popup__inner">
+					<h1 class="popup__heading">Написать письмо</h1>
+				</div>
+				<a href="#" class="popup__close">X</a>
+				<form action="#" method="post" class="popup__container popup__container--form">
+					<div class="calc__wrapper">
+						<p class="calc__text">Как к вам обращаться?</p>
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" id="" placeholder="Иван">
+					</div>
+					<div class="calc__wrapper">
+						<p class="calc__text">Текст заявки:</p>
+					</div>
+					<div class="calc__wrapper">
+						<textarea name="name" rows="8" cols="40" placeholder="Адрес, тип недвижимости, краткие характеристики, метраж, цена"></textarea>
+					</div>
+					<div class="calc__wrapper">
+						<p class="calc__text">Контактный телефон</p>
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" id="" placeholder="+7 987 654 32 10" required>
+					</div>
+					<div class="calc__wrapper">
+						<p class="calc__text">Эл. Почта:</p>
+						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="" id="" placeholder="вашапочта@mail.com">
+					</div>
+					<div class="calc__wrapper">
+						<p class="calc__text">Введите защитный код(капча):</p>
+					</div>
+					<div class="calc__wrapper">
+						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="" id="" placeholder="Введите защитный код(капча)">
+					</div>
+					<div class="popup__form-inner">
+						<div class="calc__submit-wrap">
+							<input type="submit" value="Отправить" class="calc__submit btn--med">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 	<a href="#" class="side-stick side-stick--calc"><h3>Ипотечный калькулятор</h3></a>
 	<a href="#" class="side-stick side-stick--check"><h3>Проверьте своего риэлтора</h3></a>
+	<script src="js/vendors/classlist.min.js" type="text/javascript"></script>
 	<script src="js/vendors/jquery.min.js" type="text/javascript"></script>
 	<script src="js/vendors/slick.min.js" type="text/javascript"></script>
 	<script src="js/slider.js" type="text/javascript"></script>
+	<script src="js/popup.js" type="text/javascript"></script>
+	<script src="js/dropdown.js" type="text/javascript"></script>
 </body>
 </html>

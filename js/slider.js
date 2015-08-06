@@ -84,5 +84,36 @@ $(document).ready(function(){
 	  speed: 600,
 	  slidesToShow: 5,
 	  slidesToScroll: 5,
+		responsive: [
+			{
+				breakpoint: 1120,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+				}
+			}
+		]
+	});
+});
+
+$(document).ready(function(){
+	$(".js-similar__slide").slick({
+	  dots: false,
+		prevArrow: $(".js-similar__btn--l"),
+		nextArrow: $(".js-similar__btn--r"),
+		draggable: false,
+	  infinite: false,
+	  speed: 600,
+	  slidesToShow: 4,
+	  slidesToScroll: 4,
+		responsive: [
+			{
+				breakpoint: 1120,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+				}
+			}
+		]
 	});
 });
