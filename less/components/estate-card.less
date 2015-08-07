@@ -165,3 +165,163 @@
   background-position: -181px -156px;
   background-repeat: no-repeat;
 }
+
+@media (min-width: 767px) and (max-width: 920px){
+  .estate-card{
+    &__pics{
+      width: 100%;
+      min-height: auto;
+    }
+
+    &__wrapper{
+      width: 100%;
+    }
+
+    &__img{
+      margin: 0 .7% .7% 0;
+      width: 32.8%;
+      height: auto;
+
+      &:nth-of-type(2n){
+        margin-right: .7%;
+      }
+
+      &:nth-of-type(3n){
+        margin-right: 0;
+      }
+
+      &--big{
+        margin-bottom: .7%;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__sign{
+      width: 30%;
+    }
+
+    &__spec{
+      margin: 0 .7% .7% 0;
+      width: 69.3%;
+
+      &-item{
+        min-width: 20%;
+
+        &--area{
+          min-width: 40%;
+        }
+      }
+
+      &-text{
+        font-size: @font-size--medium;
+      }
+
+      &-subheading{
+        margin-bottom: 6px;
+        font-size: 11px;
+      }
+    }
+
+    &__descr{
+      float: none;
+      margin-bottom: .7%;
+      padding: 15px 18px;
+      width: 100%;
+      height: auto;
+    }
+
+    &__info{
+      &-wrap{
+        margin: 0 0 .5% 0;
+        padding: 15px 18px;
+        width: 100%;
+        min-height: 0;
+      }
+    }
+  }
+
+  .print{
+    display: none;
+  }
+}
+
+@media (min-width: 921px) and (max-width: 1220px){
+  .estate-card{
+    &__pics{
+      width: 100%;
+      min-height: auto;
+    }
+
+    &__wrapper{
+      width: 100%;
+    }
+
+    &__img{
+      margin: 0 .7% .7% 0;
+      width: 32.8%;
+      height: auto;
+
+      &:nth-of-type(2n){
+        margin-right: .7%;
+      }
+
+      &:nth-of-type(3n){
+        margin-right: 0;
+      }
+
+      &--big{
+        margin-bottom: .7%;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__sign{
+      width: 30%;
+    }
+
+    &__spec{
+      margin: 0 .7% .7% 0;
+      width: 69.3%;
+
+      &-item{
+        min-width: 20%;
+
+        &--area{
+          min-width: 40%;
+        }
+      }
+
+      &-text{
+        font-size: @font-size--medium;
+      }
+
+      &-subheading{
+        margin-bottom: 6px;
+        font-size: 11px;
+      }
+    }
+
+    &__descr{
+      float: none;
+      margin-bottom: .7%;
+      padding: 15px 18px;
+      width: 100%;
+      height: auto;
+    }
+
+    &__info{
+      &-wrap{
+        margin: 0 0 .5% 0;
+        padding: 15px 18px;
+        width: 100%;
+        min-height: 0;
+      }
+    }
+  }
+
+  .print{
+    display: none;
+  }
+}

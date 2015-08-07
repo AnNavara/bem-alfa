@@ -114,3 +114,59 @@
 .service:nth-child(3n){
   margin-right: 0;
 }
+
+@media (min-width: 767px) and (max-width: 920px){
+  .service{
+    margin: 0 .7% .7% 0;
+    width: 32.8%;
+    height: auto;
+    min-height: 165px;
+    vertical-align: top;
+
+    &__container{
+      margin-top: 10%;
+      margin-bottom: 8%;
+      min-width: 100%;
+      border-right: none;
+    }
+
+    &__name{
+      margin: 0;
+      padding: 0 10%;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 921px) and (max-width: 1220px){
+  .service{
+    margin: 0 .7% .7% 0;
+    width: 24.4%;
+    height: auto;
+    min-height: 165px;
+    vertical-align: top;
+
+    &:nth-child(3n){
+      margin-right: .7%;
+    }
+
+    &:nth-child(4n){
+      margin-right: 0;
+    }
+
+    &__container{
+      margin-top: 10%;
+      margin-bottom: 8%;
+      min-width: 100%;
+      border-right: none;
+    }
+
+    &__name{
+      margin: 0;
+      padding: 0 10%;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

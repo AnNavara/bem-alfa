@@ -88,6 +88,13 @@ $(document).ready(function(){
 			{
 				breakpoint: 1120,
 				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 4,
+				}
+			},
+			{
+				breakpoint: 920,
+				settings: {
 					slidesToShow: 3,
 					slidesToScroll: 3,
 				}

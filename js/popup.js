@@ -62,14 +62,18 @@ $(document).ready(function(){
   	}, false);
   }
 
-  var popup_close_all = document.querySelectorAll(".popup__close");
+  var popup_close_all = document.querySelectorAll(".js-popup--close");
 
   for (i = 0; i < popup_close_all.length; ++i) {
     popup_close_all[i].addEventListener("click", function(e) {
     	e.preventDefault();
     	e = e || window.event;
     	var target = e.target || e.srcElement;
-    	target.parentElement.parentElement.parentElement.classList.remove("popup--active");
+      if (target.parentElement.parentElement.parentElement.classList.contains("popup--active")){
+        target.parentElement.parentElement.parentElement.classList.remove("popup--active");
+      } else {
+        target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.classList.remove("popup--active");
+      }
     }, false);
   }
 
