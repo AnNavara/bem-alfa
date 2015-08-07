@@ -7611,8 +7611,16 @@ img {
 	font-size: 11px;
 }
 
+.table--content {
+	margin: 0;
+}
+
 .table__cell {
 	padding: 7px 4px;
+}
+
+.table__cell--content {
+	padding: .6em .5em .6em 0;
 }
 
 .table__row > .table__cell:first-child {
@@ -7857,6 +7865,12 @@ img {
 .filter__dropdown--type {
 	margin: 0 1.2% 0 0;
 	width: 34%;
+}
+
+.adv--contained {
+	margin: 0 1.2% 1.2% 0;
+	padding: 5% 10% 0 5%;
+	width: 48.8%;
 }
 
 .note {
@@ -8555,6 +8569,35 @@ img {
 	width: 100%;
 	margin-right: 0;
 	margin-bottom: 5%;
+}
+
+.content__wrapper {
+	padding: 6% 6% 6% 7%;
+}
+
+.content__img--left {
+	display: block;
+	float: none;
+	margin: 1em 0 2em 0;
+	max-width: 100%;
+	width: 100%;
+}
+
+.content__img--right {
+	display: block;
+	float: none;
+	margin: 1em 0 2em 0;
+	max-width: 100%;
+	width: 100%;
+}
+
+.content__important {
+	margin: 0 -7% 1em -8%;
+	padding: 6% 12%;
+}
+
+.content__file-wrap {
+	max-width: 75%;
 }
 
 }
