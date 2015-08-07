@@ -13,7 +13,17 @@ $(document).ready(function(){
 		speed: 600,
 		slidesToShow: 1,
 		centerMode: false,
-		variableWidth: true
+		variableWidth: true,
+		responsive: [
+			{
+				breakpoint: 760,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					variableWidth: false,
+				}
+			}
+		]
   });
 });
 
@@ -34,7 +44,14 @@ $(document).ready(function(){
 	        slidesToShow: 3,
 	        slidesToScroll: 3,
 	      }
-	    }
+	    },
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+				}
+			}
 	  ]
 	});
 });
@@ -56,7 +73,14 @@ $(document).ready(function(){
 	        slidesToShow: 3,
 	        slidesToScroll: 3,
 	      }
-	    }
+	    },
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+				}
+			}
 	  ]
 	});
 });
@@ -119,6 +143,13 @@ $(document).ready(function(){
 				settings: {
 					slidesToShow: 3,
 					slidesToScroll: 3,
+				}
+			},
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
 				}
 			}
 		]

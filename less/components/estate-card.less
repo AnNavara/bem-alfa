@@ -60,14 +60,14 @@
     margin: 0 @margin-default @margin-default 0;
     padding: 13px 24px;
     width: 410px;
-    height: 68px;
+    min-height: 68px;
     font-size: 0;
     background-color: @white;
 
     &-item{
       display: inline-block;
       min-width: 94px;
-      vertical-align: middle;
+      vertical-align: top;
 
       &--area{
         display: inline-block;
@@ -164,6 +164,94 @@
   background-image: url("../img/sprite.png");
   background-position: -181px -156px;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 766px){
+  .estate-card{
+    &__pics{
+      width: 100%;
+      min-height: auto;
+    }
+
+    &__wrapper{
+      width: 100%;
+    }
+
+    &__img{
+      margin: 0 1.2% 1.2% 0;
+      width: 32.5%;
+      height: auto;
+
+      &:nth-of-type(2n){
+        margin-right: 1.2%;
+      }
+
+      &:nth-of-type(3n){
+        margin-right: 0;
+      }
+
+      &--big{
+        margin-bottom: 1.2%;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__sign{
+      float: none;
+      margin: 0 0 1.2% 0;
+      width: 100%;
+    }
+
+    &__spec{
+      margin: 0 0 1.2% 0;
+      padding: 5% 6%;
+      width: 100%;
+      min-height: 68px;
+
+      &-item{
+        min-width: 20%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        vertical-align: top;
+
+        &--area{
+          min-width: 40%;
+          margin-bottom: 5%;
+        }
+      }
+
+      &-text{
+        font-size: @font-size--medium;
+      }
+
+      &-subheading{
+        margin-bottom: 6px;
+        font-size: 11px;
+      }
+    }
+
+    &__descr{
+      float: none;
+      margin-bottom: 1.2%;
+      padding: 5% 6%;
+      width: 100%;
+      height: auto;
+    }
+
+    &__info{
+      &-wrap{
+        margin: 0 0 1.2% 0;
+        padding: 5% 6%;
+        width: 100%;
+        min-height: 0;
+      }
+    }
+  }
+
+  .print{
+    display: none;
+  }
 }
 
 @media (min-width: 767px) and (max-width: 920px){

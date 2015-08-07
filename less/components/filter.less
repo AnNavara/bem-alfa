@@ -482,6 +482,130 @@
   }
 }
 
+@media (max-width: 766px){
+  .filter{
+    margin-bottom: 20px;
+
+    &__container{
+      width: 44.8%;
+
+      &--bigger{
+        width: 100%;
+      }
+
+      &--big{
+        width: 100%;
+      }
+
+      &--middish{
+        width: 100%;
+      }
+
+      &--medium{
+        width: 100%;
+      }
+
+      &--smallish{
+        width: 44%;
+      }
+
+      &--small{
+        width: 48%;
+      }
+    }
+    &__input{
+      margin: 0 1.2% 0 0;
+      width: 26.8%;
+      font-size: @font-size--small;
+
+      &--calc{
+        float: none;
+      }
+
+      &--super{
+        width: 100%;
+        font-size: @font-size--small;
+      }
+
+      &--bigger{
+        width: 100%;
+        font-size: @font-size--small;
+      }
+
+      &--big{
+        margin: 0;
+        width: 100%;
+      }
+
+      &--nano{
+        margin: 0 1.2% 0 0;
+        width: 21%;
+        font-size: @font-size--small;
+      }
+
+      &--date{
+        background-position: right center;
+      }
+    }
+
+    &__text{
+      vertical-align: baseline;
+    }
+
+    &__text--no-ff{
+      margin: 0 9% 0 0;
+    }
+
+    &__text--big{
+      margin-bottom: 15px;
+      margin-right: 3%;
+      vertical-align: top;
+    }
+
+    &__text--small{
+      margin-right: 2%;
+    }
+
+    &__text--price{
+      margin: 0 1.2% 0 0;
+    }
+
+    &__text--rouble{
+      margin-top: 9px;
+      margin-right: 19px;
+    }
+
+    &__btn{
+      float: none;
+      width: 26.8%;
+      text-align: center;
+    }
+    &__dropdown{
+      &-control{
+        font-size: @font-size--small;
+      }
+
+      &--calc{
+        float: none;
+        margin: 0 1.2% 0 0;
+      }
+
+      &--rooms{
+        margin: 0;
+      }
+
+      &--area{
+        margin: 0 19.2% 8px 0;
+      }
+
+      &--type{
+        margin: 0 1.2% 0 0;
+        width: 34%;
+      }
+    }
+  }
+}
+
 @media (min-width: 767px) and (max-width: 920px){
   .filter{
     margin-bottom: 20px;

@@ -26,6 +26,7 @@
 	}
 
 	&__cell{
+		padding: 7px 4px;
 		font-family: @font-family;
 		font-size: @font-size--medium;
 		line-height: @line-height--heading;
@@ -45,6 +46,19 @@
 			font-size: @font-size--medium;
 			line-height: @line-height--heading;
 			font-weight: @font-weight;
+		}
+	}
+}
+
+@media (max-width: 766px){
+	.table{
+
+		&__cell{
+			padding: 7px 4px;
+		}
+
+		&__row>.table__cell:first-child{
+			width: auto;
 		}
 	}
 }

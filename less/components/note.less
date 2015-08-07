@@ -78,7 +78,39 @@
   }
 }
 
+@media (max-width: 766px){
+  .note{
+    margin: 0 0 3.6% 0;
+    width: 100%;
 
+    &__btn{
+      margin: 0 0 1.2% 0;
+    }
+
+    &:nth-child(odd){
+      margin-right: 0;
+    }
+
+    &__wrapper{
+      margin: 0 0 1.2% 0;
+    }
+
+    &__item{
+      margin: 0 1.2% 1.2% 0;
+      padding: 4% 3% 3% 4%;
+      width: 49.4%;
+      min-height: 110px;
+    }
+
+    &__item:nth-child(2n){
+      margin-right: 0;
+    }
+
+    &__item:nth-child(3){
+      display: none;
+    }
+  }
+}
 
 @media (min-width: 767px) and (max-width: 920px){
   .note{

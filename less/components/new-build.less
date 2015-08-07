@@ -378,6 +378,224 @@
 }
 
 @media (max-width: 766px){
+  .best-deal{
+    display: none;
+  }
+
+  .filter-build{
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+
+    &__wrapper{
+    }
+
+    &__add{
+      display: none;
+
+      &--alt{
+        display: none;
+      }
+    }
+
+    &__absolute{
+      margin-right: 10%;
+      width: 100%;
+    }
+
+    &__row{
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+
+      &::after{
+        display: none;
+      }
+    }
+
+    &__input{
+      margin-top: 0;
+    }
+
+    &__container--smaller{
+      width: 55%;
+    }
+
+    &__container--floor{
+      width: 55%;
+    }
+
+    &__item{
+      &--city{
+        margin: 0 0 4% 0;
+        z-index: 50;
+        padding: 0;
+        width: 100%;
+      }
+
+      &--address{
+        margin: 0 0 4% 0;
+        z-index: 49;
+        padding: 0;
+        width: 100%;
+      }
+
+      &--area{
+        float: none;
+        margin: 0 0 4% 0;
+        z-index: 48;
+        padding: 0;
+        width: 100%;
+      }
+
+      &--complex{
+        margin: 0 0 4% 0;
+        z-index: 47;
+        padding: 0;
+        width: 100%;
+      }
+
+      &--square{
+        margin: 0 0 4% 0;
+        z-index: 46;
+        padding: 0;
+        width: 100%;
+      }
+
+      &--price{
+        margin: 0 0 4% 0;
+        z-index: 45;
+        padding: 0;
+        width: 100%;
+      }
+
+
+      &--rooms{
+        margin: 0 0 4% 0;
+        z-index: 44;
+        padding: 0;
+        width: 100%;
+      }
+
+      &--floor{
+        margin: 0 0 4% 0;
+        z-index: 43;
+        padding: 0;
+        width: 100%;
+      }
+
+      &--home-type{
+        margin: 0 0 4% 0;
+        z-index: 42;
+        padding: 0;
+        width: 100%;
+      }
+
+      &--submit{
+        margin-right: 10%;
+      }
+
+      &--count{
+        display: none;
+      }
+    }
+  }
+
+  .new-build{
+    &__item{
+      width: 100%;
+      min-height: 0;
+    }
+
+    &__heading{
+      font-size: @font-size--h6;
+
+      &--price{
+        font-size: @font-size--middish;
+      }
+    }
+
+    &__img{
+      display: block;
+      width: 100%;
+    }
+
+    &__link{
+      position: static;
+      left: 1.2%;
+      bottom: 3%;
+    }
+
+    &__inner{
+      display: block;
+      padding: 4% 5%;
+      width: 100%;
+    }
+
+    &__wrapper{
+      &--address{
+        margin-left: 0;
+        margin-bottom: 6%;
+        width: 100%;
+      }
+
+      &--square{
+        margin-left: 0;
+        margin-bottom: 6%;
+        width: 32%;
+      }
+
+      &--rooms{
+        margin-left: 0;
+        margin-bottom: 6%;
+        width: 32%;
+      }
+
+      &--floor{
+        margin-left: 0;
+        margin-bottom: 6%;
+        width: 32%;
+      }
+
+      &--price{
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+
+    &__title{
+      &--address{
+        margin-left: 0;
+        width: 17%;
+      }
+
+      &--square{
+        width: 25%;
+      }
+
+      &--rooms{
+        width: 25%;
+      }
+
+      &--floor{
+        width: 17%;
+      }
+
+      &--price{
+        width: 11%;
+      }
+    }
+
+    &__flair{
+      padding: 2px 3.5px;
+
+      &--3d{
+        top: 0;
+        bottom: auto;
+        right: 0;
+      }
+    }
+  }
 }
 
 @media (min-width: 767px) and (max-width: 920px){
