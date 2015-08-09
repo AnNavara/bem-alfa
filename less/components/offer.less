@@ -22,7 +22,7 @@
     position: relative;
     margin-right: @margin-default;
 
-    &:after{
+    &::after{
       position: absolute;
       content: "";
       top: 11px;
@@ -38,7 +38,7 @@
   &__btn--right{
     position: relative;
 
-    &:after{
+    &::after{
       position: absolute;
       content: "";
       top: 11px;
@@ -48,6 +48,27 @@
       transform: rotate(45deg);
       border-right: 1px solid @white;
       border-top: 1px solid @white;
+    }
+  }
+}
+
+@media (max-width: 766px){
+  .offer{
+    &__btns{
+      margin: 0 2px 0 0;
+    }
+
+    &__btn--left{
+      &::after{
+        top: 9px;
+        left: 10px;
+      }
+    }
+    &__btn--right{
+      &::after{
+        top: 9px;
+        left: 7px;
+      }
     }
   }
 }

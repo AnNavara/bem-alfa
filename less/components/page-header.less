@@ -163,7 +163,49 @@
 
 @media (max-width: 766px){
   .page-header{
-    display: none;
+    margin: 8% 0 8% 0;
+
+    &__logo{
+      margin-right: 12%;
+      margin-bottom: 5%;
+      width: 42%;
+      max-width: none;
+      vertical-align: top;
+
+      >img{
+        width: 100%;
+      }
+    }
+    &__workinfo{
+      margin-right: 0;
+      margin-bottom: 0;
+      width: 40%;
+      max-width: none;
+      font-size: 0;
+      vertical-align: top;
+      >span{
+        font-size: @font-size--middish;
+      }
+    }
+    &__phone{
+      margin-right: 5%;
+      margin-bottom: 0;
+      max-width: none;
+
+      &-link{
+        font-size: 18px;
+      }
+    }
+    &__ask{
+      display: none;
+      vertical-align: top;
+    }
+    &__guild{
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
   }
 }
 
@@ -173,11 +215,11 @@
       margin-right: 68%;
     }
     &__workinfo{
-      margin-right: 8.7%;//65px
+      margin-right: 8.7%;
     }
     &__phone{
       margin-top: 10px;
-      margin-right: 8.55%;//64px
+      margin-right: 8.55%;
     }
     &__ask{
       margin-top: -45px;
