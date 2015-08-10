@@ -1414,6 +1414,10 @@ img {
 	background-color: #e74c3c;
 }
 
+.menu__item--toogle {
+	display: none;
+}
+
 .menu__item--alt {
 	background-color: #fdef9d;
 }
@@ -1446,6 +1450,22 @@ img {
 	color: #f3e3e2;
 	text-transform: uppercase;
 	border-bottom: 1px solid #ce4537;
+}
+
+.menu__link--toogle {
+	display: none;
+	padding: 13px 0;
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.27;
+	letter-spacing: 0.04em;
+	color: #f3e3e2;
+	text-transform: uppercase;
+	border-bottom: 1px solid #ce4537;
+}
+
+.menu__link--toogle:hover {
+	color: #ffffff;
 }
 
 .menu__link:hover {
@@ -7807,13 +7827,37 @@ img {
 	max-width: none;
 }
 
+.menu__container {
+	height: 42px;
+	overflow: hidden;
+	transition: height .3s ease;
+}
+
+.menu__container--active {
+	height: 333px;
+	transition: height .3s ease;
+}
+
 .menu__container--alt {
 	display: none;
 }
 
+.menu__item--toogle {
+	display: block;
+	padding: 0 25px;
+	list-style: none;
+	background-color: #e74c3c;
+}
+
 .menu__link {
 	padding: 10px 0;
-	font-size: 13px;
+	font-size: 15px;
+}
+
+.menu__link--toogle {
+	display: block;
+	padding: 14px 0 10px 0;
+	font-size: 15px;
 }
 
 .menu__link:first-of-type {

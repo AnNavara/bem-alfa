@@ -16,6 +16,10 @@
     padding: 0 25px;
     list-style: none;
     background-color: @red;
+
+    &--toogle{
+      display: none;
+    }
   }
 
   &__item--alt{
@@ -51,6 +55,22 @@
     text-transform: uppercase;
     border-bottom: 1px solid @border-color--red;
 
+    &--toogle{
+      display: none;
+      padding: 13px 0;
+      font-family: @font-family--heading;
+      font-size: @font-size--h6;
+      line-height: @line-height--semi;
+      letter-spacing: @letter-spacing;
+      color: @pink;
+      text-transform: uppercase;
+      border-bottom: 1px solid @border-color--red;
+
+      &:hover{
+        color: @white;
+      }
+    }
+
     &:hover{
       color: @white;
     }
@@ -73,13 +93,39 @@
     width: 100%;
     max-width: none;
 
+    &__container{
+      height: 42px;
+      overflow: hidden;
+      transition: height .3s ease;
+
+      &--active{
+        height: 333px;
+        transition: height .3s ease;
+      }
+    }
+
     &__container--alt{
       display: none;
     }
 
+    &__item{
+      &--toogle{
+        display: block;
+        padding: 0 25px;
+        list-style: none;
+        background-color: @red;
+      }
+    }
+
     &__link{
       padding: 10px 0;
-      font-size: 13px;
+      font-size: @font-size--h6;
+
+      &--toogle{
+        display: block;
+        padding: 14px 0 10px 0;
+        font-size: @font-size--h6;
+      }
 
       &:first-of-type{
         padding: 12px 0 9px 0;

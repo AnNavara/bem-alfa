@@ -33,6 +33,10 @@ module.exports = function(grunt) {
 				expand: true,
 				src: ["less/**/*.less"],
 			},
+			// css: {
+			// 	expand: true,
+			// 	src: ["css/**/style.css"],
+			// }
 		},
 
 		watch: {
