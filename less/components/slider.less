@@ -213,6 +213,9 @@
 
     &__btn{
       padding: 4px 13px 5px 13px;
+      position: absolute;
+      left: 6%;
+      bottom: 10%;
 
       &:after{
         display: none;
@@ -220,16 +223,17 @@
     }
 
     &__item{
-      padding: 3% 5%;
+      padding: 6% 6%;
       min-height: 150px;
 
       &:before{
-        bottom: 10%;
-        width: 40%;
-        height: 80%;
+        bottom: 2%;
+        width: 140px;
+        height: 140px;
       }
 
       &:after{
+        display: none;
         top: 10%;
         right: -59px;
         width: 74%;
@@ -243,22 +247,23 @@
     }
 
     &__heading{
-      margin-bottom: .6em;
-      max-width: 75%;
+      margin-bottom: 1.2em;
+      max-width: 100%;
       font-size: @font-size--middish;
     }
 
     &__text{
+      display: none;
       margin-bottom: .7em;
       max-width: 60%;
       font-size: 11px;
     }
 
     &__ctrls{
-      bottom: 1%;
-      right: 1%;
+      bottom: 8%;
       left: auto;
-      width: 35%;
+      right: 10%;
+      width: 30%;
     }
   }
 }

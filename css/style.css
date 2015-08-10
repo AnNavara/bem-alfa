@@ -1029,6 +1029,10 @@ img {
 	display: inline-block;
 }
 
+.navigation__item--close {
+	display: none;
+}
+
 .navigation__link {
 	display: block;
 	padding: 12px 15px 11px 14px;
@@ -2281,7 +2285,7 @@ img {
 	height: 100%;
 	background-image: url("../img/overlay-3d.png");
 	background-repeat: no-repeat;
-	background-position: 13px 13px;
+	background-position: center 13px;
 }
 
 .sale-item__wrapper {
@@ -3232,10 +3236,10 @@ img {
 .info--r2:before {
 	position: absolute;
 	content: "";
-	bottom: -70px;
-	left: 25%;
-	width: 200px;
-	height: 200px;
+	bottom: -60px;
+	left: 34%;
+	width: 195px;
+	height: 195px;
 	background-color: #fff5bc;
 	border-radius: 100%;
 }
@@ -7519,10 +7523,12 @@ img {
 
 .navigation__container {
 	position: absolute;
-	top: 20vh;
-	left: 8%;
+	top: 1vh;
+	left: 1vh;
 	z-index: 20;
 	padding: 0 20px;
+	max-height: 96vh;
+	max-width: 96vw;
 	background-color: #ffffff;
 	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
 	transition: box-shadow 0.3s ease;
@@ -7555,20 +7561,59 @@ img {
 	border-bottom: 1px dotted #aeaeae;
 }
 
-.navigation__control {
+.navigation__link--close {
 	display: block;
-	width: 24px;
-	height: 20px;
+	padding: 13px 0 12px 0;
 	font-size: 0;
+	text-align: right;
+	background-color: #ffffff;
+}
+
+.navigation__link--close::after {
+	display: inline-block;
+	content: "";
+	width: 16px;
+	height: 16px;
+	background-image: url("../img/sprite.png");
+	background-position: -181px -140px;
+}
+
+.navigation__control {
+	position: relative;
+	display: block;
+	padding: 6px 8px 6px 25px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.2;
+	color: #ffffff;
+	outline: none;
+	background-color: #e74c3c;
+}
+
+.navigation__control:hover {
+	color: #ffffff;
+	background-color: #ce4537;
+}
+
+.navigation__control::before {
+	display: inline-block;
+	position: absolute;
+	left: 6px;
+	top: 7px;
+	content: "";
+	width: 13px;
+	height: 14px;
 	background-image: url("../img/icon-sandwich.png");
 	background-size: cover;
-	outline: none;
+}
+
+.navigation__control > span {
+	font-size: 0;
 }
 
 .navigation__control-wrap {
 	display: inline-block;
-	margin: 9px 0;
-	width: 24px;
+	margin: 6px 0;
 	height: 20px;
 	vertical-align: middle;
 }
@@ -7576,6 +7621,11 @@ img {
 .navigation__item {
 	display: block;
 	background-color: #f4f4f4;
+}
+
+.navigation__item--close {
+	display: block;
+	border-bottom: 1px dotted #aeaeae;
 }
 
 }
@@ -7697,6 +7747,9 @@ img {
 
 .slider__btn {
 	padding: 4px 13px 5px 13px;
+	position: absolute;
+	left: 6%;
+	bottom: 10%;
 }
 
 .slider__btn:after {
@@ -7704,17 +7757,18 @@ img {
 }
 
 .slider__item {
-	padding: 3% 5%;
+	padding: 6% 6%;
 	min-height: 150px;
 }
 
 .slider__item:before {
-	bottom: 10%;
-	width: 40%;
-	height: 80%;
+	bottom: 2%;
+	width: 140px;
+	height: 140px;
 }
 
 .slider__item:after {
+	display: none;
 	top: 10%;
 	right: -59px;
 	width: 74%;
@@ -7727,22 +7781,23 @@ img {
 }
 
 .slider__heading {
-	margin-bottom: .6em;
-	max-width: 75%;
+	margin-bottom: 1.2em;
+	max-width: 100%;
 	font-size: 16px;
 }
 
 .slider__text {
+	display: none;
 	margin-bottom: .7em;
 	max-width: 60%;
 	font-size: 11px;
 }
 
 .slider__ctrls {
-	bottom: 1%;
-	right: 1%;
+	bottom: 8%;
 	left: auto;
-	width: 35%;
+	right: 10%;
+	width: 30%;
 }
 
 .menu {
@@ -7750,6 +7805,10 @@ img {
 	margin-bottom: 18px;
 	width: 100%;
 	max-width: none;
+}
+
+.menu__container--alt {
+	display: none;
 }
 
 .menu__link {
@@ -7965,6 +8024,18 @@ img {
 	width: 48.8%;
 }
 
+.adv--valuation {
+	display: none;
+}
+
+.adv--reviews {
+	display: none;
+}
+
+.outer {
+	display: none;
+}
+
 .note {
 	margin: 0 0 3.6% 0;
 	width: 100%;
@@ -8055,6 +8126,10 @@ img {
 	min-height: 88px;
 }
 
+.info::before {
+	left: 44%;
+}
+
 .info--r {
 	width: 100%;
 	min-height: 210px;
@@ -8066,7 +8141,7 @@ img {
 }
 
 .info--r2:before {
-	left: 37%;
+	left: 44%;
 }
 
 .info__wrapper {
@@ -8094,13 +8169,14 @@ img {
 
 .page-footer__rug {
 	float: left;
-	width: auto;
+	width: 100%;
 }
 
 .page-footer__rug--center {
-	float: right;
-	margin-left: 2.5%;
+	float: left;
+	margin-left: 0;
 	margin-right: 0;
+	width: 100%;
 }
 
 .page-footer__rug--right {

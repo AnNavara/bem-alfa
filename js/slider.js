@@ -51,6 +51,13 @@ $(document).ready(function(){
 					slidesToShow: 2,
 					slidesToScroll: 2,
 				}
+			},
+			{
+				breakpoint: 400,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
 			}
 	  ]
 	});
@@ -79,6 +86,13 @@ $(document).ready(function(){
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 2,
+				}
+			},
+			{
+				breakpoint: 400,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
 				}
 			}
 	  ]
@@ -122,6 +136,13 @@ $(document).ready(function(){
 					slidesToShow: 3,
 					slidesToScroll: 3,
 				}
+			},
+			{
+				breakpoint: 400,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
 			}
 		]
 	});
@@ -150,6 +171,13 @@ $(document).ready(function(){
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 2,
+				}
+			},
+			{
+				breakpoint: 400,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
 				}
 			}
 		]
