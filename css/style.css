@@ -385,6 +385,17 @@ img {
 	color: #e74c3c;
 }
 
+h1 {
+	display: block;
+	margin: 0;
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	font-size: 36px;
+	line-height: 1.2;
+	letter-spacing: 0.04em;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
 .block-heading {
 	float: left;
 	margin: 0;
@@ -4346,6 +4357,7 @@ img {
 }
 
 .contacts {
+	float: left;
 	margin: 0 4px 0 0;
 	padding: 15px 17px;
 	width: 294px;
