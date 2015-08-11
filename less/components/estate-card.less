@@ -168,6 +168,8 @@
 
 @media (max-width: 766px){
   .estate-card{
+    margin-bottom: 28px;
+
     &__pics{
       width: 100%;
       min-height: auto;
@@ -175,6 +177,8 @@
 
     &__wrapper{
       width: 100%;
+      display: flex;
+      flex-direction: column;
     }
 
     &__img{
@@ -201,6 +205,7 @@
       float: none;
       margin: 0 0 1.2% 0;
       width: 100%;
+      order: 5;
     }
 
     &__spec{
@@ -208,6 +213,7 @@
       padding: 5% 6%;
       width: 100%;
       min-height: 68px;
+      order: 1;
 
       &-item{
         min-width: 20%;
@@ -237,6 +243,7 @@
       padding: 5% 6%;
       width: 100%;
       height: auto;
+      order: 3;
     }
 
     &__info{
@@ -245,6 +252,7 @@
         padding: 5% 6%;
         width: 100%;
         min-height: 0;
+        order: 2;
       }
     }
   }

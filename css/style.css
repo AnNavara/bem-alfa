@@ -1454,6 +1454,7 @@ img {
 
 .menu__link--toogle {
 	display: none;
+	position: relative;
 	padding: 13px 0;
 	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 	font-size: 15px;
@@ -1466,6 +1467,16 @@ img {
 
 .menu__link--toogle:hover {
 	color: #ffffff;
+}
+
+.menu__link--toogle::before {
+	display: inline-block;
+	content: "";
+	margin-right: 12px;
+	width: 13px;
+	height: 15px;
+	background-image: url("../img/icon-sandwich.png");
+	background-size: cover;
 }
 
 .menu__link:hover {
@@ -7822,7 +7833,7 @@ img {
 
 .menu {
 	float: none;
-	margin-bottom: 18px;
+	margin-bottom: 28px;
 	width: 100%;
 	max-width: none;
 }
@@ -7927,7 +7938,7 @@ img {
 }
 
 .filter {
-	margin-bottom: 20px;
+	margin-bottom: 28px;
 }
 
 .filter__container {
@@ -8048,6 +8059,10 @@ img {
 	width: 34%;
 }
 
+.offer {
+	margin-bottom: 28px;
+}
+
 .offer__btns {
 	margin: 0 2px 0 0;
 }
@@ -8081,7 +8096,7 @@ img {
 }
 
 .note {
-	margin: 0 0 3.6% 0;
+	margin: 0 0 5% 0;
 	width: 100%;
 }
 
@@ -8400,6 +8415,10 @@ img {
 	margin: 0 0 .7em 0;
 }
 
+.estate-card {
+	margin-bottom: 28px;
+}
+
 .estate-card__pics {
 	width: 100%;
 	min-height: auto;
@@ -8407,6 +8426,12 @@ img {
 
 .estate-card__wrapper {
 	width: 100%;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 }
 
 .estate-card__img {
@@ -8433,6 +8458,9 @@ img {
 	float: none;
 	margin: 0 0 1.2% 0;
 	width: 100%;
+	-webkit-order: 5;
+	-ms-flex-order: 5;
+	order: 5;
 }
 
 .estate-card__spec {
@@ -8440,6 +8468,9 @@ img {
 	padding: 5% 6%;
 	width: 100%;
 	min-height: 68px;
+	-webkit-order: 1;
+	-ms-flex-order: 1;
+	order: 1;
 }
 
 .estate-card__spec-item {
@@ -8469,6 +8500,9 @@ img {
 	padding: 5% 6%;
 	width: 100%;
 	height: auto;
+	-webkit-order: 3;
+	-ms-flex-order: 3;
+	order: 3;
 }
 
 .estate-card__info-wrap {
@@ -8476,6 +8510,9 @@ img {
 	padding: 5% 6%;
 	width: 100%;
 	min-height: 0;
+	-webkit-order: 2;
+	-ms-flex-order: 2;
+	order: 2;
 }
 
 .print {
@@ -8483,10 +8520,13 @@ img {
 }
 
 .contacts {
-	margin: 0 1.2% 0 0;
+	margin: 0 1.2% 1.2% 0;
 	padding: 5% 6%;
 	width: 100%;
 	height: auto;
+	-webkit-order: 4;
+	-ms-flex-order: 4;
+	order: 4;
 }
 
 .contacts__img {
@@ -8862,6 +8902,14 @@ img {
 
 .content__file-wrap {
 	max-width: 75%;
+}
+
+.popup__item {
+	min-width: 96vw;
+}
+
+.popup__container {
+	max-width: 93vw;
 }
 
 }
