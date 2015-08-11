@@ -128,6 +128,7 @@
     position: relative;
     margin: 0 0 15px 0;
     width: 100%;
+    max-width: 70vw;
 
 
     &::before{
@@ -178,8 +179,20 @@
       min-width: 96vw;
     }
 
+    &__wrapper{
+      top: 1vh;
+    }
+
+    &__inner{
+      margin: 0;
+    }
+
     &__container{
       max-width: 93vw;
+
+      &--form{
+        padding: 0 25px 40px 25px;
+      }
     }
   }
 }

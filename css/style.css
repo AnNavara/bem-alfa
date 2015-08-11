@@ -5877,6 +5877,7 @@ img {
 	position: relative;
 	margin: 0 0 15px 0;
 	width: 100%;
+	max-width: 70vw;
 }
 
 .popup__inner::before {
@@ -8406,6 +8407,10 @@ img {
 	max-width: 380px;
 }
 
+.calc__wrapper {
+	margin: 1vh 0;
+}
+
 .calc__inner {
 	margin-bottom: 30px;
 }
@@ -8908,8 +8913,20 @@ img {
 	min-width: 96vw;
 }
 
+.popup__wrapper {
+	top: 1vh;
+}
+
+.popup__inner {
+	margin: 0;
+}
+
 .popup__container {
 	max-width: 93vw;
+}
+
+.popup__container--form {
+	padding: 0 25px 40px 25px;
 }
 
 }
