@@ -794,7 +794,7 @@ img {
 	transform: rotate(-90deg);
 }
 
-.side-stick > h3 {
+.side-stick > div {
 	margin: 0;
 	padding: 6px 18px;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
