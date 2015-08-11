@@ -18,3 +18,19 @@ menu_toogler.addEventListener("click", function(e) {
 	e.preventDefault();
 	menu_container.classList.toggle("menu__container--active");
 });
+
+(function(){
+	var partners = document.querySelectorAll(".partners");
+	var partners_active = document.querySelectorAll(".partners--active");
+	var partners_btn = document.querySelector(".partners__all");
+
+	partners_btn.querySelector(".inner-heading").innerHTML =  "Смотреть ещё " + (partners.length - partners_active.length) + " банков";
+
+	partners_btn.addEventListener("click", function(e) {
+		e.preventDefault();
+		for (i = 0; i < partners.length; ++i){
+				partners[i].classList.add("partners--active");
+		}
+		partners_btn.classList.add("partners__all--hidden");
+	}, false);
+})();

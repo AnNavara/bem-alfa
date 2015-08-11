@@ -2,7 +2,7 @@
 @import "mixins.less";
 
 .partners{
-  display: inline-block;
+  display: none;
   margin-right: @margin-default;
   margin-bottom: @margin-default;
   padding: 20px 0;
@@ -15,6 +15,10 @@
   background-color: @white;
   vertical-align: middle;
   text-align: center;
+
+  &--active{
+    display: inline-block;
+  }
 
   &:hover{
     #box-shadow();
@@ -150,6 +154,10 @@
     vertical-align: top;
     #round-link();
 
+    &--hidden{
+      display: none;
+    }
+
     &:hover{
       #box-shadow();
       color: @text-color--hover;
@@ -175,7 +183,7 @@
 
     &__all{
       width: 49.3%;
-      padding: 4% 0 0 4%;
+      padding: 4% 8% 0 4%;
       height: auto;
       min-height: 60px;
     }

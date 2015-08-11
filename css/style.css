@@ -3660,7 +3660,7 @@ img {
 }
 
 .partners {
-	display: inline-block;
+	display: none;
 	margin-right: 4px;
 	margin-bottom: 4px;
 	padding: 20px 0;
@@ -3673,6 +3673,10 @@ img {
 	background-color: #ffffff;
 	vertical-align: middle;
 	text-align: center;
+}
+
+.partners--active {
+	display: inline-block;
 }
 
 .partners:hover {
@@ -3845,6 +3849,10 @@ img {
 	transform: scale(1);
 	transition: -webkit-transform .8s ease;
 	transition: transform .8s ease;
+}
+
+.partners__all--hidden {
+	display: none;
 }
 
 .partners__all:hover {
@@ -8324,7 +8332,7 @@ img {
 
 .partners__all {
 	width: 49.3%;
-	padding: 4% 0 0 4%;
+	padding: 4% 8% 0 4%;
 	height: auto;
 	min-height: 60px;
 }
