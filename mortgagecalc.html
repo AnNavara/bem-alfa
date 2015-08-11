@@ -16,7 +16,7 @@
 		<header class="page-header">
 			<div class="page-header__wrapper">
 				<a href="index.html" class="page-header__logo">
-					<img src="img/logo.png" width="240px" alt="Агенство Недвижимости Альфа">
+					<img src="img/logo.png" width="240" alt="Агенство Недвижимости Альфа">
 					Агенство Недвижимости Альфа
 				</a>
 				<div class="page-header__workinfo">
@@ -213,8 +213,8 @@
 						<a href="#" class="page-footer__link">Помещения свободного назначения</a>
 					</div>
 				</div>
-				<form action="" class="page-footer__form">
-					<input type="text" name="" id="" class="page-footer__input" placeholder="Поиск по сайту">
+				<form action="#" class="page-footer__form">
+					<input type="text" name="site-search" class="page-footer__input" placeholder="Поиск по сайту">
 					<input type="submit" value="" class="page-footer__submit">
 					<a href="#" class="report-mistake">Сообщить об ошибке</a>
 				</form>
@@ -224,7 +224,6 @@
 		<div class="popup__wrapper">
 			<div class="popup__item">
 				<div class="popup__inner">
-					<h1 class="popup__heading"></h1>
 				</div>
 				<a href="#" class="popup__close">X</a>
 				<div class="popup__container">
@@ -237,17 +236,17 @@
 		<div class="popup__wrapper">
 			<div class="popup__item">
 				<div class="popup__inner">
-					<h1 class="popup__heading">Заказать звонок</h1>
+					<div class="popup__heading">Заказать звонок</div>
 				</div>
 				<a href="#" class="popup__close">X</a>
 				<form action="#" method="post" class="popup__container popup__container--form">
 					<div class="calc__wrapper">
 						<p class="calc__text">Как к вам обращаться?</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" id="" placeholder="Иван">
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="username" placeholder="Иван">
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Контактный телефон</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" id="" placeholder="+7 987 654 32 10" required>
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="phone-number" placeholder="+7 987 654 32 10" required>
 					</div>
 					<div class="popup__form-inner">
 						<div class="calc__submit-wrap">
@@ -262,7 +261,7 @@
 		<div class="popup__wrapper">
 			<div class="popup__item">
 				<div class="popup__inner">
-					<h1 class="popup__heading">Сообщить об ошибке на сайте</h1>
+					<div class="popup__heading">Сообщить об ошибке на сайте</div>
 				</div>
 				<a href="#" class="popup__close">X</a>
 				<form action="#" method="post" class="popup__container popup__container--form">
@@ -274,11 +273,11 @@
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Имя:</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" id="" placeholder="Иван" required>
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="username" placeholder="Иван" required>
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Эл. Почта:</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="" id="" placeholder="вашапочта@mail.com">
+						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="email" placeholder="вашапочта@mail.com">
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Введите защитный код(капча):</p>
@@ -286,7 +285,7 @@
 					<div class="calc__wrapper">
 					</div>
 					<div class="calc__wrapper">
-						<input class="filter__input--100" pattern="" type="email" name="" id="" placeholder="Введите защитный код(капча)">
+						<input class="filter__input--100" pattern="" type="email" name="captcha" placeholder="Введите защитный код(капча)">
 					</div>
 					<div class="popup__form-inner">
 						<div class="calc__submit-wrap">
@@ -301,21 +300,21 @@
 		<div class="popup__wrapper">
 			<div class="popup__item">
 				<div class="popup__inner">
-					<h1 class="popup__heading">Добавить свой объект</h1>
+					<div class="popup__heading">Добавить свой объект</div>
 				</div>
 				<a href="#" class="popup__close">X</a>
 				<form action="#" method="post" class="popup__container popup__container--form">
 					<div class="calc__wrapper">
 						<p class="calc__text">Как к вам обращаться?</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" id="" placeholder="Иван">
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="username" placeholder="Иван">
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Контактный телефон:</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" id="" placeholder="+7 987 654 32 10" required>
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="phone-number" placeholder="+7 987 654 32 10" required>
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Эл. Почта:</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="" id="" placeholder="вашапочта@mail.com">
+						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="email" placeholder="вашапочта@mail.com">
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Описание:</p>
@@ -327,13 +326,13 @@
 						<p class="calc__text">Фото:</p>
 					</div>
 					<div class="calc__wrapper">
-						<input class="filter__input--no-bg" pattern="" type="file" name="" id="" placeholder="" multiple>
+						<input class="filter__input--no-bg" type="file" name="user-photo" multiple>
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Введите защитный код(капча):</p>
 					</div>
 					<div class="calc__wrapper">
-						<input class="filter__input--100" pattern="" type="email" name="" id="" placeholder="Введите защитный код(капча)">
+						<input class="filter__input--100" pattern="" type="email" name="captcha" placeholder="Введите защитный код(капча)">
 					</div>
 					<div class="popup__form-inner">
 						<div class="calc__submit-wrap">
@@ -348,13 +347,13 @@
 		<div class="popup__wrapper">
 			<div class="popup__item">
 				<div class="popup__inner">
-					<h1 class="popup__heading">Написать письмо</h1>
+					<div class="popup__heading">Написать письмо</div>
 				</div>
 				<a href="#" class="popup__close">X</a>
 				<form action="#" method="post" class="popup__container popup__container--form">
 					<div class="calc__wrapper">
 						<p class="calc__text">Как к вам обращаться?</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" id="" placeholder="Иван">
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="username" placeholder="Иван">
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Текст заявки:</p>
@@ -364,17 +363,17 @@
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Контактный телефон</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" id="" placeholder="+7 987 654 32 10" required>
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="phone-number" placeholder="+7 987 654 32 10" required>
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Эл. Почта:</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="" id="" placeholder="вашапочта@mail.com">
+						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="email" placeholder="вашапочта@mail.com">
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Введите защитный код(капча):</p>
 					</div>
 					<div class="calc__wrapper">
-						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="" id="" placeholder="Введите защитный код(капча)">
+						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="captcha" placeholder="Введите защитный код(капча)">
 					</div>
 					<div class="popup__form-inner">
 						<div class="calc__submit-wrap">
@@ -385,8 +384,8 @@
 			</div>
 		</div>
 	</div>
-	<a href="#" class="side-stick side-stick--calc"><h3>Ипотечный калькулятор</h3></a>
-	<a href="#" class="side-stick side-stick--check"><h3>Проверьте своего риэлтора</h3></a>
+	<a href="#" class="side-stick side-stick--calc"><div>Ипотечный калькулятор</div></a>
+	<a href="#" class="side-stick side-stick--check"><div>Проверьте своего риэлтора</div></a>
 	<script src="js/vendors/classlist.min.js" type="text/javascript"></script>
 	<script src="js/vendors/jquery.min.js" type="text/javascript"></script>
 	<script src="js/vendors/slick.min.js" type="text/javascript"></script>

@@ -805,7 +805,7 @@ img {
 }
 
 .side-stick--calc {
-	top: 280px;
+	top: 208px;
 	right: -78px;
 }
 
@@ -815,7 +815,7 @@ img {
 }
 
 .side-stick--check {
-	top: 490px;
+	top: 430px;
 	right: -88px;
 }
 
@@ -3595,6 +3595,7 @@ img {
 }
 
 .service__wrapper {
+	margin-bottom: 30px;
 	width: 100%;
 	font-size: 0;
 }
