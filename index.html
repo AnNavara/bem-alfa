@@ -175,8 +175,8 @@
 								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-old"><span>вторичное жильё</span></label></li>
 								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-cabin"><span>коттеджи, дома</span></label></li>
 								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-land"><span>земельные участки</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-trade"><span>коммерческая недвижимость</span></label></li>
-								<input type="checkbox" name="type-any" checked hidden>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-commercial"><span>коммерческая недвижимость</span></label></li>
+								<li class="filter__item"><input type="checkbox" name="type-any" checked hidden></li>
 							</ul>
 						</li>
 					</ul>
@@ -188,7 +188,7 @@
 								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="romms-2"><span>Две</span></label></li>
 								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="rooms-3"><span>Три</span></label></li>
 								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="rooms-4"><span>Четыре</span></label></li>
-								<input type="checkbox" name="rooms-any" checked hidden>
+								<li class="filter__item"><input type="checkbox" name="rooms-any" checked hidden></li>
 							</ul>
 						</li>
 					</ul>
@@ -197,20 +197,20 @@
 						<li>
 							<span class="filter__dropdown-control">любой район</span>
 							<ul class="filter__dropdown">
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name=""><span>Метталургический район</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name=""><span>Курчатовский район</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name=""><span>Калининский район</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name=""><span>Центральный район</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name=""><span>Тракорозоводский район</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name=""><span>Советский район</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name=""><span>Ленинский район</span></label></li>
-								<input type="checkbox" name="area-any" checked hidden>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="area-metallurgical"><span>Металлургический район</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="area-kurchatov"><span>Курчатовский район</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="area-kalinin"><span>Калининский район</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="area-central"><span>Центральный район</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="area-traktorozavodsky"><span>Тракторозаводский район</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="area-soviet"><span>Советский район</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="area-leninist"><span>Ленинский район</span></label></li>
+								<li class="filter__item"><input type="checkbox" name="area-any" checked hidden></li>
 							</ul>
 						</li>
 					</ul>
 					<span class="filter__text filter__text--price filter__text--small">по цене</span>
-					<input class="filter__input" pattern="[\d\s\.]+" type="text" name="" placeholder="от">
-					<input class="filter__input" pattern="[\d\s\.]+" type="text" name="" placeholder="до">
+					<input class="filter__input" pattern="[\d\s\.]+" type="text" name="price-from" placeholder="от">
+					<input class="filter__input" pattern="[\d\s\.]+" type="text" name="price-to" placeholder="до">
 					<span class="filter__text--no-ff valuta valuta--rub">a</span>
 					<input class="filter__btn btn--med" type="submit" value="Найти">
 				</form>
@@ -536,7 +536,7 @@
 					</div>
 				</div>
 				<form action="#" class="page-footer__form">
-					<input type="text" name="" class="page-footer__input" placeholder="Поиск по сайту">
+					<input type="text" name="site-search" class="page-footer__input" placeholder="Поиск по сайту">
 					<input type="submit" value="" class="page-footer__submit">
 					<a href="#" class="report-mistake">Сообщить об ошибке</a>
 				</form>
@@ -546,7 +546,6 @@
 		<div class="popup__wrapper">
 			<div class="popup__item">
 				<div class="popup__inner">
-					<h1 class="popup__heading"></h1>
 				</div>
 				<a href="#" class="popup__close">X</a>
 				<div class="popup__container">
@@ -565,11 +564,11 @@
 				<form action="#" method="post" class="popup__container popup__container--form">
 					<div class="calc__wrapper">
 						<p class="calc__text">Как к вам обращаться?</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" placeholder="Иван">
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="username" placeholder="Иван">
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Контактный телефон</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" placeholder="+7 987 654 32 10" required>
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="phone-number" placeholder="+7 987 654 32 10" required>
 					</div>
 					<div class="popup__form-inner">
 						<div class="calc__submit-wrap">
@@ -596,11 +595,11 @@
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Имя:</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" placeholder="Иван" required>
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="username" placeholder="Иван" required>
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Эл. Почта:</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="" placeholder="вашапочта@mail.com">
+						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="email" placeholder="вашапочта@mail.com">
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Введите защитный код(капча):</p>
@@ -608,7 +607,7 @@
 					<div class="calc__wrapper">
 					</div>
 					<div class="calc__wrapper">
-						<input class="filter__input--100" pattern="" type="email" name="" placeholder="Введите защитный код(капча)">
+						<input class="filter__input--100" pattern="" type="email" name="captcha" placeholder="Введите защитный код(капча)">
 					</div>
 					<div class="popup__form-inner">
 						<div class="calc__submit-wrap">
@@ -629,15 +628,15 @@
 				<form action="#" method="post" class="popup__container popup__container--form">
 					<div class="calc__wrapper">
 						<p class="calc__text">Как к вам обращаться?</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" placeholder="Иван">
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="username" placeholder="Иван">
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Контактный телефон:</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" placeholder="+7 987 654 32 10" required>
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="phone-number" placeholder="+7 987 654 32 10" required>
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Эл. Почта:</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="" placeholder="вашапочта@mail.com">
+						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="email" placeholder="вашапочта@mail.com">
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Описание:</p>
@@ -649,13 +648,13 @@
 						<p class="calc__text">Фото:</p>
 					</div>
 					<div class="calc__wrapper">
-						<input class="filter__input--no-bg" pattern="" type="file" name="" placeholder="" multiple>
+						<input class="filter__input--no-bg" pattern="" type="file" name="user-photo" placeholder="" multiple>
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Введите защитный код(капча):</p>
 					</div>
 					<div class="calc__wrapper">
-						<input class="filter__input--100" pattern="" type="email" name="" placeholder="Введите защитный код(капча)">
+						<input class="filter__input--100" pattern="" type="email" name="captcha" placeholder="Введите защитный код(капча)">
 					</div>
 					<div class="popup__form-inner">
 						<div class="calc__submit-wrap">
@@ -676,7 +675,7 @@
 				<form action="#" method="post" class="popup__container popup__container--form">
 					<div class="calc__wrapper">
 						<p class="calc__text">Как к вам обращаться?</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" placeholder="Иван">
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="username" placeholder="Иван">
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Текст заявки:</p>
@@ -686,17 +685,17 @@
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Контактный телефон</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="" placeholder="+7 987 654 32 10" required>
+						<input class="filter__input--big filter__input--calc" pattern="" type="text" name="phone-number" placeholder="+7 987 654 32 10" required>
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Эл. Почта:</p>
-						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="" placeholder="вашапочта@mail.com">
+						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="email" placeholder="вашапочта@mail.com">
 					</div>
 					<div class="calc__wrapper">
 						<p class="calc__text">Введите защитный код(капча):</p>
 					</div>
 					<div class="calc__wrapper">
-						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="" placeholder="Введите защитный код(капча)">
+						<input class="filter__input--big filter__input--calc" pattern="" type="email" name="captcha" placeholder="Введите защитный код(капча)">
 					</div>
 					<div class="popup__form-inner">
 						<div class="calc__submit-wrap">
