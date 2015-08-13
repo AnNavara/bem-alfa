@@ -103,25 +103,25 @@
 				</div>
 				<div class="filter-build__wrapper">
 					<a href="#" class="btn--invert filter-build__add--alt">Добавить свой объект</a>
-					<form action="#" method="post" class="filter-build">
+					<form action="#" method="get" class="filter-build">
 						<div class="filter-build__row">
-							<div class="filter-build__item filter-build__item--left filter-build__item--city">
+							<div class="filter-build__item filter-build__item--city filter-build__item--left">
 								<p class="filter-build__text">город</p>
 								<ul class="filter__container--middish filter__dropdown--no-js">
 									<li>
 										<span class="filter__dropdown-control">любой</span>
 										<ul class="filter__dropdown">
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-new" id=""><span>Челябинск</span></label></li>
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-old" id=""><span>Миасс</span></label></li>
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-cabin" id=""><span>Копейск</span></label></li>
-											<input type="checkbox" name="type-any" id="" checked hidden>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="city-chel"><span>Челябинск</span></label></li>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="city-miass"><span>Миасс</span></label></li>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="city-kope"><span>Копейск</span></label></li>
+											<li class="filter__item"><input type="checkbox" name="city-any" checked hidden></li>
 										</ul>
 									</li>
 								</ul>
 							</div>
 							<div class="filter-build__item filter-build__item--center filter-build__item--address">
 								<p class="filter-build__text">адрес</p>
-								<input type="text" name="" id="" class="filter__input--super" placeholder="Введите адрес, улицу..">
+								<input type="text" name="address" class="filter__input--super filter-build__input" placeholder="Введите адрес, улицу..">
 							</div>
 							<div class="filter-build__item filter-build__item--right filter-build__item--area">
 								<p class="filter-build__text">район</p>
@@ -129,10 +129,10 @@
 									<li>
 										<span class="filter__dropdown-control">любой</span>
 										<ul class="filter__dropdown">
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-new" id=""><span>Северный</span></label></li>
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-old" id=""><span>Южный</span></label></li>
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-cabin" id=""><span>Центральный</span></label></li>
-											<input type="checkbox" name="type-any" id="" checked hidden>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="area-north"><span>Северный</span></label></li>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="area-south"><span>Южный</span></label></li>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="area-center"><span>Центральный</span></label></li>
+											<li class="filter__item"><input type="checkbox" name="area-any" checked hidden></li>
 										</ul>
 									</li>
 								</ul>
@@ -140,35 +140,35 @@
 						</div>
 						<div class="filter-build__row">
 							<div class="filter-build__item  filter-build__item--left filter-build__item--complex">
-								<p class="filter-build__text">жилой комплекс</p>
+								<p class="filter-build__text">тип сделки</p>
 								<ul class="filter__container--big filter__dropdown--no-js">
 									<li>
 										<span class="filter__dropdown-control">любой</span>
 										<ul class="filter__dropdown">
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-new" id=""><span>Северный</span></label></li>
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-old" id=""><span>Южный</span></label></li>
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-cabin" id=""><span>Центральный</span></label></li>
-											<input type="checkbox" name="type-any" id="" checked hidden>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="deal-buy"><span>Покупка</span></label></li>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="deal-sell"><span>Продажа</span></label></li>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="deal-exchange"><span>Обмен</span></label></li>
+											<li class="filter__item"><input type="checkbox" name="deal-any" checked hidden></li>
 										</ul>
 									</li>
 								</ul>
 							</div>
 							<div class="filter-build__item filter-build__item--center filter-build__item--square">
 								<p class="filter-build__text">площадь, м2</p>
-								<input type="text" name="" id="" class="filter__input--bigger" placeholder="Введите">
+								<input type="text" name="square" class="filter__input--bigger  filter-build__input" placeholder="Введите">
 							</div>
 							<div class="filter-build__item filter-build__item--right filter-build__item--price">
 								<p class="filter-build__text">цена</p>
-								<input type="text" name="" id="" class="filter__input" placeholder="от">
-								<input type="text" name="" id="" class="filter__input" placeholder="до">
+								<input type="text" name="price-from" class="filter__input  filter-build__input" placeholder="от">
+								<input type="text" name="price-to" class="filter__input  filter-build__input" placeholder="до">
 								<ul class="filter__container--smallish filter__dropdown--no-js">
 									<li>
 										<span class="filter__dropdown-control">общая</span>
-										<ul class="filter__dropdown">
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-new" id=""><span>Северный</span></label></li>
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-old" id=""><span>Южный</span></label></li>
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-cabin" id=""><span>Центральный</span></label></li>
-											<input type="checkbox" name="type-any" id="" checked hidden>
+										<ul class="filter__dropdown filter__dropdown--right">
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="price-total"><span>Общая</span></label></li>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="price-monthly"><span>Месяц</span></label></li>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="price-yearly"><span>Год</span></label></li>
+											<li class="filter__item"><input type="checkbox" name="price-any" checked hidden></li>
 										</ul>
 									</li>
 								</ul>
@@ -181,26 +181,27 @@
 									<li>
 										<span class="filter__dropdown-control">любой</span>
 										<ul class="filter__dropdown">
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-new" id=""><span>Северный</span></label></li>
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-old" id=""><span>Южный</span></label></li>
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-cabin" id=""><span>Центральный</span></label></li>
-											<input type="checkbox" name="type-any" id="" checked hidden>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="rooms-1"><span>Одна</span></label></li>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="romms-2"><span>Две</span></label></li>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="rooms-3"><span>Три</span></label></li>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="rooms-4"><span>Четыре</span></label></li>
+											<li class="filter__item"><input type="checkbox" name="rooms-any" checked hidden></li>
 										</ul>
 									</li>
 								</ul>
 							</div>
 							<div class="filter-build__item filter-build__item--floor filter-build__item--center">
 								<p class="filter-build__text">этаж</p>
-								<input type="text" name="" id="" class="filter__input--nano" placeholder="от">
-								<input type="text" name="" id="" class="filter__input--nano" placeholder="до">
-								<ul class="filter__container--medium filter-build__container--smaller filter__dropdown--no-js">
+								<input type="text" name="floor-from" class="filter__input--nano  filter-build__input" placeholder="от">
+								<input type="text" name="floor-to" class="filter__input--nano  filter-build__input" placeholder="до">
+								<ul class="filter__container--medium filter-build__container--floor filter__dropdown--no-js  filter-build__container--smaller">
 									<li>
 										<span class="filter__dropdown-control">любой</span>
 										<ul class="filter__dropdown">
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-new" id=""><span>Северный</span></label></li>
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-old" id=""><span>Южный</span></label></li>
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-cabin" id=""><span>Центральный</span></label></li>
-											<input type="checkbox" name="type-any" id="" checked hidden>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="floor-1"><span>первый</span></label></li>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="floor-1"><span>второй</span></label></li>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="floor-1"><span>третий</span></label></li>
+											<li class="filter__item"><input type="checkbox" name="type-any" checked hidden></li>
 										</ul>
 									</li>
 								</ul>
@@ -211,10 +212,11 @@
 									<li>
 										<span class="filter__dropdown-control">любой</span>
 										<ul class="filter__dropdown">
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-new" id=""><span>Северный</span></label></li>
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-old" id=""><span>Южный</span></label></li>
-											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-cabin" id=""><span>Центральный</span></label></li>
-											<input type="checkbox" name="type-any" id="" checked hidden>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-new"><span>новостройки</span></label></li>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-old"><span>вторичное жильё</span></label></li>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-cabin"><span>коттеджи, дома</span></label></li>
+											<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-land"><span>земельные участки</span></label></li>
+											<li class="filter__item"><input type="checkbox" name="type-any" checked hidden></li>
 										</ul>
 									</li>
 								</ul>
@@ -223,15 +225,15 @@
 						<div class="filter-build__absolute">
 							<div class="filter-build__item filter-build__item--center filter-build__item--submit">
 								<input type="submit" value="Найти" class="btn--med filter-build__submit">
-								<a href="" class="btn--invert">Подписаться</a>
+								<input type="submit" value="Подписаться" class="btn--invert">
 							</div>
 							<div class="filter-build__item filter-build__item--center filter-build__item--count">
-								<a href="" class="btn--invert">Рассчитать платеж по кредиту</a>
+								<input type="submit" value="Рассчитать платеж по кредиту" class="btn--invert">
 							</div>
 						</div>
 					</form>
 					<div class="best-deal">
-						<h1 class="inner-heading--build">Лучшие предложения</h1>
+						<h2 class="inner-heading--build">Лучшие предложения</h2>
 						<p class="inner-text">Возможно, информации о   них еще нет на нашем сайте.</p>
 						<p class="inner-text">Звоните! Наш специалист подберет самое выгодное предложение!</p>
 						<p class="inner-phone">+7 (351) 236-22-88</p>
