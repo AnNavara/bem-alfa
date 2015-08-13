@@ -550,12 +550,15 @@ h1 {
 }
 
 @font-face {
-	font-family: "ASL Rubl";
-	src: url("../font/rouble.otf"), local("../font/rouble.otf");
+	font-family: "ALSRubl-Arial";
+	src: url("../font/alsrubl-arial-regular.eot");
+	src: url("../font/alsrubl-arial-regular.eot?#iefix") format("embedded-opentype"), url("../font/alsrubl-arial-regular.woff") format("woff"), url("../font/alsrubl-arial-regular.ttf") format("truetype"), url("../font/alsrubl-arial-regular.svg#ALSRublArialRegular") format("svg");
+	font-weight: normal;
+	font-style: normal;
 }
 
 .valuta--rub {
-	font-family: "ALS Rubl";
+	font-family: "ALSRubl-Arial", Arial, sans-serif;
 }
 
 /* Slider */
