@@ -545,10 +545,6 @@ h1 {
 	font-weight: 400;
 }
 
-.valuta {
-	text-transform: lowercase;
-}
-
 @font-face {
 	font-family: "ALSRubl-Arial";
 	src: url("../font/alsrubl-arial-regular.eot");
@@ -2796,7 +2792,7 @@ h1 {
 	transition: box-shadow 0.3s ease;
 }
 
-.note__item:hover > h3 {
+.note__item:hover > div {
 	color: #36311a;
 }
 
@@ -2805,7 +2801,7 @@ h1 {
 	transition: box-shadow 0.3s ease;
 }
 
-.note__item > h3 {
+.note__item > div {
 	margin: 0;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 13px;
