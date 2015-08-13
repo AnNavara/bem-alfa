@@ -2,9 +2,7 @@
 @import "mixins.less";
 
 .content{
-  #clear();
-
-  &__wrapper{
+  div{
     display: block;
     margin: 0 0 24px 0;
     padding: 30px 37px 37px 37px;
@@ -12,63 +10,27 @@
     #clear();
   }
 
-  &__text{
+  p{
     margin: 0 0 17px 0;
     #text();
   }
 
-  &__img--left{
-    float: left;
-    margin-top: 10px;
-    margin-right: 32px;
-    width: 208px;
-    height: auto;
-  }
+  a{
+    display: inline;
+    margin: 0;
+    font-family: @font-family;
+    font-size: @font-size--medium;
+    line-height: @line-height;
+    font-weight: @font-weight;
+    color: @text-shill;
 
-  &__img--right{
-    float: right;
-    margin-top: 10px;
-    margin-left: 32px;
-    width: 208px;
-    height: auto;
-  }
-
-  &__ol{
-    counter-reset: item-list;
-    margin: 0 0 14px 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  &__ul{
-    margin: 0 0 10px 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  &__li{
-    padding: 4px 0;
-    #text();
-
-    &::before{
-      display: inline-block;
-      content: "\00a0\00a0\2014\00a0";
-      color: @gray-b9;
+    &:hover{
+      color: @text-shill;
+      border-bottom: 1px solid @pink-link;
     }
   }
 
-  &__li--num{
-    padding: 4px 0;
-    #text();
-
-    &::before{
-      display: inline-block;
-      content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0" counter(item-list) ".\00a0";
-      counter-increment: item-list;
-    }
-  }
-
-  &__heading{
+  h2{
     margin: 0 0 9px 0;
     font-family: @font-family--heading;
     font-size: @font-size--h1;
@@ -79,40 +41,146 @@
     text-transform: uppercase;
   }
 
-  &__subheading{
+  h3{
     margin: 15px 0;
     #heading__weighten--18();
   }
 
-  &__important{
-    display: block;
-    margin: 30px -37px 20px -37px;
-    padding: 18px 81px 19px 81px;
-    background-color: @yellow;
+  img{
+    float: left;
+    margin-top: 10px;
+    margin-right: 32px;
+    width: 208px;
+    height: auto;
+  }
 
-    &>h3{
-      margin: 0;
-      padding: 0;
-      max-width: 570px;
-      font-family: "Open Sans", Helvetica, Arial, sans-serif;
-      font-size: @font-size--h6;
-      line-height: @line-height;
-      font-weight: @font-weight--heading;
-      color: @text-color;
+  .img-right{
+    float: right;
+    margin-top: 10px;
+    margin-left: 32px;
+    width: 208px;
+    height: auto;
+  }
+
+  ol{
+    counter-reset: item-list;
+    margin: 0 0 14px 0;
+    padding: 0;
+    list-style: none;
+
+    li{
+      padding: 4px 0;
+      #text();
+
+      &::before{
+        display: inline-block;
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0" counter(item-list) ".\00a0";
+        counter-increment: item-list;
+      }
     }
   }
 
-  &__file{
+  ul{
+    margin: 0 0 10px 0;
+    padding: 0;
+    list-style: none;
+
+    li{
+      padding: 4px 0;
+      #text();
+
+      &::before{
+        display: inline-block;
+        content: "\00a0\00a0\2014\00a0";
+        color: @gray-b9;
+      }
+    }
+  }
+
+  blockquote{
+    display: block;
+    margin: 30px -37px 20px -37px;
+    padding: 18px 281px 19px 81px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: @font-size--h6;
+    line-height: @line-height;
+    font-weight: @font-weight--heading;
+    color: @text-color;
+    background-color: @yellow;
+  }
+
+  table{
+    margin: 25px 0 25px 40px;
+    min-width: 50%;
+
+    caption{
+      margin-bottom: 20px;
+      #text();
+      text-align: left;
+    }
+
+    tr{
+      border-bottom: 1px dotted @border-color--gray;
+
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+
+    td{
+      padding: 8px 16px 8px 0;
+      font-family: @font-family;
+      font-size: @font-size--medium;
+      line-height: @line-height--heading;
+      font-weight: @font-weight;
+    }
+
+    th{
+      padding: 8px 16px 8px 0;
+      font-family: @font-family;
+      font-size: @font-size--medium;
+      line-height: @line-height--heading;
+      font-weight: @font-weight;
+      text-align: left;
+    }
+  }
+
+  .file{
     display: block;
     margin: 14px 0;
+    padding: 0;
     min-height: 45px;
     font-size: 0;
 
-    &-wrap{
+    >div{
       display: inline-block;
+      margin: 0;
+      padding: 0;
       max-width: 85%;
       font-size: @font-size--medium;
       vertical-align: middle;
+    }
+
+    a{
+      display: inline;
+      margin: 0;
+      font-family: @font-family;
+      font-size: @font-size--h6;
+      line-height: @line-height--heading;
+      font-weight: @font-weight;
+      color: @text-shill;
+
+      &:hover{
+        color: @text-shill;
+        border-bottom: 1px solid @pink-link;
+      }
+    }
+
+    span{
+      display: block;
+      margin: 4px 0 0 0;
+      #text--light;
+      font-style: italic;
     }
 
     &::before{
@@ -127,7 +195,7 @@
       vertical-align: middle;
     }
 
-    &--doc{
+    &-doc{
       &::before{
         width: 40px;
         height: 49px;
@@ -136,7 +204,7 @@
       }
     }
 
-    &--xls{
+    &-xls{
       &::before{
         width: 39px;
         height: 52px;
@@ -145,7 +213,7 @@
       }
     }
 
-    &--pdf{
+    &-pdf{
       &::before{
         width: 41px;
         height: 51px;
@@ -153,60 +221,50 @@
         background-position: -101px 0;
       }
     }
-
-    &--link{
-      display: block;
-      margin: 0 0 4px 0;
-      font-family: @font-family;
-      font-size: @font-size--h6;
-      line-height: @line-height--heading;
-      font-weight: @font-weight;
-      color: @text-shill;
-
-      &:hover{
-        color: @text-shill;
-        text-decoration: underline;
-      }
-    }
-
-    &--info{
-      margin: 0;
-      #text--light;
-      font-style: italic;
-    }
   }
 }
 
 @media (max-width: 766px){
   .content{
-    &__wrapper{
+    div{
       padding: 6% 6% 6% 7%;
     }
 
-    &__img{
-      &--left{
-        display: block;
-        float: none;
-        margin: 1em 0 2em 0;
-        max-width: 100%;
-        width: 100%;
+    img{
+      display: block;
+      float: none;
+      margin: 1em 0 2em 0;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .img-right{
+      display: block;
+      float: none;
+      margin: 1em 0 2em 0;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    table{
+      margin: 0;
+
+      tr>td:first-child{
+        width: auto;
       }
-      &--right{
-        display: block;
-        float: none;
-        margin: 1em 0 2em 0;
-        max-width: 100%;
-        width: 100%;
+
+      td{
+        padding: .6em .5em .6em 0;
       }
     }
 
-    &__important{
+    blockquote{
       margin: 0 -7% 1em -8%;
       padding: 6% 12%;
     }
 
-    &__file{
-      &-wrap{
+    .file{
+      >div{
         max-width: 75%;
       }
     }
