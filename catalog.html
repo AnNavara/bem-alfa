@@ -100,12 +100,12 @@
 						<li>
 							<span class="filter__dropdown-control">любой тип</span>
 							<ul class="filter__dropdown">
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-new" id=""><span>новостройки</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-old" id=""><span>вторичное жильё</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-cabin" id=""><span>коттеджи, дома</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-land" id=""><span>земельные участки</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-trade" id=""><span>коммерческая недвижимость</span></label></li>
-								<input type="checkbox" name="type-any" id="" checked hidden>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-new"><span>новостройки</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-old"><span>вторичное жильё</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-cabin"><span>коттеджи, дома</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-land"><span>земельные участки</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="type-commercial"><span>коммерческая недвижимость</span></label></li>
+								<li class="filter__item"><input type="checkbox" name="type-any" checked hidden></li>
 							</ul>
 						</li>
 					</ul>
@@ -113,11 +113,11 @@
 						<li>
 							<span class="filter__dropdown-control">кол-во комнат</span>
 							<ul class="filter__dropdown">
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="rooms-1" id=""><span>Одна</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="romms-2" id=""><span>Две</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="rooms-3" id=""><span>Три</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="rooms-4" id=""><span>Четыре</span></label></li>
-								<input type="checkbox" name="rooms-any" id="" checked hidden>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="rooms-1"><span>Одна</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="romms-2"><span>Две</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="rooms-3"><span>Три</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="rooms-4"><span>Четыре</span></label></li>
+								<li class="filter__item"><input type="checkbox" name="rooms-any" checked hidden></li>
 							</ul>
 						</li>
 					</ul>
@@ -126,20 +126,20 @@
 						<li>
 							<span class="filter__dropdown-control">любой район</span>
 							<ul class="filter__dropdown">
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="" id=""><span>Метталургический район</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="" id=""><span>Курчатовский район</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="" id=""><span>Калининский район</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="" id=""><span>Центральный район</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="" id=""><span>Тракорозоводский район</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="" id=""><span>Советский район</span></label></li>
-								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="" id=""><span>Ленинский район</span></label></li>
-								<input type="checkbox" name="area-any" id="" checked hidden>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="area-metallurgical"><span>Металлургический район</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="area-kurchatov"><span>Курчатовский район</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="area-kalinin"><span>Калининский район</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="area-central"><span>Центральный район</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="area-traktorozavodsky"><span>Тракторозаводский район</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="area-soviet"><span>Советский район</span></label></li>
+								<li class="filter__item"><label><input class="filter__check" type="checkbox" name="area-leninist"><span>Ленинский район</span></label></li>
+								<li class="filter__item"><input type="checkbox" name="area-any" checked hidden></li>
 							</ul>
 						</li>
 					</ul>
 					<span class="filter__text filter__text--price filter__text--small">по цене</span>
-					<input class="filter__input" pattern="[\d\s\.]+" type="text" name="" id="" placeholder="от">
-					<input class="filter__input" pattern="[\d\s\.]+" type="text" name="" id="" placeholder="до">
+					<input class="filter__input" pattern="[\d\s\.]+" type="text" name="price-from" placeholder="от">
+					<input class="filter__input" pattern="[\d\s\.]+" type="text" name="price-to" placeholder="до">
 					<span class="filter__text--no-ff valuta valuta--rub">a</span>
 					<input class="filter__btn btn--med" type="submit" value="Найти">
 				</form>
@@ -170,7 +170,7 @@
 					</div>
 				</section>
 				<section class="offer">
-					<h1 class="block-heading">Спецпредложения</h1>
+					<h2 class="block-heading">Спецпредложения</h2>
 					<div class="offer__btns">
 						<a href="" class="js-spec__btn--l offer__btn--left btn--small">&#60;</a>
 						<a href="" class="js-spec__btn--r offer__btn--right btn--small">&#62;</a>
@@ -283,7 +283,7 @@
 					</div>
 				</section>
 				<section class="offer">
-					<h1 class="block-heading">3D Туры</h1>
+					<h2 class="block-heading">3D Туры</h2>
 					<div class="offer__btns">
 						<a href="" class="js-3d__btn--l offer__btn--left btn--small">&#60;</a>
 						<a href="" class="js-3d__btn--r offer__btn--right btn--small">&#62;</a>
