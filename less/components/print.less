@@ -1,0 +1,154 @@
+@import "../variables.less";
+@import "mixins.less";
+
+@media print{
+  body,
+  header,
+  div,
+  section,
+  article{
+    background-color: @white;
+    background-image: none;
+  }
+
+  *{
+    -webkit-print-color-adjust: exact;
+  }
+
+  a[href^=http]:after{
+    content: " <" attr(href) ">";
+  }
+
+  aside,
+  nav,
+  footer,
+  .page-header__guild,
+  .page-header__ask-call,
+  .btn--big,
+  .breadcrumbs__item,
+  .offer,
+  .estate-card__sign,
+  .estate-card__more,
+  .testimony,
+  .adv__container{
+    display: none;
+  }
+
+  h1{
+    margin-bottom: 4%;
+    font-size: 26pt;
+  }
+
+  .page-wrapper{
+    padding: 0 2% 0 3%;
+  }
+
+  header{
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-header__logo{
+    width: 20%;
+    margin: 0 5% 0 0;
+    vertical-align: top;
+  }
+
+  .page-header__workinfo{
+    width: 35%;
+    margin: 0 5% 0 0;
+    vertical-align: top;
+    font-size: @font-size--medium;
+  }
+
+  .page-header__phone{
+    width: 35%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    >span{
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .estate-card__pics,
+  .estate-card__spec,
+  .estate-card__descr,
+  .estate-card__info-wrap{
+    margin: 0 0 2% 0;
+    padding: 0;
+    border-bottom: 1px dotted @dark;
+  }
+
+  .estate-card__info{
+    padding: 0;
+  }
+
+  .contacts{
+    page-break-before: always;
+    margin: 0 5% 0 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+
+    &__wrapper{
+      display: none;
+    }
+
+    &__inner{
+      width: auto;
+    }
+
+    &__img{
+      display: none;
+    }
+
+    &__position{
+      margin: 0;
+    }
+
+    &__email{
+      display: inline-block;
+    }
+  }
+
+  .estate-card__spec-item--area,
+  .estate-card__spec-item,
+  .estate-card__spec-text{
+    font-size: @font-size--h4;
+  }
+
+  .content{
+    padding: 0;
+    background-color: @white;
+
+    div{
+      margin: 0 0 4% 0;
+      padding: 0;
+    }
+
+    img{
+      float: left;
+      margin-right: 6%;
+      width: 40%;
+      background-color: @white;
+      page-break-before: always;
+    }
+
+    .img-right{
+      float: right;
+      margin-left: 6%;
+      width: 40%;
+      page-break-before: always;
+    }
+
+    p{
+      padding: 0;
+    }
+
+    .file{
+      display: none;
+    }
+  }
+}

@@ -787,7 +787,9 @@ h1 {
 	transform: rotate(-90deg);
 }
 
-.side-stick > div {
+.side-stick--calc {
+	top: 208px;
+	right: -78px;
 	margin: 0;
 	padding: 6px 18px;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -797,27 +799,26 @@ h1 {
 	background: #e74c3c;
 }
 
-.side-stick--calc {
-	top: 208px;
-	right: -78px;
-}
-
-.side-stick--calc:hover > h3 {
-	color: link-color--hover;
+.side-stick--calc:hover {
+	color: #ffffff;
 	background-color: #ce4537;
 }
 
 .side-stick--check {
 	top: 430px;
 	right: -88px;
-}
-
-.side-stick--check > h3 {
+	margin: 0;
+	padding: 6px 18px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	color: #ffffff;
+	background: #e74c3c;
 	color: #e74c3c;
 	background-color: #fdef9d;
 }
 
-.side-stick--check:hover > h3 {
+.side-stick--check:hover {
 	color: #e74c3c;
 	background-color: #e6d98a;
 }
@@ -8995,6 +8996,161 @@ h1 {
 
 .popup__container--form {
 	padding: 0 25px 40px 25px;
+}
+
+}
+
+@media print {
+
+body,
+header,
+div,
+section,
+article {
+	background-color: #ffffff;
+	background-image: none;
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+a[href^=http]:after {
+	content: " <" attr(href) ">";
+}
+
+aside,
+nav,
+footer,
+.page-header__guild,
+.page-header__ask-call,
+.btn--big,
+.breadcrumbs__item,
+.offer,
+.estate-card__sign,
+.estate-card__more,
+.testimony,
+.adv__container {
+	display: none;
+}
+
+h1 {
+	margin-bottom: 4%;
+	font-size: 26pt;
+}
+
+.page-wrapper {
+	padding: 0 2% 0 3%;
+}
+
+header {
+	margin: 0;
+	padding: 0;
+}
+
+.page-header__logo {
+	width: 20%;
+	margin: 0 5% 0 0;
+	vertical-align: top;
+}
+
+.page-header__workinfo {
+	width: 35%;
+	margin: 0 5% 0 0;
+	vertical-align: top;
+	font-size: 13px;
+}
+
+.page-header__phone {
+	width: 35%;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+.page-header__phone > span {
+	margin: 0;
+	padding: 0;
+}
+
+.estate-card__pics,
+.estate-card__spec,
+.estate-card__descr,
+.estate-card__info-wrap {
+	margin: 0 0 2% 0;
+	padding: 0;
+	border-bottom: 1px dotted #36311a;
+}
+
+.estate-card__info {
+	padding: 0;
+}
+
+.contacts {
+	page-break-before: always;
+	margin: 0 5% 0 0;
+	padding: 0;
+	width: auto;
+	height: auto;
+}
+
+.contacts__wrapper {
+	display: none;
+}
+
+.contacts__inner {
+	width: auto;
+}
+
+.contacts__img {
+	display: none;
+}
+
+.contacts__position {
+	margin: 0;
+}
+
+.contacts__email {
+	display: inline-block;
+}
+
+.estate-card__spec-item--area,
+.estate-card__spec-item,
+.estate-card__spec-text {
+	font-size: 18px;
+}
+
+.content {
+	padding: 0;
+	background-color: #ffffff;
+}
+
+.content div {
+	margin: 0 0 4% 0;
+	padding: 0;
+}
+
+.content img {
+	float: left;
+	margin-right: 6%;
+	width: 40%;
+	background-color: #ffffff;
+	page-break-before: always;
+}
+
+.content .img-right {
+	float: right;
+	margin-left: 6%;
+	width: 40%;
+	page-break-before: always;
+}
+
+.content p {
+	padding: 0;
+}
+
+.content .file {
+	display: none;
 }
 
 }
