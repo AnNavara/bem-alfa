@@ -5427,6 +5427,15 @@ h1 {
 	max-width: 780px;
 }
 
+.articles__wrapper > p {
+	margin: 0 0 14px 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #4a4a4a;
+	font-weight: 400;
+}
+
 .articles__heading {
 	display: block;
 	margin: 0 0 14px 0;
@@ -5440,15 +5449,6 @@ h1 {
 .articles__heading:hover {
 	color: #e74c3c;
 	text-decoration: underline;
-}
-
-.articles__text {
-	margin: 0 0 14px 0;
-	font-family: "Roboto", Helvetica, Arial, sans-serif;
-	font-size: 13px;
-	line-height: 1.4;
-	color: #4a4a4a;
-	font-weight: 400;
 }
 
 .articles__date {
