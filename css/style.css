@@ -5537,6 +5537,15 @@ h1 {
 	font-weight: 500;
 }
 
+.content h4 {
+	margin: 0 0 17px 0;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #4a4a4a;
+	font-weight: 400;
+}
+
 .content img {
 	float: left;
 	margin-top: 10px;
@@ -7756,16 +7765,8 @@ h1 {
 	font-size: 11px;
 }
 
-.table--content {
-	margin: 0;
-}
-
 .table__cell {
 	padding: 7px 4px;
-}
-
-.table__cell--content {
-	padding: .6em .5em .6em 0;
 }
 
 .table__row > .table__cell:first-child {
