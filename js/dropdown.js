@@ -19,18 +19,35 @@ menu_toogler.addEventListener("click", function(e) {
 	menu_container.classList.toggle("menu__container--active");
 });
 
+function show(btn, items, items_class, btn_class) {
+	btn.addEventListener("click", function(e) {
+		e.preventDefault();
+		for (i = 0; i < items.length; ++i){
+				items[i].classList.add(items_class);
+		}
+		btn.classList.add(btn_class);
+	}, false);
+}
+
 (function(){
 	var partners = document.querySelectorAll(".partners");
 	var partners_active = document.querySelectorAll(".partners--active");
 	var partners_btn = document.querySelector(".partners__all");
 
-	partners_btn.querySelector(".inner-heading").innerHTML =  "Смотреть ещё " + (partners.length - partners_active.length) + " банков";
+	if (partners.length > 0){
+		partners_btn.querySelector(".inner-heading").innerHTML =  "Смотреть ещё " + (partners.length - partners_active.length) + " банков";
+		show(partners_btn, partners, "partners--active", "partners__all--hidden");
+	}
+})();
 
-	partners_btn.addEventListener("click", function(e) {
-		e.preventDefault();
-		for (i = 0; i < partners.length; ++i){
-				partners[i].classList.add("partners--active");
-		}
-		partners_btn.classList.add("partners__all--hidden");
-	}, false);
+
+(function(){
+	var imgs = document.querySelectorAll(".estate-card__img");
+	var imgs_active = document.querySelectorAll(".estate-card__img--active");
+	var imgs_btn = document.querySelector(".estate-card__more");
+
+	if (imgs.length > 0){
+		imgs_btn.innerHTML =  "...и ещё " + (imgs.length - imgs_active.length) + " фотографии";
+		show(imgs_btn, imgs, "estate-card__img--active", "estate-card__more--hidden");
+	}
 })();

@@ -93,10 +93,20 @@
     height: auto;
 
     &__wrapper{
-      display: none;
+      display: block;
+
+      &:after{
+        display: none;
+      }
+    }
+
+    &__heading{
+      font-size: 16pt;
+      text-align: left;
     }
 
     &__inner{
+      padding: 0;
       width: auto;
     }
 
