@@ -9,7 +9,21 @@
   width: 380px;
   border: 1px dotted @gray-cb;
 
+  &__sign{
+    display: inline-block;
+  }
+
+  &--alt{
+    position: relative;
+    #clear();
+    margin: 0 auto;
+    padding: 21px 28px 35px;
+    width: 830px;
+    border: 1px dotted @gray-cb;
+  }
+
   &__inner{
+    margin-bottom: 44px;
     padding-top: 17px;
     background-image: url("../img/bg-mortgage.png");
     background-repeat: no-repeat;
@@ -20,6 +34,57 @@
     float: left;
     margin: 10px 0;
     width: 100%;
+
+    &--center{
+      float: left;
+      position: relative;
+      z-index: 5;
+      margin: 12px 0 5px 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    &--left{
+      float: left;
+      margin: 14px 0;
+      padding: 15px 25px;
+      width: 380px;
+    }
+
+    &--right{
+      float: right;
+      position: relative;
+      margin: 14px 0;
+      padding: 15px 25px;
+      width: 380px;
+      background-color: @yellow;
+      #round-esteem();
+
+      &:hover{
+        #box-shadow();
+      }
+
+      &:not(:hover){
+        #no-shadow();
+      }
+    }
+
+    &--alt{
+      float: left;
+      position: relative;
+      z-index: 5;
+      margin: 2px 0;
+      width: 100%;
+
+      >span{
+        float: right;
+        display: inline-block;
+        margin: .5em 0 0 0;
+        text-align: right;
+        #text();
+        vertical-align: middle;
+      }
+    }
   }
 
   &__heading{
@@ -100,8 +165,48 @@
     width: 100%;
     max-width: 380px;
 
+    &--alt{
+      padding: 6% 7% 10% 7%;
+      width: 100%;
+    }
+
     &__wrapper{
       margin: 1vh 0;
+
+      &--table{
+        margin: 0 -8%;
+        width: 116%;
+        overflow: scroll;
+      }
+
+      &--left{
+        float: left;
+        padding: 0;
+        width: 100%;
+      }
+
+      &--right{
+        float: left;
+        margin: 0 -8%;
+        padding: 0 8%;
+        width: 116%;
+      }
+
+      &--center{
+        margin: 6% 0;
+      }
+
+      &--alt{
+        display: block;
+        margin: 4px 0;
+        text-align: center;
+
+        >span{
+          float: none;
+          display: block;
+          text-align: center;
+        }
+      }
     }
 
     &__inner{
@@ -111,6 +216,46 @@
     &__text{
       display: block;
       margin: 0 0 .7em 0;
+    }
+  }
+}
+
+@media (min-width: 767px) and (max-width: 920px){
+  .calc{
+    &--alt{
+      width: 100%;
+    }
+
+    &__wrapper{
+      &--left{
+        float: left;
+        width: 100%;
+      }
+
+      &--right{
+        float: left;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 921px) and (max-width: 1160px){
+  .calc{
+    &--alt{
+      width: 100%;
+    }
+
+    &__wrapper{
+      &--left{
+        float: left;
+        width: 100%;
+      }
+
+      &--right{
+        float: left;
+        width: 100%;
+      }
     }
   }
 }

@@ -3,6 +3,24 @@
 
 .table{
 
+	&--mortgage{
+		float: left;
+		width: 100%;
+
+		tr>.table__cell{
+			text-align: center;
+		}
+
+		tr:nth-child(odd){
+			background-color: @yellow-light;
+		}
+
+		tr>.table__cell:first-child{
+			width: auto;
+			text-align: left;
+		}
+	}
+
 	&__row{
 		border-bottom: 1px dotted @border-color--gray;
 
@@ -33,6 +51,11 @@
 
 @media (max-width: 766px){
 	.table{
+
+		&--mortgage{
+			margin: 0;
+			width: 100%;
+		}
 
 		&__cell{
 			padding: 7px 4px;

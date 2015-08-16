@@ -752,6 +752,24 @@ h1 {
 	margin: 0 0 30px 0;
 }
 
+.table--mortgage {
+	float: left;
+	width: 100%;
+}
+
+.table--mortgage tr > .table__cell {
+	text-align: center;
+}
+
+.table--mortgage tr:nth-child(odd) {
+	background-color: #fff5bc;
+}
+
+.table--mortgage tr > .table__cell:first-child {
+	width: auto;
+	text-align: left;
+}
+
 .table__row {
 	border-bottom: 1px dotted #aeaeae;
 }
@@ -4008,7 +4026,27 @@ h1 {
 	clear: both;
 }
 
+.calc__sign {
+	display: inline-block;
+}
+
+.calc--alt {
+	position: relative;
+	margin: 0 auto;
+	padding: 21px 28px 35px;
+	width: 830px;
+	border: 1px dotted #cbcbcb;
+}
+
+.calc--alt:before,
+.calc--alt:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 .calc__inner {
+	margin-bottom: 44px;
 	padding-top: 17px;
 	background-image: url("../img/bg-mortgage.png");
 	background-repeat: no-repeat;
@@ -4019,6 +4057,90 @@ h1 {
 	float: left;
 	margin: 10px 0;
 	width: 100%;
+}
+
+.calc__wrapper--center {
+	float: left;
+	position: relative;
+	z-index: 5;
+	margin: 12px 0 5px 0;
+	width: 100%;
+	text-align: center;
+}
+
+.calc__wrapper--left {
+	float: left;
+	margin: 14px 0;
+	padding: 15px 25px;
+	width: 380px;
+}
+
+.calc__wrapper--right {
+	float: right;
+	margin: 14px 0;
+	padding: 15px 25px;
+	width: 380px;
+	background-color: #fdef9d;
+	position: relative;
+	overflow: hidden;
+}
+
+.calc__wrapper--right:before {
+	position: absolute;
+	content: "";
+	bottom: -5px;
+	left: -5%;
+	width: 240px;
+	height: 240px;
+	background-color: #fff5bc;
+	border-radius: 100%;
+}
+
+.calc__wrapper--right:hover:before {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+	transition: -webkit-transform .8s ease;
+	transition: transform .8s ease;
+}
+
+.calc__wrapper--right:not(:hover):before {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	transition: -webkit-transform .8s ease;
+	transition: transform .8s ease;
+}
+
+.calc__wrapper--right:hover {
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease;
+}
+
+.calc__wrapper--right:not(:hover) {
+	box-shadow: none;
+	transition: box-shadow 0.3s ease;
+}
+
+.calc__wrapper--alt {
+	float: left;
+	position: relative;
+	z-index: 5;
+	margin: 2px 0;
+	width: 100%;
+}
+
+.calc__wrapper--alt > span {
+	float: right;
+	display: inline-block;
+	margin: .5em 0 0 0;
+	text-align: right;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #4a4a4a;
+	font-weight: 400;
+	vertical-align: middle;
 }
 
 .calc__heading {
@@ -6517,6 +6639,20 @@ h1 {
 	height: auto;
 }
 
+.calc--alt {
+	width: 100%;
+}
+
+.calc__wrapper--left {
+	float: left;
+	width: 100%;
+}
+
+.calc__wrapper--right {
+	float: left;
+	width: 100%;
+}
+
 .estate-card__pics {
 	width: 100%;
 	min-height: auto;
@@ -7622,6 +7758,24 @@ h1 {
 
 }
 
+@media (min-width: 921px) and (max-width: 1160px) {
+
+.calc--alt {
+	width: 100%;
+}
+
+.calc__wrapper--left {
+	float: left;
+	width: 100%;
+}
+
+.calc__wrapper--right {
+	float: left;
+	width: 100%;
+}
+
+}
+
 @media (min-width: 1190px) and (max-width: 1660px) {
 
 .staff__item:nth-of-type(3n) .staff__about {
@@ -7797,6 +7951,11 @@ h1 {
 
 .pagination {
 	font-size: 11px;
+}
+
+.table--mortgage {
+	margin: 0;
+	width: 100%;
 }
 
 .table__cell {
@@ -8492,8 +8651,48 @@ h1 {
 	max-width: 380px;
 }
 
+.calc--alt {
+	padding: 6% 7% 10% 7%;
+	width: 100%;
+}
+
 .calc__wrapper {
 	margin: 1vh 0;
+}
+
+.calc__wrapper--table {
+	margin: 0 -8%;
+	width: 116%;
+	overflow: scroll;
+}
+
+.calc__wrapper--left {
+	float: left;
+	padding: 0;
+	width: 100%;
+}
+
+.calc__wrapper--right {
+	float: left;
+	margin: 0 -8%;
+	padding: 0 8%;
+	width: 116%;
+}
+
+.calc__wrapper--center {
+	margin: 6% 0;
+}
+
+.calc__wrapper--alt {
+	display: block;
+	margin: 4px 0;
+	text-align: center;
+}
+
+.calc__wrapper--alt > span {
+	float: none;
+	display: block;
+	text-align: center;
 }
 
 .calc__inner {

@@ -1,9 +1,9 @@
 $(document).ready(function(){
-  var call = document.querySelector(".page-header__ask-call");
+  var call = document.querySelectorAll(".page-header__ask-call");
   var popup_call = document.querySelector(".popup--ask-call");
 
-  if (typeof call != "undefined") {
-    call.addEventListener("click", function(e) {
+  for (i = 0; i < call.length ; ++i) {
+    call[i].addEventListener("click", function(e) {
       e.preventDefault();
       e = e || window.event;
       popup_call.classList.add("popup--active");
