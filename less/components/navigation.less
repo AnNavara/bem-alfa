@@ -166,10 +166,12 @@
   .navigation{
     &__container{
       position: absolute;
-      top: 12vh;
-      left: 8%;
+      top: 6vh;
+      left: 1vh;
       z-index: 20;
       padding: 0 20px;
+      max-height: 96vh;
+      max-width: 96vw;
       background-color: @white;
       #box-shadow();
       transform: translateX(-150%);
@@ -192,21 +194,60 @@
       padding: 13px 0 12px 0;
       background-color: @white;
       border-bottom: 1px dotted @border-color--gray;
+
+      &--close{
+        display: block;
+        padding: 13px 0 12px 0;
+        font-size: 0;
+        text-align: right;
+        background-color: @white;
+
+        &::after{
+          display: inline-block;
+          content: "";
+          width: 16px;
+          height: 16px;
+          background-image: url("../img/sprite.png");
+          background-position: -181px -140px;
+        }
+      }
     }
 
     &__control{
+      position: relative;
       display: block;
-      width: 24px;
-      height: 20px;
-      font-size: 0;
-      background-image: url("../img/icon-sandwich.png");
-      background-size: cover;
+      padding: 6px 8px 6px 25px;
+      font-family: @font-family;
+      font-size: @font-size--medium;
+      line-height: @line-height--heading;
+      color: @white;
       outline: none;
+      background-color: @red;
+
+      &:hover{
+        color: @white;
+        background-color: @red-dark;
+      }
+
+      &::before{
+        display: inline-block;
+        position: absolute;
+        left: 6px;
+        top: 7px;
+        content: "";
+        width: 13px;
+        height: 14px;
+        background-image: url("../img/icon-sandwich.png");
+        background-size: cover;
+      }
+
+      >span{
+        font-size: 0;
+      }
 
       &-wrap{
         display: inline-block;
-        margin: 9px 0;
-        width: 24px;
+        margin: 6px 0;
         height: 20px;
         vertical-align: middle;
       }
@@ -215,6 +256,11 @@
     &__item{
       display: block;
       background-color: @body-color;
+
+      &--close{
+        display: block;
+        border-bottom: 1px dotted @border-color--gray;
+      }
     }
   }
 }

@@ -7055,10 +7055,12 @@ h1 {
 
 .navigation__container {
 	position: absolute;
-	top: 12vh;
-	left: 8%;
+	top: 6vh;
+	left: 1vh;
 	z-index: 20;
 	padding: 0 20px;
+	max-height: 96vh;
+	max-width: 96vw;
 	background-color: #ffffff;
 	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
 	transition: box-shadow 0.3s ease;
@@ -7091,20 +7093,59 @@ h1 {
 	border-bottom: 1px dotted #aeaeae;
 }
 
-.navigation__control {
+.navigation__link--close {
 	display: block;
-	width: 24px;
-	height: 20px;
+	padding: 13px 0 12px 0;
 	font-size: 0;
+	text-align: right;
+	background-color: #ffffff;
+}
+
+.navigation__link--close::after {
+	display: inline-block;
+	content: "";
+	width: 16px;
+	height: 16px;
+	background-image: url("../img/sprite.png");
+	background-position: -181px -140px;
+}
+
+.navigation__control {
+	position: relative;
+	display: block;
+	padding: 6px 8px 6px 25px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.2;
+	color: #ffffff;
+	outline: none;
+	background-color: #e74c3c;
+}
+
+.navigation__control:hover {
+	color: #ffffff;
+	background-color: #ce4537;
+}
+
+.navigation__control::before {
+	display: inline-block;
+	position: absolute;
+	left: 6px;
+	top: 7px;
+	content: "";
+	width: 13px;
+	height: 14px;
 	background-image: url("../img/icon-sandwich.png");
 	background-size: cover;
-	outline: none;
+}
+
+.navigation__control > span {
+	font-size: 0;
 }
 
 .navigation__control-wrap {
 	display: inline-block;
-	margin: 9px 0;
-	width: 24px;
+	margin: 6px 0;
 	height: 20px;
 	vertical-align: middle;
 }
@@ -7112,6 +7153,11 @@ h1 {
 .navigation__item {
 	display: block;
 	background-color: #f4f4f4;
+}
+
+.navigation__item--close {
+	display: block;
+	border-bottom: 1px dotted #aeaeae;
 }
 
 .slider {
