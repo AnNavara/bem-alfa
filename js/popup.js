@@ -47,11 +47,11 @@
 	  	}, false);
 	  }
 
-	  var add = document.querySelector(".filter-build__add");
+	  var add = document.querySelectorAll(".filter-build__add");
 	  var popup_add = document.querySelector(".popup--add-property");
 
-	  if (typeof add != "undefined") {
-	    add.addEventListener("click", function(e) {
+	  for (i = 0; 0 < add.length; ++i) {
+	    add[i].addEventListener("click", function(e) {
 	      e.preventDefault();
 	      e = e || window.event;
 	      popup_add.classList.add("popup--active");
