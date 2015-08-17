@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 		less: {
 			style: {
 				files:{
-					"css/style.css": ["less/style.less"]
+					"build/css/style.css": ["source/less/style.less"]
 				}
 			}
 		},
@@ -16,14 +16,14 @@ module.exports = function(grunt) {
 				browsers: ["last 3 version", "ie 9"]
 			},
 			style: {
-				src: "css/style.css"
+				src: "build/css/style.css"
 			}
 		},
 
 		cmq: {
 			style: {
 				files: {
-					"css/style.css": ["css/style.css"]
+					"build/css/style.css": ["build/css/style.css"]
 				}
 			}
 		},
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
 					report: "gzip"
 				},
 				files: {
-					"css/style.min.css": ["css/style.css"]
+					"build/css/style.min.css": ["build/css/style.css"]
 				}
 			}
 		},
@@ -127,6 +127,8 @@ module.exports = function(grunt) {
 	});
 
 		grunt.registerTask("build", [
+			"clean",
+			"copy",
 			"csscomb",
 			"less",
 			"autoprefixer",
