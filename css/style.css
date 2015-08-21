@@ -1546,28 +1546,29 @@ h1{
 .catalog__item{
   float: left;
   padding: 0 25px;
-  height: 64px;
+  min-height: 64px;
   border-left: 1px dotted #cbcbcb;
 }
 
 .catalog__item:first-of-type{
-  padding: 0 0 0 28px;
+  padding: 0 25px 0 28px;
   min-width: 171px;
   border-left: none;
 }
 
 .catalog__item:nth-of-type(2){
-  padding: 0 0 0 23px;
+  padding: 0 23px 0 23px;
   min-width: 187px;
 }
 
 .catalog__item:nth-of-type(3){
   padding: 0 0 0 23px;
+  width: 287px;
 }
 
 .catalog__item--l{
   float: left;
-  padding: 0 0 0 28px;
+  padding: 0 25px 0 28px;
   height: 100%;
   min-height: 80px;
   min-width: 187px;
@@ -1589,7 +1590,7 @@ h1{
 
 .catalog__item--center{
   float: left;
-  padding: 0 0 0 27px;
+  padding: 0 25px 0 27px;
   height: 100%;
   min-height: 80px;
   min-width: 207px;
@@ -1598,6 +1599,7 @@ h1{
 
 .catalog__wrapper{
   float: left;
+  padding-right: 14px;
   min-width: 71px;
 }
 
@@ -5232,11 +5234,8 @@ input~.valid-err:after{
 }
 
 .new-build__link{
-  position: absolute;
-  display: inline-block;
-  margin: 0;
-  left: 22px;
-  bottom: 16px;
+  display: block;
+  margin: -10px 0 10px 0;
 }
 
 .new-build__flair{
@@ -7203,7 +7202,7 @@ input~.valid-err:after{
 
   .catalog__inner{
     padding: 20px 0;
-    width: auto;
+    width: 100%;
     min-height: 0;
   }
 

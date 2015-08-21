@@ -30,27 +30,28 @@
   &__item{
     float: left;
     padding: 0 25px;
-    height: 64px;
+    min-height: 64px;
     border-left: 1px dotted @border-color;
 
     &:first-of-type{
-      padding: 0 0 0 28px;
+      padding: 0 25px 0 28px;
       min-width: 171px;
       border-left: none;
     }
 
     &:nth-of-type(2){
-      padding: 0 0 0 23px;
+      padding: 0 23px 0 23px;
       min-width: 187px;
     }
 
     &:nth-of-type(3){
       padding: 0 0 0 23px;
+      width: 287px;
     }
 
     &--l{
       float: left;
-      padding: 0 0 0 28px;
+      padding: 0 25px 0 28px;
       height: 100%;
       min-height: 80px;
       min-width: 187px;
@@ -72,7 +73,7 @@
 
     &--center{
       float: left;
-      padding: 0 0 0 27px;
+      padding: 0 25px 0 27px;
       height: 100%;
       min-height: 80px;
       min-width: 207px;
@@ -82,6 +83,7 @@
 
   &__wrapper{
     float: left;
+    padding-right: 14px;
     min-width: 71px;
   }
 
@@ -249,7 +251,7 @@
 
     &__inner{
       padding: 20px 0;
-      width: auto;
+      width: 100%;
       min-height: 0;
     }
 
