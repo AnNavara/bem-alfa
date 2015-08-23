@@ -120,7 +120,8 @@ module.exports = function(grunt) {
       all: {
         src: "img/_source-icon/*.png",
         dest: "img/sprite.png",
-        destCss: "less/components/sprite.less"
+        padding : 16,
+        destCss: "less/components/sprite.css"
       }
     }
 
@@ -129,11 +130,11 @@ module.exports = function(grunt) {
     grunt.registerTask("build", [
       "clean",
       "copy",
-      "csscomb",
+      "csscomb:less",
       "less",
       "autoprefixer",
       "cmq",
-      "csscomb",
+      "csscomb:css",
       "cssmin"
     ]);
 };

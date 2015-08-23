@@ -186,10 +186,18 @@
   content: "";
   right: 0;
   top: -28px;
-  padding-left: 25px;
-  background-image: url("../img/sprite.png");
-  background-position: -181px -156px;
-  background-repeat: no-repeat;
+
+  &::before{
+    display: inline-block;
+    content: "";
+    padding-right: 10px;
+    width: 26px;
+    height: 16px;
+    background-image: url("../img/sprite.png");
+    background-position: -68px -242px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
 }
 
 @media (max-width: 766px){

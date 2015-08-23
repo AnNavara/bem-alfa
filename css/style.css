@@ -966,7 +966,7 @@ h1{
   width: 48px;
   height: 36px;
   background-image: url("../img/sprite.png");
-  background-position: -54px -101px;
+  background-position: -70px -133px;
   background-repeat: no-repeat;
 }
 
@@ -974,14 +974,14 @@ h1{
   width: 48px;
   height: 36px;
   background-image: url("../img/sprite.png");
-  background-position: -102px -101px;
+  background-position: -134px -133px;
 }
 
 .page-header__guild--ac{
   width: 38px;
   height: 39px;
   background-image: url("../img/sprite.png");
-  background-position: -142px -52px;
+  background-position: -190px -68px;
   background-repeat: no-repeat;
 }
 
@@ -989,7 +989,7 @@ h1{
   width: 38px;
   height: 39px;
   background-image: url("../img/sprite.png");
-  background-position: -135px -138px;
+  background-position: -183px -186px;
 }
 
 .page-header__guild--ac>.page-header__guild-promt{
@@ -1352,14 +1352,14 @@ h1{
   width: 20px;
   height: 20px;
   background-image: url("../img/sprite.png");
-  background-position: -181px 0;
+  background-position: -245px 0;
 }
 
 .social__link--ok:hover{
   width: 20px;
   height: 20px;
   background-image: url("../img/sprite.png");
-  background-position: -150px -101px;
+  background-position: -198px -133px;
   background-color: #ed812b;
 }
 
@@ -1367,14 +1367,14 @@ h1{
   width: 20px;
   height: 20px;
   background-image: url("../img/sprite.png");
-  background-position: -181px -60px;
+  background-position: -245px -108px;
 }
 
 .social__link--mailru:hover{
   width: 20px;
   height: 20px;
   background-image: url("../img/sprite.png");
-  background-position: -181px -80px;
+  background-position: -245px -144px;
   background-color: #07c;
 }
 
@@ -1382,14 +1382,14 @@ h1{
   width: 20px;
   height: 20px;
   background-image: url("../img/sprite.png");
-  background-position: -181px -40px;
+  background-position: -245px -72px;
 }
 
 .social__link--vk:hover{
   width: 20px;
   height: 20px;
   background-image: url("../img/sprite.png");
-  background-position: -181px -20px;
+  background-position: -245px -36px;
   background-color: #45668e;
 }
 
@@ -1397,14 +1397,14 @@ h1{
   width: 20px;
   height: 20px;
   background-image: url("../img/sprite.png");
-  background-position: -181px -100px;
+  background-position: -245px -180px;
 }
 
 .social__link--fb:hover{
   width: 20px;
   height: 20px;
   background-image: url("../img/sprite.png");
-  background-position: -181px -120px;
+  background-position: 0 -242px;
   background-color: #3b5998;
 }
 
@@ -1742,7 +1742,8 @@ input~.valid-err:after{
   left: 97%;
   content: attr(title);
   padding: .5em;
-  width: 110%;
+  width: auto;
+  min-width: 40%;
   font-size: 12px;
   color: #e74c3c;
   background-color: #fdef9d;
@@ -2036,7 +2037,7 @@ input~.valid-err:after{
   width: 12px;
   height: 10px;
   background-image: url("../img/sprite.png");
-  background-position: -142px -91px;
+  background-position: -245px -216px;
 }
 
 .filter__check[type="radio"]:checked+span:after{
@@ -2048,7 +2049,7 @@ input~.valid-err:after{
   width: 12px;
   height: 10px;
   background-image: url("../img/sprite.png");
-  background-position: -142px -91px;
+  background-position: -245px -216px;
 }
 
 .filter__item{
@@ -3394,17 +3395,6 @@ input~.valid-err:after{
   padding-top: 23px;
 }
 
-.page-footer__form::after{
-  position: absolute;
-  content: "";
-  right: 8px;
-  top: 32px;
-  width: 11px;
-  height: 11px;
-  background-image: url("../img/sprite.png");
-  background-position: -170px -101px;
-}
-
 .page-footer__input{
   float: left;
   padding: 6px 12px;
@@ -3434,6 +3424,8 @@ input~.valid-err:after{
   height: 27px;
   background-color: #fff;
   border: none;
+  background-image: url("../img/sprite.png");
+  background-position: -154px -234px;
 }
 
 .page-footer__wrapper{
@@ -3510,7 +3502,7 @@ input~.valid-err:after{
   width: 16px;
   height: 15px;
   background-image: url("../img/sprite.png");
-  background-position: -150px -121px;
+  background-position: -100px -242px;
   vertical-align: top;
 }
 
@@ -3645,21 +3637,21 @@ input~.valid-err:after{
   width: 44px;
   height: 39px;
   background-image: url("../img/sprite.png");
-  background-position: -91px -138px;
+  background-position: -123px -186px;
 }
 
 .service--sell>.service__container:before{
   width: 44px;
   height: 39px;
   background-image: url("../img/sprite.png");
-  background-position: -47px -138px;
+  background-position: -63px -186px;
 }
 
 .service--urgent>.service__container:before{
   width: 55px;
   height: 37px;
   background-image: url("../img/sprite.png");
-  background-position: -46px -54px;
+  background-position: -62px -70px;
 }
 
 .service--exchange>.service__container:before{
@@ -3673,28 +3665,28 @@ input~.valid-err:after{
   width: 47px;
   height: 40px;
   background-image: url("../img/sprite.png");
-  background-position: 0 -138px;
+  background-position: 0 -186px;
 }
 
 .service--privatization>.service__container:before{
   width: 46px;
   height: 47px;
   background-image: url("../img/sprite.png");
-  background-position: 0 -54px;
+  background-position: 0 -70px;
 }
 
 .service--commerce>.service__container:before{
   width: 54px;
   height: 37px;
   background-image: url("../img/sprite.png");
-  background-position: 0 -101px;
+  background-position: 0 -133px;
 }
 
 .service--legal>.service__container:before{
   width: 47px;
   height: 47px;
   background-image: url("../img/sprite.png");
-  background-position: -54px 0;
+  background-position: -70px 0;
 }
 
 .service:nth-child(3n){
@@ -4513,10 +4505,18 @@ input~.valid-err:after{
   content: "";
   right: 0;
   top: -28px;
-  padding-left: 25px;
+}
+
+.print::before{
+  display: inline-block;
+  content: "";
+  padding-right: 10px;
+  width: 26px;
+  height: 16px;
   background-image: url("../img/sprite.png");
-  background-position: -181px -156px;
+  background-position: -68px -242px;
   background-repeat: no-repeat;
+  vertical-align: middle;
 }
 
 .contacts{
@@ -4895,7 +4895,7 @@ input~.valid-err:after{
   width: 10px;
   height: 10px;
   background-image: url("../img/sprite.png");
-  background-position: -154px -91px;
+  background-position: -217px -242px;
   background-repeat: no-repeat;
   vertical-align: middle;
 }
@@ -5898,21 +5898,21 @@ input~.valid-err:after{
   width: 40px;
   height: 49px;
   background-image: url("../img/sprite.png");
-  background-position: -101px -51px;
+  background-position: -133px -67px;
 }
 
 .content .file-xls::before{
   width: 39px;
   height: 52px;
   background-image: url("../img/sprite.png");
-  background-position: -142px 0;
+  background-position: -190px 0;
 }
 
 .content .file-pdf::before{
   width: 41px;
   height: 51px;
   background-image: url("../img/sprite.png");
-  background-position: -101px 0;
+  background-position: -133px 0;
 }
 
 .testimony{
@@ -5981,6 +5981,8 @@ input~.valid-err:after{
   width: 100%;
   height: 100%;
   background-image: url("../img/bg-popup.png");
+  background-size: 6px 6px;
+  background-repeat: repeat;
 }
 
 .popup--show{
@@ -6026,7 +6028,6 @@ input~.valid-err:after{
   display: none;
   position: relative;
   min-width: 140px;
-  margin-bottom: 30px;
   padding: 10px 25px 55px 25px;
   width: 380px;
 }
@@ -6062,7 +6063,7 @@ input~.valid-err:after{
 .popup__item{
   position: relative;
   display: inline-block;
-  padding: 12px 4px 4px 4px;
+  padding: 12px 4px 25px 4px;
   background-color: #f4f4f4;
   text-align: left;
 }
@@ -6110,7 +6111,7 @@ input~.valid-err:after{
   top: 0;
   right: 30px;
   background-image: url("../img/sprite.png");
-  background-position: -181px -140px;
+  background-position: -36px -242px;
   width: 16px;
   height: 16px;
 }
@@ -6985,6 +6986,16 @@ input~.valid-err:after{
   }
 }
 
+@media (min-width: 767px) and (max-width: 1366px){
+  .calc__wrapper{
+    margin: 3px 0;
+  }
+
+  .popup__wrapper{
+    top: 2vh;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1220px){
   .staff__item:nth-of-type(2n) .staff__about{
     right: 190px;
@@ -7094,7 +7105,7 @@ input~.valid-err:after{
     width: 16px;
     height: 16px;
     background-image: url("../img/sprite.png");
-    background-position: -181px -140px;
+    background-position: -36px -242px;
   }
 
   .navigation__control{
@@ -8220,6 +8231,7 @@ input~.valid-err:after{
   input~.valid-err{
     float: left;
     display: block;
+    width: 100%;
     height: 0;
     padding: 0;
     overflow: hidden;
@@ -9222,6 +9234,11 @@ input~.valid-err:after{
     margin-bottom: 5%;
   }
 
+  .similar{
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
   .content div{
     padding: 6% 6% 6% 7%;
   }
@@ -9281,6 +9298,10 @@ input~.valid-err:after{
 
   .popup__container--form{
     padding: 0 25px 40px 25px;
+  }
+
+  .popup__textarea{
+    height: 10vh;
   }
 }
 
